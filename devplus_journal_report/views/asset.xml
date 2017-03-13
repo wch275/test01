@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="assets_backend" name="Reference clickable assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/devplus_journal_report/static/src/js/web_tree_reference_clickable.js"></script>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

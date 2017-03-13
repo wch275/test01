@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+
+		<record model="ir.ui.view" id="echlon_tree_view">
+			<field name="name">salary_grid.echlon.tree</field>
+			<field name="model">salary_grid.echlon</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Echlons">
+					
+					<field name="name" />
+					<field name="code" />
+					<field name="categorie_id" />
+					<field name="duree" />
+					
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="echlon_search_view">
+			<field name="name">echlon.search</field>
+			<field name="model">salary_grid.echlon</field>
+			<field name="arch" type="xml">
+				<search string=" Search echlon">
+					<field name="categorie_id" select="1" />
+					<group expand="0" string="Group By">
+						<filter string="Catégorie" context="{'group_by': 'categorie_id'}" />
+					</group>
+					
+				</search>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="echlon_form_view">
+			<field name="name">salary_grid.echlon.form</field>
+			<field name="model">salary_grid.echlon</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<from string="Echlons" version="7.0">
+					<sheet>
+						<group col="4">
+							<field name="name" />
+							<field name="categorie_id" />
+							<field name="code" />
+							<field name="sequence" />
+							<field name="duree" />
+							<field name="salaire_base" />
+							
+						</group>
+						<group string="Rubriques">
+							<field name="rubrique_ids" nolabel="1" >
+								 
+							</field>
+						</group>
+
+					</sheet>
+				</from>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="hr_payroll_echlon_action">
+			<field name="name">Echlons</field>
+			<field name="res_model">salary_grid.echlon</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		
+
+		<menuitem id="hr_grille_echlon_menuitem" name="Echlons"
+			parent="salary_grid_configuration_menu" action="hr_payroll_echlon_action" />
+
+
+	</data>
+
+</openerp>
+		

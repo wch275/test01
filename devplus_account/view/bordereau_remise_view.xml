@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+
+		<record id="bordereau_remise_view_tree" model="ir.ui.view">
+			<field name="name">account.bordereau_remise.tree</field>
+			<field name="model">account.bordereau_remise</field>
+			<field name="arch" type="xml">
+				<tree create="0" string="Bordereau remise" colors="blue:state == 'draft';gray:state == 'cancel'">
+					<field name="name" />
+					<field name="payment_mode_id" />
+					<field name="date_created" />
+					<field name="date_remise" />
+					<field name="total" />
+					<field name="state" />
+					<field name="company_id" groups="base.group_multi_company" />
+				</tree>
+			</field>
+		</record>
+
+
+
+		<record id="bordereau_remise_form" model="ir.ui.view">
+			<field name="name">account.bordereau_remise.form</field>
+			<field name="model">account.bordereau_remise</field>
+			<field name="arch" type="xml">
+				<form string="Bordereau remise" create="0">
+					<header>
+						<button name="action_sent" states="draft" string="Remettre à la banque"
+							type="object" class="oe_highlight" />
+						<button name="action_draft" states="cancel" string="Mettre en Brouillon"
+							type="object" />
+						<button name="action_cancel" states="draft" string="Annuler"
+							type="object" />
+						<button name="action_done" states="sent" string="Comptabiliser"
+							type="object" />
+						<field name="state" widget="statusbar" statusbar_visible="draft,sent,done" />
+					</header>
+					<sheet string="Bordereau remise">
+						<div class="oe_title">
+							<h1>
+								<field name="name" />
+							</h1>
+						</div>
+						<div class=" oe_right oe_button_box">
+
+						</div>
+						<group>
+							<group>
+								<field name="payment_mode_id" />
+								<field name="type" required="1" />
+								<field name="type_effet" attrs="{'invisible': [('type','!=','effet')],'required': [('type','==','effet')] }" />
+							</group>
+							<group>
+								<field name="date_created"  required="1" />
+								<field name="date_remise" required="1" on_change="onchange_date_remise(date_remise)"/>
+								<field name="period_id"  required="1" />
+								<field name="company_id" widget='selection' groups="base.group_multi_company" />
+								<field name="user_id"
+									context="{'default_groups_ref': ['base.group_user', 'base.group_partner_manager', 'account.group_account_invoice']}" />
+							</group>
+						</group>
+					<notebook>
+                      <page string="lignes Bordereau">
+						<field name="line_ids" context="{'bordereau_remise_id': active_id or False}">
+							<tree string="Payment Line" editable="buttom" create="0">
+								<field name="numero_cheque" />
+								<field name="bank_name" />
+								<field name="proprietaire" />
+								<field name="amount"  />
+								<field name="state"  invisible="1"/>
+								 <button  states="draft" string="Supprimer" name="%(devplus_account.wizard_bordereau_remise_line)d" type="action" icon="STOCK_CANCEL" help="Supprimer"/>
+							</tree>
+						</field>
+					</page>
+					<page string="Pièces comptables" attrs="{'invisible': [('state','!=','done')]}">
+						<field name="move_ids" data-context='{"xml_id":"account.action_move_journal_line"}'/>
+					</page>
+					</notebook>
+					
+
+						<group class="oe_subtotal_footer oe_right">
+							<field name="total" widget="monetary"
+								options="{'currency_field': 'currency_id'}" />
+							<field name="nb_cheque" />
+						</group>
+						<div class="oe_clear">
+							<label for="comment" />
+						</div>
+						<field name="comment" nolabel="1" />
+					</sheet>
+			    <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+				</form>
+			</field>
+		</record>
+
+		<record id="bordereau_remise_view_search" model="ir.ui.view">
+			<field name="name">account.bordereau_remise.search</field>
+			<field name="model">account.bordereau_remise</field>
+			<field name="arch" type="xml">
+				<search string="Bordereau remise">
+					<field name="name" />
+					<field name="company_id" groups="base.group_multi_company" />
+					<filter string="Brouillon" domain="[('state','=','draft')]"
+						icon="terp-document-new" />
+					<filter string="Remis" domain="[('state','=','sent')]"
+						icon="terp-camera_test" />
+					<filter string="Comptabilisé" domain="[('state','=','done')]"
+						icon="terp-dialog-close" />
+					<group expand="0" string="Group By">
+						<filter string="Status" context="{'group_by': 'state'}"
+							icon="terp-stock_effects-object-colorize" />
+						<filter string="Compte Bancaire" icon="terp-folder-orange"
+							domain="[]" context="{'group_by':'payment_mode_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+		
+		<record id="action_bordereau_remise" model="ir.actions.act_window">
+			<field name="name">Bordereau remise</field>
+			<field name="res_model">account.bordereau_remise</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem id="bordereau_remise_root" name="Bordereau remise"
+			parent="account.menu_finance" sequence="3" />
+
+		<menuitem action="action_bordereau_remise" id="bordereau_remise_menu"
+			parent="bordereau_remise_root" sequence="5" />
+
+	</data>
+</openerp>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_avance">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+							<div class="row">
+								<div class="col-xs-3 col-xs-offset-8">
+									Date :
+									<span t-field="o.date" />
+								</div>
+							</div>
+
+							<div class="text-center col-xs-12">
+								<h2>
+									<strong>Avance Sur Salaire</strong>
+								</h2>
+
+								<br />
+								<br />
+								<br />
+								<br />
+
+								<div class="row">
+									<div class="col-xs-5">
+										<div class="text-left">
+											<tr t-foreach="o.avance_ids" t-as="l">
+												<strong>Nom,Prénom :</strong>
+												<span t-field="l.employee_id" />
+												<br />
+												<br />
+												<strong>Montant Souhaité :</strong>
+												<tr t-foreach="o.avance_ids" t-as="l">
+													<span t-field="l.amount" />
+												</tr>
+												<br />
+												<br />
+												<strong>Montant Confirmé :</strong>
+												<tr t-foreach="o.avance_ids" t-as="l">
+													<span t-field="l.amount_confirm" />
+												</tr>
+												<br />
+												<br />
+											</tr>
+											<strong>Mois :</strong>
+											<span t-field="o.month_id" />
+											<br />
+											<br />
+
+											<strong>Avis DRH :</strong>
+											<span t-field="o.state" />
+										</div>
+									</div>
+								</div>
+
+								<br />
+								<br />
+								<br />
+								<br />
+								<table class="table table-bordered table-padding-4">
+									<thead>
+										<tr>
+											<th class="text-center col-xs-5">
+												<strong>Employé</strong>
+											</th>
+											<th class="text-center col-xs-5">DRH </th>
+										</tr>
+
+
+									</thead>
+									<tbody>
+
+										<tr>
+											<td>
+												Signature
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+											</td>
+											<td>Signature </td>
+
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+
+
+
+
+
+
+
+
+		<template id="report_hr_holidays">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+							<div class="text-center col-xs-12">
+								<h2>
+									<strong>Demande De Congé</strong>
+								</h2>
+
+								<br />
+								<br />
+								<br />
+								<br />
+
+								<div class="row">
+									<div class="col-xs-5">
+										<div class="text-left">
+											<strong>Nom,Prénom :</strong>
+											<span t-field="o.employee_id" />
+											<br />
+											<br />
+											<strong>Description :</strong>
+											<span t-field="o.name" />
+											<br />
+											<br />
+											<strong>Type de congé :</strong>
+											<span t-field="o.holiday_status_id" />
+											<br />
+											<br />
+											<strong>Date de sortie:</strong>
+											<span t-field="o.date_from" />
+											<br />
+											<br />
+											<strong>Date de retour:</strong>
+											<span t-field="o.date_to" />
+											<br />
+											<br />
+											<strong>Durée:</strong>
+											<span t-field="o.number_of_days_temp" />
+											<br />
+											<br />
+										</div>
+									</div>
+								</div>
+
+								<br />
+								<br />
+								<br />
+								<br />
+								<table class="table table-bordered table-padding-4">
+									<thead>
+										<tr>
+											<th class="text-center col-xs-5">
+												<strong>Employé</strong>
+											</th>
+											<th class="text-center col-xs-5">DRH </th>
+										</tr>
+
+
+									</thead>
+									<tbody>
+
+										<tr>
+											<td>
+												Signature
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+												<br />
+											</td>
+											<td>Signature </td>
+
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+
+	</data>
+</openerp>

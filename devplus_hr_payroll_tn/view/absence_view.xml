@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="absence_tree_view">
+			<field name="name">res.absence.tree</field>
+			<field name="model">res.absence</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="date_from" />
+					<field name="date_to" />
+					<field name="employee_id" />
+					<field name="matricule" />
+					<field name="department_id" />
+					<field name="cause_absence" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="absence_form_view">
+			<field name="name">res.absence.form</field>
+			<field name="model">res.absence</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<group>
+							<group>
+								<field name="name" />
+								<field name="employee_id" on_change="onchange_employee( employee_id) " />
+								<field name="regime" invisible="0" />
+								<label for="number_of_days_temp" string="Durée"/>
+								<div >
+									<group col="3">
+										<field name="date_from" nolabel="1" class="oe_inline"/>
+										<label string="-" class="oe_inline" attrs="{'invisible':[('regime','=','horaire')]}"/>
+										<field name="date_to" nolabel="1" class="oe_inline" 
+											on_change="onchange_date_to(date_to,date_from)" attrs="{'required':[('regime','!=','horaire')],'invisible':[('regime','=','horaire')]}" />
+									</group>
+									<div attrs="{'invisible':[('regime','=','horaire')]}" >
+										<field name="number_absent_days" class="oe_inline" />
+										jours
+									</div>
+									<div attrs="{'invisible':[('regime','!=','horaire')]}">
+										<field name="number_absent_hours" class="oe_inline" />
+										heures
+									</div>
+								</div>
+							</group>
+							<group>
+								<field name="matricule" />
+								<field name="department_id" />
+								<field name="cause_absence" />
+							</group>
+
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- ajout jour Absence au pointage -->
+ 
+		<record id="absence_hr_graph" model="ir.ui.view">
+			<field name="name">res.absence.graph</field>
+			<field name="model">res.absence</field>
+			<field name="arch" type="xml">
+				<graph type="pivot">
+					<field name="employee_id" type="row" />
+					<field name="date_from" type="col" />
+					<field name="number_absent_hours" type="measure" />
+					<field name="number_absent_days" type="measure" />
+				</graph>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="action_open_new_absence">
+			<field name="name">Absence</field>
+			<field name="res_model">res.absence</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form,calendar,graph</field>
+		</record>
+
+
+		<menuitem id="res_absence_ss_menu" name="Absence"
+			action="action_open_new_absence" parent="devplus_hr_payroll_tn.menu_hr_payroll_discipline"
+			sequence="1" groups="devplus_hr_payroll_tn.absence_managment" />
+
+		<record id="res_absence_calendar_view" model="ir.ui.view">
+			<field name="name">res.absence.calendar</field>
+			<field name="model">res.absence</field>
+			<field name="arch" type="xml">
+				<calendar color="number_absent_hours" date_start="date_from"
+					date_stop="date_from" string="Jours Feries">
+					<field name="employee_id" />
+				</calendar>
+			</field>
+		</record>
+
+			
+		<record model="ir.actions.act_window" id="action_type_absence">
+			<field name="name">Type Absence</field>
+			<field name="res_model">res.absence.type</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="type_absence_ss_menu" name="Type Absence"
+			action="action_type_absence" parent="devplus_hr_payroll_tn.payroll_configuration"
+			sequence="25" groups="devplus_hr_payroll_tn.absence_managment" />
+
+<!-- 		<menuitem id="type_absence_ss_menu_teqt" name="Type Absence 2"
+			action="action_type_absence" parent="devplus_hr_payroll_tn.payroll_configuration"
+			sequence="500"  /> -->
+			
+	</data>
+</openerp>

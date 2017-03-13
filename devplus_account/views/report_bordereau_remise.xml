@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+	<data>
+		<template id="report_bordereau_remise">
+			<t t-call="report.html_container">
+				<t t-call="report.external_layout">
+
+					<t t-foreach="docs" t-as="o">
+						<div class="page">
+							<div class="oe_structure" />
+							<div class="row">
+								<div class="col-xs-12 text-center">
+									<strong>
+										<h3>
+											<span t-if="o.type=='cheque'">BORDEREAU REMISE CHEQUE N° </span>
+											<span t-if="o.type=='effet'">BORDEREAU REMISE D'EFFETS N° </span>
+											 
+											<span t-field="o.name" />
+										</h3>
+									</strong>
+									<br />
+									Date :
+									<span t-field="o.date_created" />
+
+								</div>
+							</div>
+
+							<div class="col-xs-12">
+								<strong>N° compte :</strong>
+								<span t-field="o.payment_mode_id.bank_id.acc_number" />
+								<br />
+								<strong>Titulaire :</strong>
+								<span t-field="o.payment_mode_id.bank_id.partner_id.name" />
+								<br />
+								<strong>Banque :</strong>
+								<span t-field="o.payment_mode_id.bank_id.bank_name" />
+								<br />
+							</div>
+
+
+							<table class="table  table-bordered ">
+								<thead>
+									<tr style="background-color: rgba(122, 114, 114, 0.24);">
+										<th>Numéro</th>
+										<th>Banque</th>
+										<th>Nom du tireur</th>
+										<th class="text-right">Montant</th>
+									</tr>
+								</thead>
+								<tbody class="invoice_tbody">
+									<tr t-foreach="o.line_ids" t-as="l">
+										<td>
+											<span t-field="l.numero_cheque" />
+										</td>
+										<td>
+											<span t-field="l.bank_name" />
+										</td>
+										<td>
+											<span t-field="l.proprietaire" />
+										</td>
+										<td class="text-right">
+											<span t-field="l.amount" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="row">
+								<div class="col-xs-4 pull-right">
+									<table class="table table-condensed">
+										<tr class="border-black">
+											<td>
+												<strong>Montant Total</strong>
+											</td>
+											<td class="text-right">
+												<span t-field="o.total" />
+											</td>
+										</tr>
+
+										<tr>
+											<td>Nombre Total</td>
+											<td class="text-right">
+												<span t-field="o.nb_cheque" />
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+
+
+
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+	</data>
+</openerp>
+							

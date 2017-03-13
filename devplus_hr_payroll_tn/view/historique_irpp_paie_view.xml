@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record id="hr_payroll_bulletin_irpp_tree" model="ir.ui.view">
+			<field name="name">hr.payroll.bulletin.irpp.tree</field>
+			<field name="model">hr.payroll.bulletin</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="period_id" />
+					<field name="employee_id" />
+					<field name="salaire_brute_imposable" />
+					<field name="state" invisible='1' />
+				</tree>
+			</field>
+		</record>
+		<record id="historique_irpp_paie_all_act" model="ir.actions.act_window">
+			<field name="name">Historique IRPP</field>
+			<field name="res_model">hr.payroll.bulletin</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="hr_payroll_bulletin_irpp_tree" />
+		</record>
+		<menuitem action="historique_irpp_paie_all_act" id="ss_menu_historique_irpp_paie_"
+			parent="payroll_configuration" sequence="20"
+			name="Historique IRPP" />
+
+	</data>
+</openerp> 

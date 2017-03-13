@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_salary_grid_echlon_manager,name_salary_grid_echlon_manager,devplus_salary_grid.model_salary_grid_echlon,base.group_hr_manager,1,1,1,1
+access_salary_grid_categorie_manager,name_salary_grid_categorie_manager,devplus_salary_grid.model_salary_grid_categorie,base.group_hr_manager,1,1,1,1
+access_salary_grid_avancement_manager,name_salary_grid__avancement_manager,devplus_salary_grid.model_salary_grid_avancement,base.group_hr_manager,1,1,1,1

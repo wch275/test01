@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="wizard_journal_vente_view" model="ir.ui.view">
+			<field name="name">Journal des Ventes</field>
+			<field name="model">wizard.journal.vente</field>
+			<field name="arch" type="xml">
+				<form>
+					<separator string="Période " colspan="4" />
+					<newline />
+					<newline />
+					<group col="4">
+						<field name="date_begin" />
+						<field name="date_end" />
+					</group>
+					<footer>
+						<button string="Imprimer" name="check_report" type="object"
+							class="oe_highlight" />
+						ou
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+		<record id="action_journal_vente_view" model="ir.actions.act_window">
+			<field name="name">Journal des Ventes</field>
+			<field name="res_model">wizard.journal.vente</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+
+		<menuitem id="menu_journal_vente_root" name="Rapports des Ventes"
+			parent="base.menu_base_partner" sequence="2" />
+
+		<menuitem id="menu_journal_vente" name="Journal des Ventes"
+			parent="menu_journal_vente_root" action="action_journal_vente_view"
+			sequence="5" />
+
+
+
+	</data>
+</openerp>

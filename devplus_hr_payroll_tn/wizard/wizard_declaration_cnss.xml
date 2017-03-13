@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="declaration_cnss_tree">
+			<field name="name">payroll.report.declaration_cnss.tree</field>
+			<field name="model">payroll.report.declaration_cnss</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree>
+						<field name="name"/>
+						<field name="trimester" />
+						<field name="fiscalyear_id" string="Année" />
+						<field name="state" string="État"/>
+				</tree>
+			</field>
+		</record>	
+						
+		<record model="ir.ui.view" id="declaration_cnss_form">
+			<field name="name">payroll.report.declaration_cnss.form</field>
+			<field name="model">payroll.report.declaration_cnss</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Déclaration CNSS">
+ 					<header>
+						<button name="action_cancel_draft" string="Mettre en brouillon" type="object" class="oe_edit_only" states="confirmed" />
+						<button name="action_confirm" string="Confirmer" type="object" states="draft" />
+						<field name="state" widget="statusbar" statusbar_visible="draft,confirmed"/>
+					</header> 
+				 <group  col="4"  >
+				  
+						<field name="name"/>
+						<field name="date"/>
+						<field name="company_id"  options="{'no_create': 1,'no_open': 1,'create_edit':0}"/>
+						<field name="fiscalyear_id" string="Année" options="{'no_create': 1,'no_open': 1,'create_edit':0}" on_change="onchange_trimester_period(trimester, fiscalyear_id)"/>
+						<field name="trimester" on_change="onchange_trimester_period(trimester, fiscalyear_id)"  />
+						Le fichier générée :
+							<field name="data" readonly="1" filename="file_name" /> 
+				</group>
+				
+
+				<div class="oe_subtotal_footer_separator" >
+						<button class="oe_edit_only oe_inline oe_stat_button" name="generate_cnss" string="Calculer" type="object"
+									                             icon="fa-cogs"/>	
+						<button name="generate_file" string="Générer le fichier du Déclaration CNSS "
+							type="object" colspan="1" class="oe_edit_only oe_inline oe_stat_button" icon="fa-download"/>
+				</div>					
+					<notebook >
+							<page string="Déclaration par trimestre" >
+	                             <field name="line_ids" nolabel="1" widget="one2many_list">
+	                                <tree string="line_ids" editable="top" >
+	                                	<field name="declaration_line_id" invisible="1"/>
+	                                    <field name="num_page"  />
+	                                    <field name="num_ordre"  />
+	                                    <field name="matricule_cnss" string="Matricule de l'assuré"/>
+	                                    <field name="employee_id"/>
+	                                    <field name="cin"/>
+	                                    <field name="remuneration_1" />
+	                                    <field name="remuneration_2" />
+	                                    <field name="remuneration_3" />
+	                                    <field name="total" />
+	                                </tree>
+	                            </field>
+	                            
+                            </page>
+                      </notebook>
+				 
+				</form>
+			</field>
+		</record>
+
+
+		<record id="action_declaration_cnss" model="ir.actions.act_window">
+			<field name="name">Déclaration CNSS</field>
+			<field name="res_model">payroll.report.declaration_cnss</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+
+
+		<menuitem name="Déclaration CNSS" parent="menu_hr_reporting_paie"
+			action="action_declaration_cnss" id="menu_declaration_cnss" />
+
+
+	</data>
+</openerp>

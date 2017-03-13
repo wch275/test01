@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="journal_payment_clients_report">
+				<t t-call="report.html_container">
+			
+			 			<t t-call="report.internal_layout">
+						<div class="page">
+							<div class="oe_structure" />
+
+							<div class="col-xs-12 text-center">
+								<h2>
+									<strong>Journal des paiements</strong>
+								</h2>
+								<br />
+								<br />
+							</div>
+						 
+							<div class="col-xs-12 text-left">
+								<strong> Période de :</strong>
+								<span t-esc="data['form']['date_debut']" />
+								-
+								<span t-esc="data['form']['date_fin']" />
+							</div>
+
+
+
+
+							<div class="col-xs-12" style="margin-top:20px;">
+
+								<t
+									t-foreach="get_mode_paiements(data['form']['date_debut'],data['form']['date_fin'])"
+									t-as="journal">
+									<table class="table  table-bordered table-condensed table-bg-head-gray-border">
+										<thead>
+											<tr>
+												<th class="text-left" colspan="8">
+													<strong>
+														Mode de paiement :
+														<span t-esc="journal.name" />
+													</strong>
+												</th>
+											</tr>
+
+											<tr>
+												<th class="text-left">Client</th>
+												<th class="text-center">Date</th>
+												<th class="text-center">Montant</th>
+												<th class="text-center">Numéro de chèque</th>
+												<th class="text-center">Propriétaire</th>
+												<th class="text-center">Banque</th>
+											</tr>
+										</thead>
+
+										<tr
+											t-foreach="get_paiements_for_journal(journal.id,data['form']['date_debut'],data['form']['date_fin'])"
+											t-as="paiement">
+											 
+											<td>
+												<span t-esc="paiement.partner_id.name" />
+											</td>
+											 
+											<td>
+												<span t-esc="formatLang(paiement.date,date=True)" />
+											</td>
+
+											<td class="text-right">
+												<span t-esc="formatLang(paiement.amount,dp='Account')" />
+											</td>
+											<td>
+												<span t-esc="paiement.reference" />
+											</td>
+											<td>
+												<span t-esc="paiement.proprietaire" />
+											</td>
+											<td>
+												<span t-esc="paiement.bank_name" />
+											</td>
+
+										</tr>
+
+
+
+									</table>
+
+									<div class="col-xs-12 text-right">
+										<h3>
+											<strong>
+												Total
+												<span t-esc="journal.name" />
+												:
+												<span
+													t-esc="formatLang(get_total_paiements_for_journal(journal.id,data['form']['date_debut'],data['form']['date_fin']),dp='Account')" />
+											</strong>
+										</h3>
+									</div>
+								</t>
+								<br />
+								<br />
+								<br />
+								<br />
+								<div class="col-xs-12 text-right" style="background-color: rgba(122, 114, 114, 0.24);">
+									<h3>
+										<strong>
+											Total Recettes :
+											<span
+												t-esc="formatLang(get_somme_total_paiements(data['form']['date_debut'],data['form']['date_fin']),dp='Account')" />
+										</strong>
+									</h3>
+								</div>
+							</div>
+
+
+						</div>
+					</t>
+				</t>
+	 
+
+		</template>
+	</data>
+</openerp>
+					
+			

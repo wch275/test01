@@ -1,0 +1,378 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* devplus_salary_grid
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-29 20:08+0000\n"
+"PO-Revision-Date: 2016-03-29 20:08+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: devplus_salary_grid
+#: code:addons/devplus_salary_grid/salary_grid.py:66
+#, python-format
+msgid "Action non valide  !"
+msgstr "Action non valide  !"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,active:0
+msgid "Active"
+msgstr "نشط"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_search_view
+msgid "Ancien echlon"
+msgstr "الدرجة القديمة"
+
+#. module: devplus_salary_grid
+#: view:website:devplus_salary_grid.report_salarygrid_avancement
+msgid "Ancien echlon :"
+msgstr "الدرجة القديمة :"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,ancien_echlon_id:0
+msgid "Ancien échlon"
+msgstr "الدرجة القديمة"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_form_view
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_search_view
+#: field:salary_grid.avancement,ancien_categorie_id:0
+#: view:website:devplus_salary_grid.report_salarygrid_avancement
+msgid "Ancienne catégorie"
+msgstr "الصنف القديم"
+
+#. module: devplus_salary_grid
+#: view:website:devplus_salary_grid.report_salarygrid_avancement
+msgid "Ancienne catégorie :"
+msgstr "الصنف القديم :"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.echlon,avancement:0
+msgid "Avancement automatique?"
+msgstr "تدرج تلقائي؟"
+
+#. module: devplus_salary_grid
+#: view:website:devplus_salary_grid.report_salarygrid_avancement
+msgid "Avancement employé"
+msgstr "Avancement employé"
+
+#. module: devplus_salary_grid
+#: model:ir.actions.act_window,name:devplus_salary_grid.hr_payroll_avancement_action
+#: model:ir.model,name:devplus_salary_grid.model_salary_grid_avancement
+#: model:ir.ui.menu,name:devplus_salary_grid.devplus_salary_avancement_menu
+#: model:ir.ui.menu,name:devplus_salary_grid.hr_grille_avancement_menuitem
+msgid "Avancements"
+msgstr "اﻟﺘﺪرج في سلم الرواتب"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancment_tree_view
+msgid "Avancmenets"
+msgstr "اﻟﺘﺪرج في سلم الرواتب"
+
+#. module: devplus_salary_grid
+#: selection:salary_grid.avancement,state:0
+msgid "Brouillon"
+msgstr "مسودة"
+
+#. module: devplus_salary_grid
+#: field:hr.contract,categorie_id:0
+#: model:ir.model,name:devplus_salary_grid.model_salary_grid_categorie
+msgid "Categorie"
+msgstr "الصنف"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.categorie:devplus_salary_grid.categorie_form_view
+msgid "Categorie Form"
+msgstr "Categorie Form"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.categorie:devplus_salary_grid.categorie_tree_view
+msgid "Categories"
+msgstr "الأصناف"
+
+#. module: devplus_salary_grid
+#: field:hr.employee,categorie_id:0
+#: view:salary_grid.echlon:devplus_salary_grid.echlon_search_view
+#: field:salary_grid.echlon,categorie_id:0
+msgid "Catégorie"
+msgstr "الصنف"
+
+#. module: devplus_salary_grid
+#: model:ir.actions.act_window,name:devplus_salary_grid.hr_payroll_categorie_action
+#: model:ir.ui.menu,name:devplus_salary_grid.salary_grid_categorie_menu
+msgid "Catégories"
+msgstr "الأصناف"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.categorie,code:0
+#: field:salary_grid.echlon,code:0
+msgid "Code"
+msgstr "الرمز"
+
+#. module: devplus_salary_grid
+#: model:ir.model,name:devplus_salary_grid.model_hr_contract
+msgid "Contract"
+msgstr "العقد"
+
+#. module: devplus_salary_grid
+#: code:addons/devplus_salary_grid/hr_employee.py:32
+#, python-format
+msgid "Contrat : "
+msgstr "العقد : "
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,create_uid:0
+#: field:salary_grid.categorie,create_uid:0
+#: field:salary_grid.echlon,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,create_date:0
+#: field:salary_grid.categorie,create_date:0
+#: field:salary_grid.echlon,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: devplus_salary_grid
+#: field:hr.employee,create_contract:0
+msgid "Créer un contrat?"
+msgstr "إنشاء عقد؟"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,date:0
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: devplus_salary_grid
+#: view:website:devplus_salary_grid.report_salarygrid_avancement
+msgid "Date :"
+msgstr "التاريخ :"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_form_view
+msgid "Date d'avancement"
+msgstr "تاريخ التدرج"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,description:0
+#: field:salary_grid.categorie,description:0
+msgid "Description"
+msgstr "الوصف"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.echlon,duree:0
+msgid "Durée"
+msgstr "المدة"
+
+#. module: devplus_salary_grid
+#: field:hr.contract,echlon_id:0
+#: field:hr.employee,echlon_id:0
+#: field:hr.payroll.ligne_rubrique,echlon_id:0
+#: model:ir.model,name:devplus_salary_grid.model_salary_grid_echlon
+msgid "Echlon"
+msgstr "الدرجة"
+
+#. module: devplus_salary_grid
+#: model:ir.actions.act_window,name:devplus_salary_grid.hr_payroll_echlon_action
+#: model:ir.ui.menu,name:devplus_salary_grid.hr_grille_echlon_menuitem
+#: view:salary_grid.categorie:devplus_salary_grid.categorie_form_view
+#: field:salary_grid.categorie,categorie_ids:0
+#: view:salary_grid.echlon:devplus_salary_grid.echlon_form_view
+#: view:salary_grid.echlon:devplus_salary_grid.echlon_tree_view
+msgid "Echlons"
+msgstr "الدرجات"
+
+#. module: devplus_salary_grid
+#: model:ir.model,name:devplus_salary_grid.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_search_view
+#: field:salary_grid.avancement,employee_id:0
+msgid "Employé"
+msgstr "الموظف"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,state:0
+msgid "Etat"
+msgstr "الحالة"
+
+#. module: devplus_salary_grid
+#: view:hr.contract:devplus_salary_grid.contract_form_view_inherit
+#: view:hr.employee:devplus_salary_grid.employee_form_view_inherit
+#: model:ir.ui.menu,name:devplus_salary_grid.salary_grid_configuration_menu
+msgid "Grille de salaire"
+msgstr "سلم الرواتب"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_search_view
+#: view:salary_grid.echlon:devplus_salary_grid.echlon_search_view
+msgid "Group By"
+msgstr "Group By"
+
+#. module: devplus_salary_grid
+#: selection:hr.employee,regime:0
+msgid "Horaire"
+msgstr "ساعات العمل"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,id:0
+#: field:salary_grid.categorie,id:0
+#: field:salary_grid.echlon,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: devplus_salary_grid
+#: model:ir.actions.report.xml,name:devplus_salary_grid.report_salary_grid_avancement
+msgid "Imprimer Détailles"
+msgstr "طباعة التفاصيل"
+
+#. module: devplus_salary_grid
+#: selection:hr.employee,regime:0
+msgid "Journalier"
+msgstr "يومي"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,write_uid:0
+#: field:salary_grid.categorie,write_uid:0
+#: field:salary_grid.echlon,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,write_date:0
+#: field:salary_grid.categorie,write_date:0
+#: field:salary_grid.echlon,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.echlon,rubrique_ids:0
+msgid "Les rubriques"
+msgstr "المنح"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.echlon,name:0
+msgid "Libellé"
+msgstr "الإسم"
+
+#. module: devplus_salary_grid
+#: model:ir.model,name:devplus_salary_grid.model_hr_payroll_ligne_rubrique
+msgid "Ligne Rubrique"
+msgstr "Ligne Rubrique"
+
+#. module: devplus_salary_grid
+#: selection:hr.employee,regime:0
+msgid "Mensuel"
+msgstr "شهري"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.categorie,name:0
+msgid "Nom"
+msgstr "الإسم"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_form_view
+msgid "Notes..."
+msgstr "ملاحظة"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_search_view
+msgid "Nouveau echlon"
+msgstr "الدرجة الجديدة"
+
+#. module: devplus_salary_grid
+#: view:website:devplus_salary_grid.report_salarygrid_avancement
+msgid "Nouveau echlon :"
+msgstr "الدرجة الجديدة :"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,nouveau_echlon_id:0
+msgid "Nouveau échlon"
+msgstr "الدرجة الجديدة"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_form_view
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_search_view
+#: field:salary_grid.avancement,nouveau_categorie_id:0
+#: view:website:devplus_salary_grid.report_salarygrid_avancement
+msgid "Nouvelle catégorie"
+msgstr "الصنف الجديد"
+
+#. module: devplus_salary_grid
+#: view:website:devplus_salary_grid.report_salarygrid_avancement
+msgid "Nouvelle catégorie :"
+msgstr "الصنف الجديد :"
+
+#. module: devplus_salary_grid
+#: field:hr.employee,regime:0
+msgid "Regime"
+msgstr "نظام العمل"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.echlon:devplus_salary_grid.echlon_form_view
+msgid "Rubriques"
+msgstr "المنح"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.echlon,salaire_base:0
+msgid "Salaire de base"
+msgstr "الراتب الأساسي"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_search_view
+msgid "Search avancment"
+msgstr "بحث"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.echlon:devplus_salary_grid.echlon_search_view
+msgid "Search echlon"
+msgstr "بحث"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.categorie,sequence:0
+#: field:salary_grid.echlon,sequence:0
+msgid "Séquence"
+msgstr "الترتيب"
+
+#. module: devplus_salary_grid
+#: field:salary_grid.avancement,type:0
+msgid "Type"
+msgstr "النوع"
+
+#. module: devplus_salary_grid
+#: field:hr.employee,contract_type_id:0
+msgid "Type de contrat"
+msgstr "نوع العقد"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_form_view
+msgid "Valider avancement"
+msgstr "تأكيد"
+
+#. module: devplus_salary_grid
+#: selection:salary_grid.avancement,state:0
+msgid "Validée"
+msgstr "مؤكدة"
+
+#. module: devplus_salary_grid
+#: code:addons/devplus_salary_grid/salary_grid.py:67
+#, python-format
+msgid "Veuillez saisir un contrat  pour cet employé !"
+msgstr "يجب إنشاء عقد لهذا الموظف !"
+
+#. module: devplus_salary_grid
+#: view:salary_grid.avancement:devplus_salary_grid.avancement_form_view
+msgid "avancement Form"
+msgstr "avancement Form"
+

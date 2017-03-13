@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_account_payment_mode_group_account_invoice,name_account_payment_mode_group_account_invoice,devplus_account.model_account_payment_mode,account.group_account_invoice,1,1,1,1
+bordereau_remise_group_account_invoice,name_bordereau_remise_group_account_invoice,devplus_account.model_account_bordereau_remise,account.group_account_invoice,1,1,1,0
+bordereau_remise_line_group_account_invoice,name_bordereau_remise_line_group_account_invoice,devplus_account.model_account_bordereau_remise_line,account.group_account_invoice,1,1,1,0

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record id="purchase_document_tree_view" model="ir.ui.view">
+			<field name="name">purchase.document.tree</field>
+			<field name="model">purchase.document</field>
+			<field name="arch" type="xml">
+				<tree colors="blue:state == 'draft';gray:state == 'cancel'">
+					<field name="type" />
+					<field name="ref" widget="reference_clickable" />
+					<field name="date" />
+					<field name="partner_id"   />
+					<field name="amount_total" sum="Total" />
+					<field name="amount_untaxed" sum="Total HT"  />
+					<field name="residual" invisible="1"  />
+					<field name="user_id"  />
+					<field name="state"  />
+					<field name="invoice_state"  invisible="1"/>
+				</tree>
+			</field>
+		</record>
+		 
+		<record id="purchase_document_serach" model="ir.ui.view">
+			<field name="name">purchase.document.search</field>
+			<field name="model">purchase.document</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="number" />
+					<field name="date" />
+					<field name="partner_id" />
+					<filter name="Bon de Commande " domain="[('type','=','purchase_order')]"/>
+					<filter name="Facture " domain="[('type','=','in_invoice')]"/>
+					<filter name="Avoir " domain="[('type','=','in_refund')]"/>
+					<separator/>
+					<filter name="Factures impayés " domain="[('state','=','open'),('type','=','in_invoice')]"/>
+					<newline />
+					<group expand="1" string="Grouper par...">
+						<filter string="Type du Document" context="{'group_by':'type'}" />
+						<filter string="Fournisseur" context="{'group_by':'partner_id'}" />
+						<filter string="Date" context="{'group_by':'date'}" />
+						<filter string="Etat" context="{'group_by':'state'}" />
+						<filter string="Vendeur" context="{'group_by':'user_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+
+	   <!--  <record id="filter_purchase_document_vendeur" model="ir.filters">
+	        <field name="name">Par Vendeur</field>
+	        <field name="model_id">purchase.document</field>
+	        <field name="user_id" eval="False"/>
+	        <field name="context">{'group_by': ['date:month', 'user_id']}</field>
+	    </record>
+
+	    <record id="filter_purchase_document_credit_client" model="ir.filters">
+	        <field name="name">Crédit par Client</field>
+	        <field name="model_id">purchase.document</field>
+	        <field name="user_id" eval="False"/>
+	        <field name="domain">['|', ['invoice_state', '=', '2binvoiced'], '&', ['state', '=', 'open'], ['type', '=', 'out_invoice']]</field>
+	    </record>-->
+	        
+		<record model="ir.actions.act_window" id="action_purchase_document">
+			<field name="name">Documents des Achats</field>
+			<field name="res_model">purchase.document</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree</field>
+		</record>
+
+		<menuitem id="menu_purchase_document" name="Documents des Achats"
+			parent="menu_journal_achat_root" action="action_purchase_document"
+			sequence="2" />
+ 
+ 
+	</data>
+</openerp>

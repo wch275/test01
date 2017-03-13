@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_salarygrid_avancement">
+
+			<t t-foreach="docs" t-as="o">
+				<t t-call="report.external_layout">
+					<div class="page">
+						<div class="oe_structure" />
+						<div class="row">
+							<div class="col-xs-12 text-center">
+								<h2>
+									<FONT COLOR="Royal blue">
+										Avancement employé
+									</FONT>
+								</h2>
+								<h3>
+									<span t-field="o.employee_id.name" />
+								</h3>
+								<div class="col-xs-6" style="margin-top:50px;">
+									<h3>
+										<strong> Date :
+										</strong>
+										<span t-field="o.date" />
+									</h3>
+								</div>
+							</div>
+							<div class="col-xs-6" style="margin-top:50px;">
+								<h4>
+									<strong>Ancienne catégorie  </strong>
+								</h4>
+							
+								<br />
+								<table class="table table-condensed">
+									<tbody class="sale_tbody">
+										<tr class="table-td-bg">
+											<th class="table-td-bg">Ancienne catégorie : </th>
+											<td class="table-td-bg">
+												<span t-field="o.ancien_categorie_id" />
+											</td>
+										</tr>
+										<tr>
+											<th>Ancien echlon : </th>
+											<td>
+												<span t-field="o.ancien_echlon_id" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+							<div class="col-xs-6" style="margin-top:50px;">
+								<h4>
+									<strong>Nouvelle catégorie </strong>
+								</h4>
+							
+								<br />
+								<table class="table table-condensed">
+
+									<tr>
+										<th>Nouvelle catégorie : </th>
+										<td>
+											<span t-field="o.nouveau_categorie_id" />
+										</td>
+									</tr>
+									<tr>
+										<th>Nouveau echlon : </th>
+										<td>
+											<span t-field="o.nouveau_echlon_id" />
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</t>
+			</t>
+		</template>
+
+
+	</data>
+</openerp>

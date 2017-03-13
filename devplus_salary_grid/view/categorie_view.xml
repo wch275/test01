@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="categorie_tree_view">
+			<field name="name">categorie.tree</field>
+			<field name="model">salary_grid.categorie</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Categories">
+					<field name="sequence" widget="handle" />
+					<field name="name" />
+					<field name="code" />
+				</tree>
+			</field>
+		</record>
+		
+
+		<record model="ir.ui.view" id="categorie_form_view">
+			<field name="name">categorie.form</field>
+			<field name="model">salary_grid.categorie</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<from string="Categorie Form" version="7.0">
+					<sheet>
+						<group>
+							<field name="name" />
+							<field name="code" />
+							<field name="sequence" />
+						</group>
+						<group string="Echlons">
+							<field name="categorie_ids" nolabel="1">
+								<tree>
+									<field name="sequence" widget="handle" />
+									<field name="name" />
+									<field name="code" />
+									<field name="categorie_id" />
+									<field name="duree" />
+								</tree>
+							</field>
+						</group>
+					</sheet>
+				</from>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="hr_payroll_categorie_action">
+			<field name="name">Catégories</field>
+			<field name="res_model">salary_grid.categorie</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem id="salary_grid_configuration_menu" name="Grille de salaire"
+			parent="hr.menu_hr_configuration" />
+
+		<menuitem id="salary_grid_categorie_menu" name="Catégories"
+			parent="salary_grid_configuration_menu" action="hr_payroll_categorie_action" />
+
+
+	</data>
+
+</openerp>
+		

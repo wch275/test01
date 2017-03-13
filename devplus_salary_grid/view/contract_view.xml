@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="contract_form_view_inherit">
+			<field name="name">hr.contract.inherit</field>
+			<field name="model">hr.contract</field>
+			<field name="inherit_id" ref="devplus_hr_payroll_tn.view_order_form2" />
+			<field name="arch" type="xml">
+			<field name="employee_id" on_change="onchange_employee_id(employee_id)" />
+				<xpath expr="//group[@name='salary_and_advantages']" position="before">
+			
+				<group string="Grille de salaire">
+				<field name="categorie_id"/>
+					<field name="echlon_id"/>
+						
+				
+					</group>
+				</xpath>
+			</field>
+		</record>
+		
+		
+	</data>
+</openerp>

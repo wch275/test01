@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record id="sale_document_line_tree_view" model="ir.ui.view">
+			<field name="name">sale.document.line.tree</field>
+			<field name="model">sale.document.line</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="product_id" />
+					<field name="product_uom_qty"/>
+					<field name="price_unit"   />
+					<field name="price_subtotal" sum="Total" />
+					<field name="type" />
+					<field name="ref" widget="reference_clickable" />
+					<field name="date"/>
+					<field name="partner_id"/>
+					<field name="state"/>
+					<field name="user_id"/>
+					<field name="invoice_state"  invisible="1"/>
+				</tree>
+			</field>
+		</record>
+		 
+		<record id="sale_document_line_serach" model="ir.ui.view">
+			<field name="name">sale.document.line.search</field>
+			<field name="model">sale.document.line</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="product_id" />
+					<field name="number" />
+					<field name="date" />
+					<field name="partner_id" />
+					<filter name="Bon de Commande " domain="[('type','=','sale_order')]"/>
+					<filter name="Bon de Livraison " domain="[('type','=','picking_out')]"/>
+					<filter name="Facture " domain="[('type','=','out_invoice')]"/>
+					<filter name="Avoir " domain="[('type','=','out_refund')]"/>
+					<separator/>
+					<filter name="BL non facturés " domain="[('invoice_state','=','2binvoiced')]"/>
+					<filter name="Factures impayés " domain="[('state','=','open'),('type','=','out_invoice')]"/>
+					<newline />
+					<group expand="1" string="Grouper par...">
+						<filter string="Produit" context="{'group_by':'product_id'}" />
+						<filter string="Type du Document" context="{'group_by':'type'}" />
+						<filter string="Client" context="{'group_by':'partner_id'}" />
+						<filter string="Date" context="{'group_by':'date'}" />
+						<filter string="Etat" context="{'group_by':'state'}" />
+						<filter string="Vendeur" context="{'group_by':'user_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+ 
+		<record model="ir.actions.act_window" id="action_sale_document_line">
+			<field name="name">Documents des Ventes</field>
+			<field name="res_model">sale.document.line</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree</field>
+		</record>
+
+		<menuitem id="menu_sale_document_line" name="Détails des Ventes"
+			parent="menu_journal_vente_root" action="action_sale_document_line"
+			sequence="3" />
+ 
+ 
+	</data>
+</openerp>

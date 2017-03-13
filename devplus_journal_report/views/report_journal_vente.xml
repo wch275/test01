@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_journal_vente">
+			<t t-call="report.html_container">
+				<t t-call="report.internal_layout">
+					<div class="page">
+						<h2 class="text-center">
+							Le journal des ventes
+							<br />
+							<p class="text-center">
+								Période du :
+								<span t-esc="formatLang(get_start_date(data), date=True)" />
+								Au :
+								<span t-esc="formatLang(get_end_date(data), date=True)" />
+
+							</p>
+						</h2>
+						<table style="font-size: 10px;" class="table table-condensed">
+							<thead>
+								<tr style="font-weight: bold;background-color:#E5E5E5;">
+									<td>Date</td>
+									 <td>Numéro</td> 
+									<td>Client</td>
+									<td class="text-right">Montant HT</td>
+									<t t-foreach="colonnes_head()" t-as="colonne">
+											<td class="text-right">
+												Base
+												<span t-esc=" colonne['name']" />
+											</td>
+											<td class="text-right">
+												<span t-esc="colonne['name']" />
+											</td>
+									</t>
+									<td class="text-right">
+										Montant TVA
+									</td>
+									<td class="text-right">
+										Timbre 
+									</td>
+									<td class="text-right">
+										Montant TTC
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+							    <t t-set="amount_untaxed" t-value="0"/>
+							     <t t-set="amount_tax" t-value="0"/>
+							      <t t-set="ammount_timbre" t-value="0"/>
+							       <t t-set="amount_total" t-value="0"/>
+							       
+								<tr t-foreach="lines(data['form'],'out_invoice')" t-as="line">
+									<t t-set="amount_untaxed" t-value="amount_untaxed+line['amount_untaxed']"/>
+								     <t t-set="amount_tax" t-value="amount_tax+line['amount_tax']"/>
+								      <t t-set="ammount_timbre" t-value="ammount_timbre+line['ammount_timbre']"/>
+								       <t t-set="amount_total" t-value="amount_total+line['amount_total']"/>
+								   
+								   
+									<td>
+										<span t-att-style="style" t-esc="line['date']" />
+									</td>
+									   <td>
+										<span t-att-style="style" t-esc="line['number']" />
+									</td> 
+									<td>
+										<span t-att-style="style" t-esc="line['partner']" />
+									</td>
+
+									<td class="text-right">
+										<span t-att-style="style" t-esc="formatLang(line['amount_untaxed'], currency_obj=res_company.currency_id, dp='Account')" />
+									</td>
+									<t t-foreach="colonnes_head()" t-as="colonne">
+										<t t-foreach="lines_colonnes(colonne['name'],line['type'],line['id'])" t-as="lncl">
+											 
+												<td class="text-right">
+													<span t-att-style="style" t-esc="formatLang(lncl['base'], currency_obj=res_company.currency_id, dp='Account')" />
+												</td>
+											 											 
+												<td class="text-right">
+													<span t-att-style="style" t-esc="formatLang(lncl['taxe_amount'], currency_obj=res_company.currency_id, dp='Account')" />
+												</td>
+											 
+										</t>
+									</t>
+									<td class="text-right">
+										<span t-att-style="style"  t-esc="formatLang(line['amount_tax'], currency_obj=res_company.currency_id, dp='Account')"   />
+									</td>
+									<td class="text-right">
+										<span t-att-style="style"  t-esc="formatLang(line['ammount_timbre'], currency_obj=res_company.currency_id, dp='Account')" />
+									</td>
+									<td class="text-right">
+										<span t-att-style="style"  t-esc="formatLang(line['amount_total'], currency_obj=res_company.currency_id, dp='Account')" />
+									</td>
+								</tr>
+								<tr style="border: 4px solid #000000;font-weight: bold;">
+								
+									<td colspan="3">
+										<strong><span t-att-style="style">Totaux</span></strong>
+									</td>
+									<td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(amount_untaxed, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td>
+									<t t-foreach="colonnes_head()" t-as="colonne">
+										<t t-foreach="get_total(colonne['name'])" t-as="total">
+											
+												<td class="text-right">
+													<strong><span t-att-style="style" t-esc="formatLang(total['base'], currency_obj=res_company.currency_id, dp='Account')" /></strong>
+												</td>
+											
+										
+												<td class="text-right">
+													<strong><span t-att-style="style" t-esc="formatLang(total['amount'], currency_obj=res_company.currency_id, dp='Account')" /></strong>
+												</td>
+											
+										</t>
+									</t>
+									<td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(amount_tax, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td>
+									<td class="text-right">
+									  <strong> <span t-att-style="style" t-esc="formatLang(ammount_timbre, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td>
+									<td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(amount_total, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td>
+									
+								</tr>
+											
+									</tbody>
+									 <!-- </table> -->
+								<!-- ********** Table des avoirs  ***********-->  
+								
+						    
+						     <tr></tr>
+						    <!--  <table style="font-size: 10px;" class="table table-condensed"> -->
+						     <thead>
+						     
+						     <tr ><td style="border : none;"></td></tr>
+								<tr ><td style="border : none;"></td></tr>
+						        <tr>
+								   <td colspan="3" style="border : none;"> <strong>Avoirs clients</strong>   </td>
+								</tr>
+								<tr style="font-weight: bold;background-color:#E5E5E5;">
+									<td>Date</td>
+									 <td>Numéro</td> 
+									<td>Client</td>
+									<td class="text-right">Montant HT</td>
+									 <t t-foreach="colonnes_head()" t-as="colonne">
+											<td class="text-right">
+												Base
+												<span t-esc=" colonne['name']" />
+											</td>
+											<td class="text-right">
+												<span t-esc="colonne['name']" />
+											</td>
+									 </t>
+									<td class="text-right">
+										Montant TVA
+									</td>
+									<td class="text-right">
+										Timbre 
+									</td>
+									<td class="text-right">
+										Montant TTC
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+							<t t-set="refund_amount_untaxed" t-value="0"/>
+							     <t t-set="refund_amount_tax" t-value="0"/>
+							      <t t-set="refund_ammount_timbre" t-value="0"/>
+							       <t t-set="refund_amount_total" t-value="0"/>
+							       
+								<tr t-foreach="lines(data['form'],'out_refund')" t-as="line_voir">
+								
+								<t t-set="refund_amount_untaxed" t-value="refund_amount_untaxed+line_voir['amount_untaxed']"/>
+								     <t t-set="refund_amount_tax" t-value="refund_amount_tax+line_voir['amount_tax']"/>
+								      <t t-set="refund_ammount_timbre" t-value="refund_ammount_timbre+line_voir['ammount_timbre']"/>
+								       <t t-set="refund_amount_total" t-value="refund_amount_total+line_voir['amount_total']"/>
+								       
+									<td>
+										<span t-att-style="style" t-esc="line_voir['date']" />
+									</td>
+									   <td>
+										<span t-att-style="style" t-esc="line_voir['number']" />
+									</td> 
+									<td>
+										<span t-att-style="style" t-esc="line_voir['partner']" />
+									</td>
+
+									 <td class="text-right">
+										<span t-att-style="style" t-esc="formatLang(line_voir['amount_untaxed'], currency_obj=res_company.currency_id, dp='Account')" />
+									</td> 
+									<t t-foreach="colonnes_head()" t-as="colonne">
+										<t t-foreach="lines_colonnes(colonne['name'],line_voir['type'], line_voir['id'])" t-as="lncl_avoir">
+											 
+												<td class="text-right">
+													<span t-att-style="style" t-esc="formatLang(lncl_avoir['base'], currency_obj=res_company.currency_id, dp='Account')" />
+												</td>
+											 											 
+												<td class="text-right">
+													<span t-att-style="style" t-esc="formatLang(lncl_avoir['taxe_amount'], currency_obj=res_company.currency_id, dp='Account')" />
+												</td>
+											 
+										</t>
+									</t>
+									  <td class="text-right">
+										<span t-att-style="style" t-esc="formatLang(line_voir['amount_tax'], currency_obj=res_company.currency_id, dp='Account')" />
+									</td> 
+									 <td class="text-right">
+										<span t-att-style="style" t-esc="formatLang(line_voir['ammount_timbre'], currency_obj=res_company.currency_id, dp='Account')" />
+									</td>
+									<td class="text-right">
+										<span t-att-style="style" t-esc="formatLang(line_voir['amount_total'], currency_obj=res_company.currency_id, dp='Account')" />
+									</td> 
+								</tr>
+								<tr style="border: 4px solid #000000;font-weight: bold;">
+								
+									<td colspan="3">
+										<strong><span t-att-style="style">Totaux</span></strong>
+									</td>
+								 
+							       
+									 <td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(refund_amount_untaxed, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td> 
+									 <t t-foreach="colonnes_head()" t-as="colonne">
+										<t t-foreach="get_total(colonne['name'])" t-as="total">
+											
+												<td class="text-right">
+													<strong><span t-att-style="style" t-esc="formatLang(total['base'], currency_obj=res_company.currency_id, dp='Account')" /></strong>
+												</td>
+											
+										
+												<td class="text-right">
+													<strong><span t-att-style="style" t-esc="formatLang(total['amount'], currency_obj=res_company.currency_id, dp='Account')" /></strong>
+												</td>
+											
+										</t>
+									</t> 
+									 <td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(refund_amount_tax, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td>
+									<td class="text-right">
+									   <strong><span t-att-style="style" t-esc="formatLang(refund_ammount_timbre, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td>
+									<td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(refund_amount_total, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td> 
+									
+								</tr>
+								<tr ><td style="border : none;"></td></tr>
+								<tr ><td style="border : none;"></td></tr>
+								<tr ><td style="border : none;"></td></tr>
+								
+								<tr style="border: 5px solid #000000;font-weight: bold;" > 
+									<td colspan="3">
+										<span t-att-style="strong">A Reporter</span>
+									</td>
+									 <td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(amount_untaxed-refund_amount_untaxed, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td> 
+									 <t t-foreach="colonnes_head()" t-as="colonne">
+										<t t-foreach="get_total(colonne['name'])" t-as="total">
+											
+												<td class="text-right">
+													<strong><span t-att-style="style" t-esc="formatLang(total['base'], currency_obj=res_company.currency_id, dp='Account')" /></strong>
+												</td>
+											
+										
+												<td class="text-right">
+													<strong><span t-att-style="style" t-esc="formatLang(total['amount'], currency_obj=res_company.currency_id, dp='Account')" /></strong>
+												</td>
+											
+										</t>
+									</t> 
+									 <td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(amount_tax-refund_amount_tax, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td>
+									<td class="text-right">
+									   <strong><span t-att-style="style" t-esc="formatLang(ammount_timbre-refund_ammount_timbre, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td>
+									<td class="text-right">
+										<strong><span t-att-style="style" t-esc="formatLang(amount_total-refund_amount_total, currency_obj=res_company.currency_id, dp='Account')" /></strong>
+									</td> 
+									
+								</tr>
+											
+									</tbody>
+						
+						</table>
+						
+					</div>
+				</t>
+
+
+			</t>
+		</template>
+	</data>
+</openerp>

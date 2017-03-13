@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_approbation_conge">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+							<table class="table table-bordered">
+								<tr>
+									<th>
+										<br />
+										<br />
+										<br />
+										<br />
+										<div class="text-center col-xs-12">
+											<h2>
+												<strong>Titre de Congé Annuel
+												</strong>
+											</h2>
+											<br />
+											<br />
+											<br />
+											<br />
+										</div>
+										<div class="row">
+											<div class="col-xs-3 col-xs-offset-8">
+												Tunis,Le
+												<span t-field="o.date" />
+											</div>
+										</div>
+										<br />
+										<br />
+										<br />
+										<div class="row">
+											<div class="col-xs-10">
+												<h4>
+													<strong>Nom et Prénom : </strong>
+													
+													<span t-field="o.employee_id" />
+													<br /><br />
+													<strong>Matricule : </strong>
+													<span t-field="o.employee_id.matricule" />
+												</h4>
+											</div>
+											<div class="col-xs-10">
+												<h4>
+													<strong>Fonction : </strong>
+													<span t-field="o.employee_id.job_id" />
+												</h4>
+											</div>
+											<div class="col-xs-10 ">
+												<h4>
+													<strong>Service : </strong>
+													D.A.F
+												</h4>
+											</div>
+											<div class="col-xs-10 ">
+												<h4>
+													<strong>Date de Cessation de Service : </strong>
+													<span t-field="o.date_from" />
+												</h4>
+											</div>
+											<div class="col-xs-10 ">
+												<h4>
+													<strong>Date de Cessation de Service : </strong>
+													<span t-field="o.date_to" />
+												</h4>
+											</div>
+											<div class="col-xs-10 ">
+												<h4>
+													<strong>Nombre de jours pris : </strong>
+													<span t-field="o.number_of_days_temp" />
+													jour(s) au titre du congé annuel :
+													<span t-field="o.yeaar" />
+												</h4>
+											</div>
+											<br />
+										</div>
+									</th>
+								</tr>
+							</table>
+							<br />
+							<br />
+							<table class="table table-bordered">
+
+								<thead>
+									<tr>
+										<th class="text-center col-xs-12">
+											<h4>
+												<strong>Les conditions de Retour :</strong>
+											</h4>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+
+									<tr>
+										<td>
+											<strong> Avis du D.A.F :</strong>
+												........................................................................................................................
+											
+										</td>
+
+
+									
+
+
+									</tr>
+									<tr>
+										<td>
+											<strong> Avis du D.G :</strong> 
+												........................................................................................................................
+											
+										</td>
+
+
+									
+
+									</tr>
+								</tbody>
+
+							</table>
+							<br />
+							<br />
+
+							<div class="col-xs-3 col-xs-offset-9">
+								<h4>
+									<strong>Signature</strong>
+								</h4>
+							</div>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+
+
+	</data>
+</openerp>

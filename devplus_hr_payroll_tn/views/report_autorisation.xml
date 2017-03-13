@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_autorisation">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+						<table  class="table table-bordered"><tr><th>
+							<div class="text-center col-xs-12">
+								<h2>
+									<strong>AUTORISATION DE SORTIE
+									</strong>
+								</h2>
+							</div>
+
+							<br />
+							<br />
+							<br />
+							<br />
+
+							<br />
+							<br />
+							<br />
+							<br />
+
+							<div class="row">
+								<div class="col-xs-10">
+									<h4>
+										<strong>Nom et Prénom : </strong>
+										<span t-field="o.employee_id" />
+										<strong>Fonction : </strong>
+										<span t-field="o.employee_id.job_id" />
+									</h4>
+								</div>
+								<div class="col-xs-10">
+									<h4>
+										<strong>Service : </strong>
+										<span t-field="o.employee_id.department_id" />
+										je demande l'autorisation de sortie de mon travail :
+									</h4>
+								</div>
+								<div class="col-xs-10">
+									<h4>
+										<strong>Date : </strong>
+										<span t-field="o.date" />
+										Heure de sortie :
+										<t
+										t-esc="'%s:%s' % ( (str(o.heure_start).split('.')[0]).zfill(2), str(int(float(str('%.2f' 
+								% o.heure_start).split('.')[1])/100*60)).zfill(2))" />
+										Heure de retour
+										<t
+										t-esc="'%s:%s' % ( (str(o.heure_stop).split('.')[0]).zfill(2), 
+								str(int(float(str('%.2f' % o.heure_stop).split('.')[1])/100*60)).zfill(2))" />
+									</h4>
+								</div>
+								<div class="col-xs-10">
+									<h4>
+										<strong>pour la raison suivante : </strong>
+										<span t-field="o.raison_autorisation" />
+										</h4>
+										</div>
+										
+										<div class="col-xs-10">
+									<h4>
+										Signature de l'employé(e).......................Signature Supérieur Immédiat.......................
+										</h4></div>
+							</div>
+							<br/>	
+							<div class="row">
+								 <div class="col-xs-5 text-center">
+								 <h4><strong>D.A.F</strong></h4>
+								</div> 
+								<div class="col-xs-7 ">
+									<h4><strong>Directeur Général</strong></h4><br/><br/>
+								</div>
+								
+							</div> 
+							</th></tr></table>
+							
+							
+							
+							<table  class="table table-bordered"><tr><th>
+							<div class="text-center col-xs-12">
+								<h2>
+									<strong>AUTORISATION DE SORTIE
+									</strong>
+								</h2>
+							</div>
+
+							<br />
+							<br />
+							<br />
+							<br />
+
+							<br />
+							<br />
+							<br />
+							<br />
+
+							<div class="row">
+								<div class="col-xs-10">
+									<h4>
+										<strong>Nom et Prénom : </strong>
+										<span t-field="o.employee_id" />
+										<strong>Fonction : </strong>
+										<span t-field="o.employee_id.job_id" />
+									</h4>
+								</div>
+								<div class="col-xs-10">
+									<h4>
+										<strong>Service : </strong>
+										<span t-field="o.employee_id.department_id" />
+										je demande l'autorisation de sortie de mon travail :
+									</h4>
+								</div>
+								<div class="col-xs-10">
+									<h4>
+										<strong>Date : </strong>
+										<span t-field="o.date" />
+										Heure de sortie :
+										<t
+										t-esc="'%s:%s' % ( (str(o.heure_start).split('.')[0]).zfill(2), str(int(float(str('%.2f' 
+								% o.heure_start).split('.')[1])/100*60)).zfill(2))" />
+										Heure de retour
+										<t
+										t-esc="'%s:%s' % ( (str(o.heure_stop).split('.')[0]).zfill(2), 
+								str(int(float(str('%.2f' % o.heure_stop).split('.')[1])/100*60)).zfill(2))" />
+									</h4>
+								</div>
+								<div class="col-xs-10">
+									<h4>
+										<strong>pour la raison suivante : </strong>
+										<span t-field="o.raison_autorisation" />
+										</h4>
+										</div>
+										
+										<div class="col-xs-10">
+									<h4>
+										Signature de l'employé(e).......................Signature Supérieur Immédiat.......................
+										</h4></div>
+							</div>
+							<br/>	
+							<div class="row">
+								 <div class="col-xs-5 text-center">
+								 <h4><strong>D.A.F</strong></h4>
+								</div> 
+								<div class="col-xs-7 ">
+									<h4><strong>Directeur Général</strong></h4><br/><br/>
+								</div>
+								
+							</div> 
+							</th></tr></table>
+							
+
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+
+
+	</data>
+</openerp>

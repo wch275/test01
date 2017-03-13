@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="wizard_account_voucher_caisse_form">
+			<field name="name">wizard.account.voucher.caisse.form</field>
+			<field name="model">wizard.customer.payment</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Payments Clients">
+					<group>
+						<group>
+							<field name="date_debut" />
+							<field name="date_fin" />
+						</group>
+						<group>
+							<field name="user_id" options="{'no_create': True}" />
+						</group>
+					</group>
+					<footer>
+						<button name="print_report" string="Imprimer le rapport"
+							type="object" class="oe_highlight" />
+						ou
+						<button string="Annuler" class="oe_link" special="cancel" />
+					</footer>
+
+				</form>
+			</field>
+		</record>
+
+		<record id="action_wizard_account_voucher_caisse_open" model="ir.actions.act_window">
+			<field name="name">Journal des paiements</field>
+			<field name="res_model">wizard.customer.payment</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+		
+		<menuitem id="menu_journal_payment_clients" name="Journal des paiements"
+			parent="menu_journal_vente_root" action="action_wizard_account_voucher_caisse_open"
+			sequence="10" /> 
+
+
+	</data>
+</openerp>

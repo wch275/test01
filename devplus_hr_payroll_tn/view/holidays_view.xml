@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!--Jour férié -->
+ 
+		<record model="ir.ui.view" id="res_holidays_tree_view">
+			<field name="name">res.holidays.tree</field>
+			<field name="model">res.holidays</field>
+			<field name="arch" type="xml">
+				<tree string="Jour férié">
+					<field name="name" />
+					<field name="period_id" invisible="1"/>
+					<field name="nb_days" />
+ 					<field name="date_start"  />
+					<field name="date_end" />
+				</tree>
+			</field>
+		</record>
+
+
+
+		<record model="ir.ui.view" id="res_holidays_from_view">
+			<field name="name">res.holidays.form</field>
+			<field name="model">res.holidays</field>
+			<field name="arch" type="xml">
+				<form string="Emploi du temps" version="7.0">
+					<sheet>
+						<group>
+							<group>
+								<field name="name" />
+								<field name="period_id" invisible="1"/> 
+								<field name="nb_days" required="1"  />
+							</group>
+							<group>
+								<field name="date_start" required="1" />
+								<field name="date_end" required="1" on_change="onchange_date(date_start, date_end)" />
+
+							</group>
+						</group>
+
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="res_holidays_calendar_view" model="ir.ui.view">
+			<field name="name">res.holidays.calendar</field>
+			<field name="model">res.holidays</field>
+			<field name="arch" type="xml">
+				<calendar color="period_id" date_start="date_start" date_stop="date_end"
+					string="Jours Feries">
+					<field name="name" />
+				</calendar>
+			</field>
+		</record>
+
+
+		<record model="ir.actions.act_window" id="action_res_holiday">
+			<field name="name">Liste des Jours Fériés</field>
+			<field name="res_model">res.holidays</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">calendar,tree,form</field>
+		</record>
+		
+
+		<menuitem id="menu_res_holidays_ss_menu" name="Liste Jours Fériés"
+			 parent="devplus_hr_payroll_tn.payroll_configuration"
+			sequence="60" action="action_res_holiday" groups="devplus_hr_payroll_tn.holidays_managment"/>	
+			
+
+		<record model="ir.ui.view" id="hr_resume_form_view">
+			<field name="name">res.holidays.resume.form</field>
+			<field name="model">res.holidays.resume</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form >
+					<sheet>
+						<group col="4">
+							<field name="month_id" on_change="onchange_month_id(month_id,company_id)"
+								options="{'no_create': 1,'no_open': 1,'create_edit':0}" />
+							<field name="date" />
+							<field name="period_id" invisible='0' />
+							<field name="holidays_id" domain = "[('period_id', '=', period_id)]" on_change="onchange_holidays_id(holidays_id)" />
+							<field name="company_id" groups="base.group_multi_company"
+								options="{'no_create': 1,'no_open': 1,'create_edit':0}" />
+						</group>
+						<group col="4">
+							<field name="name" colspan="3" />
+						</group>
+
+						<notebook>
+							<page string="Lignes des Jours Fériés">
+								<field name="holidays_line_ids">
+									<tree string="Lignes des Jours Feries" editable="bottom">
+										<field name="employee_id"
+											options="{'no_create': 1,'no_open': 1,'create_edit':0}"
+											on_change="onchange_employee_id(employee_id)" />
+										<field name="matricule" />
+										<field name="regime_id" />
+										<field name="holidays_id" />
+										<field name="nb_days"/>
+										<field name="nb_days_presence" />
+									    <field name="nb_hours_presence" />
+									    <field name="nb_non_worked_hours" />
+									</tree>
+								</field>
+
+								<div class="oe_subtotal_footer_separator">
+									<button class="oe_edit_only oe_inline oe_stat_button" name="add_act_employees" string="Importer les employées" type="object"
+									                             icon="fa-user"/>
+								</div>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record> 
+
+		<record id="resume_calendar_view" model="ir.ui.view">
+			<field name="name">res.holidays.resume.calendar</field>
+			<field name="model">res.holidays.resume</field>
+			<field name="arch" type="xml">
+				<calendar color="period_id" date_start="date" 
+					string="nb_days_presence">
+					<field name="holidays_id" />
+				</calendar>
+			</field>
+		</record>
+		
+		<record model="ir.actions.act_window" id="action_resume_holidays">
+			<field name="name">Jours Fériés</field>
+			<field name="res_model">res.holidays.resume</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">calendar,tree,form</field>
+		</record>
+
+		<menuitem id="res_holidays_resume_ss_menu" name="Résumé Jours Fériés"
+			 parent="hr_holidays.menu_open_ask_holidays"
+			sequence="60" action="action_resume_holidays" groups="devplus_hr_payroll_tn.holidays_managment" />	
+						
+	</data>
+</openerp>

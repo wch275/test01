@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="view_vendor_receipt_dialog_form_inherit">
+			<field name="name">account.voucher.receipt.dialog.form.inherit</field>
+			<field name="model">account.voucher</field>
+			<field name="inherit_id" ref="account_voucher.view_vendor_receipt_dialog_form" />
+			<field name="arch" type="xml">
+
+				<field name="journal_id" position="before">
+					<field name="payment_type" invisible="1" />
+					<field name="payment_mode_id" options="{'no_create':True}"
+						on_change="onchange_payment_mode_id(payment_mode_id)" />
+				</field>
+
+				<field name="journal_id" position="attributes">
+					<attribute name="attrs">{'invisible':
+						[('payment_type','!=','bank')]}
+					</attribute>
+					<attribute name="string">Journal</attribute>
+					<attribute name="domain">[('use_payment','=',True),('type','=','bank')]</attribute>
+				</field>
+
+				<field name="reference" position="attributes">
+					<attribute name="string">Numéro</attribute>
+					<attribute name="attrs">{'invisible':[('payment_type','!=','bank')]}
+					</attribute>
+				</field>
+
+				<field name="name" position="before">
+					<field name="bank_name" attrs="{'invisible': [('payment_type','!=','bank')]}" />
+					<field name="proprietaire" attrs="{'invisible': [('payment_type','!=','bank')]}" />
+					<field name="date_echeance" attrs="{'invisible': [('payment_type','!=','bank')]}" />
+				</field>
+
+			</field>
+		</record>
+
+
+		<record model="ir.ui.view" id="view_voucher_form_inherit">
+			<field name="name">account.voucher.form.inherit</field>
+			<field name="model">account.voucher</field>
+			<field name="inherit_id" ref="account_voucher.view_voucher_tree" />
+			<field name="arch" type="xml">
+				<tree position="attributes">
+					<attribute name="colors">blue:state =='draft';gray:state ==
+						'cancel';red:audit</attribute>
+				</tree>
+				<field name="partner_id" position="after">
+					<field name="payment_mode_id" />
+					<field name="bank_name" />
+					<field name="proprietaire" />
+					<field name="date_echeance" />
+					<field name="state_bordereau" />
+					<field name="encaisse" invisible="1" />
+				</field>
+				<field name="state" position="attributes">
+					<attribute name="invisible">1</attribute>
+				</field>
+			</field>
+		</record>
+
+		<!-- Paiements Clients -->
+		<record model="ir.ui.view" id="view_vendor_receipt_form_inherit">
+			<field name="name">account.voucher.vendor_receipt.form.inherit</field>
+			<field name="model">account.voucher</field>
+			<field name="inherit_id" ref="account_voucher.view_vendor_receipt_form" />
+			<field name="arch" type="xml">
+				<field name="journal_id" position="before">
+					<field name="payment_type" invisible="1" />
+					<field name="payment_mode_id" options="{'no_create':True}"
+						on_change="onchange_payment_mode_id(payment_mode_id)" />
+				</field>
+
+				<field name="journal_id" position="attributes">
+					<attribute name="attrs">{'invisible':
+						[('payment_type','!=','bank')]}
+					</attribute>
+					<attribute name="string">Journal</attribute>
+					<attribute name="domain">[('use_payment','=',True),('type','=','bank')]</attribute>
+				</field>
+
+				<field name="reference" position="attributes">
+					<attribute name="string">Numéro</attribute>
+					<attribute name="attrs">{'invisible':[('payment_type','!=','bank')],'required':[('payment_type','=','bank')]}
+					</attribute>
+				</field>
+
+				<field name="name" position="before">
+					<field name="bank_journal_id" invisible="1"/>
+					<field name="bank_name" attrs="{'invisible': [('payment_type','!=','bank')]}" />
+					<field name="proprietaire" attrs="{'invisible': [('payment_type','!=','bank')],'required':[('payment_type','=','bank')]}"  />
+					<field name="date_echeance" attrs="{'invisible': [('payment_type','!=','bank')]}" />
+				</field>
+
+				<field name="name" position="after">
+					<field name="encaisse" invisible="1" />
+				</field>
+				<field name="period_id" position="attributes">
+					<attribute name="invisible">1</attribute>
+				</field>
+				<field name="period_id" position="attributes">
+					<attribute name="invisible">1</attribute>
+				</field>
+			</field>
+		</record>
+		
+		
+		
+		<!-- <record id="view_voucher_filter" model="ir.ui.view">
+            <field name="name">account.voucher.select</field>
+            <field name="model">account.voucher</field>
+            <field name="priority">1</field>
+            <field name="arch" type="xml">
+                <search string="Search Vouchers">
+                    <field name="number" string="Voucher"/>
+                    <field name="date"/>
+                    <filter icon="terp-document-new" string="Draft" domain="[('state','=','draft')]" help="Draft Vouchers"/>
+                    <filter icon="terp-camera_test" string="Posted" domain="[('state','=','posted')]" help="Posted Vouchers"/>
+                    <separator/>
+                    <filter icon="terp-gtk-jump-to-ltr" string="To Review" domain="[('state','=','posted'), ('audit','=',False)]" help="To Review"/>
+                    <field name="partner_id" filter_domain="[('partner_id', 'child_of', self)]"/>
+                    <field name="journal_id" widget="selection" context="{'journal_id': self, 'set_visible':False}" /> Keep widget=selection on this field to pass numeric `self` value, which is not the case for regular m2o widgets!
+                    <field name="period_id"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Partner" icon="terp-partner" domain="[]" context="{'group_by':'partner_id'}"/>
+                        <filter string="Journal" icon="terp-folder-orange" domain="[]" context="{'group_by':'journal_id'}"/>
+                        <filter string="Period" icon="terp-go-month" domain="[]" context="{'group_by':'period_id','visible':True}"/>
+                        <filter string="Status" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+		 -->
+		
+		
+		<record id="inherit_view_voucher_filter" model="ir.ui.view">
+            <field name="name">account.voucher.select.inherit</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_voucher_filter_customer_pay" />
+            <field name="arch" type="xml">
+     		<!--  <xpath expr="filter[@string='period_id']" position="after">
+                     <filter string="Statut" name="state_bordereau" />
+            </xpath>  -->
+			 <xpath expr="//group/filter[@string='Status']" position="replace">
+                    <filter string="Etat" domain="[]" context="{'group_by':'state_bordereau'}"/>
+            </xpath>      
+		  </field>
+		  </record>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		<!-- Paiement Fournisseur -->
+
+		<record model="ir.ui.view" id="view_vendor_payment_form_inherit">
+			<field name="name">account.voucher.vendor_payment.form.inherit</field>
+			<field name="model">account.voucher</field>
+			<field name="inherit_id" ref="account_voucher.view_vendor_payment_form" />
+			<field name="arch" type="xml">
+				<field name="journal_id" position="before">
+					<field name="payment_type" invisible="1" />
+					<field name="payment_mode_id" options="{'no_create':True}"
+						on_change="onchange_payment_mode_id(payment_mode_id)" />
+				</field>
+
+				<field name="journal_id" position="attributes">
+					<attribute name="attrs">{'invisible':
+						[('payment_type','!=','bank')]}
+					</attribute>
+					<attribute name="string">Journal</attribute>
+					<attribute name="domain">[('use_payment','=',True),('type','=','bank')]</attribute>
+				</field>
+
+				<field name="reference" position="attributes">
+					<attribute name="string">Numéro</attribute>
+					<attribute name="attrs">{'invisible':[('payment_type','!=','bank')],'required':[('payment_type','=','bank')]}
+					</attribute>
+				</field>
+
+				<field name="name" position="before">
+					<field name="bank_journal_id" invisible="1"/>
+					<field name="bank_name" attrs="{'invisible': [('payment_type','!=','bank')]}" />
+					<field name="proprietaire" attrs="{'invisible': [('payment_type','!=','bank')]}" />
+					<field name="date_echeance" attrs="{'invisible': [('payment_type','!=','bank')]}" />
+				</field>
+
+				<field name="name" position="after">
+					<field name="encaisse" invisible="1" />
+				</field>
+				 <field name="payment_option" position="attributes">
+				 <attribute name="attrs">{'invisible':[('writeoff_amount','=',0)]}</attribute>
+				 </field>
+			</field>
+		</record>
+
+
+		<!--Types de paiement -->
+
+		<record model="ir.ui.view" id="account_payment_mode_tree_view">
+			<field name="name">account.payment.mode.tree</field>
+			<field name="model">account.payment.mode</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Types de paiement">
+					<field name="code" />
+					<field name="name" />
+					<field name="journal_id" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="account_payment_mode_form_view">
+			<field name="name">account.payment.mode.form</field>
+			<field name="model">account.payment.mode</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Types de paiement">
+					<sheet>
+						<group>
+							<group>
+								<field name="code" />
+								<field name="name" />
+							</group>
+							<group>
+								<field name="journal_id" />
+								<field name="type" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_account_payment_mode_tree_view">
+			<field name="name">Types de paiement</field>
+			<field name="res_model">account.payment.mode</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="account_payment_mode_menu" name="Types de paiement"
+			sequence="11" parent="account.menu_configuration_misc" action="action_account_payment_mode_tree_view" />
+
+
+	</data>
+</openerp>

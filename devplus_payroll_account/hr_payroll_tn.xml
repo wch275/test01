@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<record id="hr_payroll_form" model="ir.ui.view">
+			<field name="name">spa.inherit.hr.payroll_tn</field>
+			<field name="model">hr.payroll</field>
+			<field name="inherit_id" ref="devplus_hr_payroll_tn.hr_payroll_form" />
+			<field name="arch" type="xml">
+				<!--  <field name="date_salary" position="after">
+					<field name="journal_id" />
+				</field>
+				<field name="partner_id" position="before">
+					<field name="currency_id" />
+				</field>
+				
+				-->
+			   <field name="name" position="after">
+					<field name="move_id" string="Pièce comptable" />
+				</field>
+				
+			</field>
+		</record>
+	</data>
+</openerp>     

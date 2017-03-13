@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_payroll_loan_manager ,name_hr_payroll_loan_manager,devplus_hr_payroll_loan.model_hr_payroll_loan,base.group_hr_manager,1,1,1,1
+access_hr_payroll_loan_user,name_hr_payroll_loan_user,devplus_hr_payroll_loan.model_hr_payroll_loan,base.group_hr_user,1,1,1,1
+,,,,,,,
+access_h_payroll_loan_line_manager ,name_h_payroll_loan_line_manager,devplus_hr_payroll_loan.model_hr_payroll_loan_line,base.group_hr_manager,1,1,1,1
+access_h_payroll_loan_line_user,name_h_payroll_loan_line_user,devplus_hr_payroll_loan.model_hr_payroll_loan_line,base.group_hr_user,1,1,1,1

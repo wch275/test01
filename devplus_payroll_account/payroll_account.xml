@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record id="hr_payroll_parametres_form_inherit_account" model="ir.ui.view">
+			<field name="name">hr.payroll.parametres.form.inherit.account</field>
+			<field name="model">hr.payroll.parametres</field>
+			<field name="inherit_id" ref="devplus_hr_payroll_tn.hr_payroll_parametres_form" />
+			<field name="arch" type="xml">
+				<notebook position="inside">
+					<page string="Comptabilité">
+						<group>
+							<field name="account_journal_id" />
+							<field name="taux_accident_travail" />
+							<field name="taux_cotisation" />
+							<field name="taux_tfp" />
+							<field name="taux_foprolos" />
+						</group>
+						
+						<group string="Configuration des Comptes comptable">
+							<group>
+								<field name="account_brut_id" />
+								<field name="account_net_paye_id" />
+								<field name="account_cnss_id" />
+								<field name="account_irpp_id" />
+								<field name="account_prime_id" />
+								<field name="account_retenue_id" />
+							</group>
+							<group>
+								<field name="account_tfp_d_id" />
+								<field name="account_tfp_c_id" />
+								<field name="account_foprolos_d_id" />
+								<field name="account_foprolos_c_id" />
+								<field name="account_cnss_d_id" />
+								<field name="account_cnss_c_id" />
+								<field name="account_accident_travail_d_id" />
+								<field name="account_accident_travail_c_id" />
+							</group>
+						</group>
+					
+					</page>
+				</notebook>
+			</field>
+		</record>
+
+
+	</data>
+</openerp>     

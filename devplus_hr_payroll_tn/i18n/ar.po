@@ -1,0 +1,3695 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* devplus_hr_payroll_tn
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-29 22:04+0000\n"
+"PO-Revision-Date: 2016-03-29 22:04+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,droit_conge:0
+msgid " Nombre de jours par mois  "
+msgstr "عدد الأيام في الشهر"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,parent_charge:0
+msgid " Taux parent(s) à charge"
+msgstr " Taux parent(s) à charge"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "(1) l’identité doit être conforme à la carte d’assuré ou à\n"
+"								l’extrait de naissance"
+msgstr "(1) l’identité doit être conforme à la carte d’assuré ou à\n"
+"								l’extrait de naissance"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "(2) L’arrêté doit correspondre au total des salaires\n"
+"								déclarés\n"
+"								pendant le trimestre (à indiquer sur la dernière page)."
+msgstr "(2) L’arrêté doit correspondre au total des salaires\n"
+"								déclarés\n"
+"								pendant le trimestre (à indiquer sur la dernière page)."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "(sur toutes les pages)"
+msgstr "(sur toutes les pages)"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid ") jour(s) au titre de l'année"
+msgstr ") jour(s) au titre de l'année"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid ",agissant en qualité de"
+msgstr ",agissant en qualité de"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "- accompagner le cas échéant le personnel salarié « itinérant » en clientèle,"
+msgstr "- accompagner le cas échéant le personnel salarié « itinérant » en clientèle,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "- recueillir les informations pertinentes portant notamment sur la solvabilité des clients,"
+msgstr "- recueillir les informations pertinentes portant notamment sur la solvabilité des clients,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "- s’occuper personnellement des clients les plus importants,"
+msgstr "- s’occuper personnellement des clients les plus importants,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "- veiller au  règlement des litiges éventuels avec la clientèle."
+msgstr "- veiller au  règlement des litiges éventuels avec la clientèle."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "- veiller au respect des conditions de vente fixées par la société, des ordres et des commandes,"
+msgstr "- veiller au respect des conditions de vente fixées par la société, des ordres et des commandes,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "... jours sur ...."
+msgstr "... jours sur ...."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+msgid "........................................................................................................................"
+msgstr "........................................................................................................................"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "1er mois (TND)"
+msgstr "الشهر الأول (د.)"
+
+#. module: devplus_hr_payroll_tn
+#: selection:wizard_declaration_cnss,trimester:0
+msgid "1er trimestre"
+msgstr "الثلاثية الأولى"
+
+#. module: devplus_hr_payroll_tn
+#: selection:wizard_declaration_cnss,trimester:0
+msgid "2e trimestre"
+msgstr "الثلاثية الثانية"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "2éme mois (TND)"
+msgstr "الشهر الثاني (د.)"
+
+#. module: devplus_hr_payroll_tn
+#: selection:wizard_declaration_cnss,trimester:0
+msgid "3e trimestre"
+msgstr "الثلاثية الثالثة "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "3éme mois (TND)"
+msgstr "3éme mois (TND)"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.payroll.parametres,regime:0
+msgid "40 H"
+msgstr "40 ساعة "
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.payroll.parametres,regime:0
+msgid "48 H"
+msgstr "48 ساعة "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "49. Av. TAIEB MHIRI - TUNIS- Tel : 71. 796. 744"
+msgstr " شارع الطيب المهيري- تونس - الهاتف : "
+
+#. module: devplus_hr_payroll_tn
+#: selection:wizard_declaration_cnss,trimester:0
+msgid "4e trimestre"
+msgstr "الثلاثية الرابعة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "A Dar Chaabane, le 4 avril 2005"
+msgstr "A Dar Chaabane, le 4 avril 2005"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "A ce titre, Monsieur B est investi de l’autorité nécessaire pour lui permettre de fixer des directives et des instructions en direction de l’ensemble du personnel, signer toute correspondance commerciale et procéder aux démarches ayant trait aux attributions qui lui ont été fixées."
+msgstr "A ce titre, Monsieur B est investi de l’autorité nécessaire pour lui permettre de fixer des directives et des instructions en direction de l’ensemble du personnel, signer toute correspondance commerciale et procéder aux démarches ayant trait aux attributions qui lui ont été fixées."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "A ce titre, Monsieur Monsieur B s’engage à :"
+msgstr "A ce titre, Monsieur Monsieur B s’engage à :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "A) ATTRIBUTIONS"
+msgstr "A) ATTRIBUTIONS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "A---Employer ou Organisme Payeu"
+msgstr "A---Employer ou Organisme Payeu"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 10 - FRAIS PROFESSIONNELS"
+msgstr "ARTICLE 10 - FRAIS PROFESSIONNELS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 11 - SECRET PROFESSIONNEL"
+msgstr "ARTICLE 11 - SECRET PROFESSIONNEL"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 12 - ABSENCE - MALADIE - ACCIDENT"
+msgstr "ARTICLE 12 - ABSENCE - MALADIE - ACCIDENT"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 13 - OBLIGATIONS"
+msgstr "ARTICLE 13 - OBLIGATIONS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 14 – CLAUSE DE NON CONCURRENCE"
+msgstr "ARTICLE 14 – CLAUSE DE NON CONCURRENCE"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 15 - RUPTURE DU CONTRAT"
+msgstr "ARTICLE 15 - RUPTURE DU CONTRAT"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 1 - CONDITIONS D’ ENGAGEMENT"
+msgstr "ARTICLE 1 - CONDITIONS D’ ENGAGEMENT"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 2 – PERIODE D’ ESSAI"
+msgstr "ARTICLE 2 – PERIODE D’ ESSAI"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 3 - FONCTIONS"
+msgstr "ARTICLE 3 - FONCTIONS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 4 - ATTRIBUTIONS ET DELEGATION DE POUVOIRS"
+msgstr "ARTICLE 4 - ATTRIBUTIONS ET DELEGATION DE POUVOIRS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 5 - LIEU DE TRAVAIL"
+msgstr "ARTICLE 5 - LIEU DE TRAVAIL"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 6  - ORGANISATION DU TRAVAIL - DUREE DU TRAVAIL"
+msgstr "ARTICLE 6  - ORGANISATION DU TRAVAIL - DUREE DU TRAVAIL"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 7 - APPOINTEMENTS  / REMUNERATION"
+msgstr "ARTICLE 7 - APPOINTEMENTS  / REMUNERATION"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "ARTICLE 8 - CONGES PAYES"
+msgstr "ARTICLE 8 - CONGES PAYES"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "ATTESTAION DE TRAVAIL"
+msgstr "ATTESTAION DE TRAVAIL"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+msgid "AUTORISATION DE SORTIE"
+msgstr "ترخيص خروج"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.rubrique,absence:0
+msgid "Absence"
+msgstr "الغياب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Accident de travail"
+msgstr "Accident de travail"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:31
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:873
+#, python-format
+msgid "Action non valide  !"
+msgstr "Action non valide  !"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Adresse"
+msgstr "العنوان "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,address_home:0
+msgid "Adresse Personnelle"
+msgstr "العنوان الشخصي "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,address:0
+msgid "Adresse Professionnelle"
+msgstr "العنوان المهني "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "Adresse complète:"
+msgstr "Adresse complète:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Adresse de Résidence"
+msgstr "عنوان الإقامة  "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Adresse de contact pendant le congé :"
+msgstr "Adresse de contact pendant le congé :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Adroit à ce jour à :"
+msgstr "Adroit à ce jour à :"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.autorisation,raison_autorisation:0
+msgid "Affaire personnel"
+msgstr "Affaire personnel"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,auto_droit_conge:0
+msgid "Affecter automatiquement droit des congés payés"
+msgstr "تعيين إجازة مدفوعة الأجر  تلقائيا"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,afficher:0
+#: field:hr.payroll.rubrique,afficher:0
+msgid "Afficher"
+msgstr "يظهر "
+
+#. module: devplus_hr_payroll_tn
+#: help:hr.payroll.rubrique,afficher:0
+msgid "Afficher cette rubrique sur le bulletin de paie"
+msgstr "Afficher cette rubrique sur le bulletin de paie"
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Annuler"
+msgstr "Annuler"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.holidays,yeaar:0
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_form _view
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+#: field:wizard.certificat.impot,fiscalyear_id:0
+msgid "Année"
+msgstr "السنة "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,fiscalyear_id:0
+msgid "Année fiscale"
+msgstr "السنة الضريبية"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Année:"
+msgstr "السنة:"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,redevance_from:0
+msgid "Applicables à partir du"
+msgstr "Applicables à partir du"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Après ce congé, il lui reste :"
+msgstr "Après ce congé, il lui reste :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Assurer la gestion de la production pour assurer les livraisons dans les délais impartis, avec le niveau de qualité demandé."
+msgstr "Assurer la gestion de la production pour assurer les livraisons dans les délais impartis, avec le niveau de qualité demandé."
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:112
+#, python-format
+msgid "Attention"
+msgstr "تحذير"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:359
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:410
+#: code:addons/devplus_hr_payroll_tn/models/hr_pointage.py:103
+#, python-format
+msgid "Attention  !"
+msgstr "تحذير  !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:179
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:182
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:184
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:206
+#, python-format
+msgid "Attention!"
+msgstr "تحذير!"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.devplus_hr_payroll_attestaion_report
+msgid "Attestaion de travail "
+msgstr "Attestaion de travail "
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.action_report_autorisation
+msgid "Autorisation"
+msgstr "طباعة ترخيص الخروج"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,autorisation_ids:0
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_autorisation_form
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_employee_2_autorisation
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.autorisation_ss_menu
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_hr_payroll_autorisation
+msgid "Autorisations"
+msgstr "تراخيص الخروج"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,avance:0
+msgid "Autoriser une avance sur salaire"
+msgstr "السماح بتسبقة على الراتب"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.parametres:devplus_hr_payroll_tn.hr_payroll_parametres_form
+msgid "Autres"
+msgstr "Autres"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.action_report_avance
+msgid "Avance"
+msgstr "طباعة تسبقه على الراتب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_avance
+msgid "Avance Sur Salaire"
+msgstr "تسبقه على الراتب"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:515
+#, python-format
+msgid "Avance n° : "
+msgstr "تسبقه عدد : "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Avances et prêts"
+msgstr "Avances et prêts"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_avance_form
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.avance_ss_menu
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_hr_payroll_avance_salaire
+msgid "Avances sur Salaire"
+msgstr "تسبقه على الرواتب"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.payroll.rubrique,type:0
+msgid "Avantage"
+msgstr "ميزة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,avantage:0
+msgid "Avantages"
+msgstr "امتيازات "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Avis D.A.F"
+msgstr "Avis D.A.F"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_avance
+msgid "Avis DRH :"
+msgstr "Avis DRH :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+msgid "Avis du D.A.F :"
+msgstr "Avis du D.A.F :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+msgid "Avis du D.G :"
+msgstr "Avis du D.G :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Avis du Resp. Hiérarchique"
+msgstr "Avis du Resp. Hiérarchique"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "B) DELEGATIONS DE POUVOIRS"
+msgstr "B) DELEGATIONS DE POUVOIRS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "B--Désignation de bénéficiaire"
+msgstr "B--تعيين المستفيد"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "BR:"
+msgstr "BR:"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,res_bank_id:0
+#: field:wizard.ordre.virement,bank_id:0
+msgid "Banque"
+msgstr "البنك "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Banque Employé"
+msgstr "بنك الموظف"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.ir:devplus_hr_payroll_tn.hr_payroll_ir_form
+#: view:hr.payroll.ir:devplus_hr_payroll_tn.hr_payroll_ir_tree
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.hr_payroll_ir_action
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.hr_payroll_ir_menuitem
+msgid "Barèmes IR"
+msgstr "الضريبة على الدخل السنوي"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,base:0
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Base"
+msgstr "الأساس"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.autorisation,state:0
+#: selection:hr.avance,state:0
+#: selection:hr.infraction,state:0
+#: selection:hr.payroll,state:0
+#: selection:hr.payroll.bulletin,state:0
+#: selection:hr.pointage,state:0
+msgid "Brouillon"
+msgstr "مسودة"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.devplus_hr_payroll_bulletin_report
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Bulletin de paie"
+msgstr "بطاقة بيانية في الأجر"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll:devplus_hr_payroll_tn.hr_payroll_form
+#: field:hr.payroll,bulletin_line_ids:0
+#: field:hr.payroll,bulletinn_count:0
+msgid "Bulletins"
+msgstr "كشوف الرواتب"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.salary_form
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_payroll_to_bulletin
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_salary_tree
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_bulletin
+msgid "Bulletins de paie"
+msgstr "كشوف الرواتب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "C) POLITIQUE QUALITE"
+msgstr "C) POLITIQUE QUALITE"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "CAISSE NATIONALE DE SECURITE SOCIALE"
+msgstr "الصندوق الوطني للضمان و الحيطة الاجتماعية "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,cin:0
+msgid "CIN"
+msgstr "رقم بطاقة التعريف"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "CIN."
+msgstr "رقم بطاقة التعريف."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "CIN:"
+msgstr "رقم بطاقة التعريف:"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,cnrps:0
+msgid "CNRPS"
+msgstr "الصندوق الوطني للتقاعد و الحيطة الإجتماعية"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,cnss:0
+#: field:res.company,cnss:0
+msgid "CNSS"
+msgstr "الصندوق الوطني للضمان و الحيطة الاجتماعية "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "CNSS/CNRPS"
+msgstr "CNSS/CNRPS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "CNSS/CNRPS:"
+msgstr "الصندوق الوطني للتقاعد و الحيطة الإجتماعية/الصندوق الوطني للضمان و الحيطة الاجتماعية:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "CONTRAT DE TRAVAIL"
+msgstr "CONTRAT DE TRAVAIL"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "CONTROLE FISCAL"
+msgstr "المراقبة الضريبية"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,nb_jours_cp_attribue:0
+msgid "CP attribués"
+msgstr "عدد أيام الإجازات الممنوحة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,nb_jours_cp_pris:0
+msgid "CP pris ce mois"
+msgstr "عدد أيام إجازات هذا الشهر"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Cachet et signature"
+msgstr "ختم و توقيع "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Cachet et signature de l'Employeur"
+msgstr "ختم و توقيع صاحب العمل "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Cachet et signature de l’Entreprise"
+msgstr "ختم و توقيع الشركة "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Caisse le :"
+msgstr "Caisse le :"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_hr_root_payroll
+msgid "Calcul de la Paie"
+msgstr "إحتساب الرواتب "
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.salary_form
+msgid "Calculer"
+msgstr "إحتساب"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.contract.type,irpp:0
+msgid "Calculer l'impôt?"
+msgstr "خاضع للضريبة؟"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll:devplus_hr_payroll_tn.hr_payroll_form
+msgid "Calculer les salaires"
+msgstr "إحتساب الرواتب"
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard.certificat.impot:devplus_hr_payroll_tn.view_certificat_impot
+#: view:wizard.journal.paie:devplus_hr_payroll_tn.view_journal_paie
+#: view:wizard.ordre.virement:devplus_hr_payroll_tn.view_net_paye
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.rubrique,categorie:0
+msgid "Catégorie"
+msgstr "الوحدة "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Catégorie:"
+msgstr "الوحدة :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Ce congé durera du"
+msgstr "Ce congé durera du"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.devplus_hr_payroll_certificat_impot_report
+msgid "Certificat de Retunue d'impôt"
+msgstr "Certificat de Retunue d'impôt"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Certificat de Retunue d'impôt sur le Revenu au Titre"
+msgstr "Certificat de Retunue d'impôt sur le Revenu au Titre"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Certifié sincère et conforme à nos documents comptables\n"
+"									et\n"
+"									arrêté à la somme de :(en toutes lettres)(2)"
+msgstr "Certifié sincère et conforme à nos documents comptables\n"
+"									et\n"
+"									arrêté à la somme de :(en toutes lettres)(2)"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "Cette attestation est délivrée à la demande de l'intéressé pour servir et valoir ce que"
+msgstr "Cette attestation est délivrée à la demande de l'intéressé pour servir et valoir ce que"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Cette obligation de secret professionnel subsistera après la fin du présent contrat."
+msgstr "Cette obligation de secret professionnel subsistera après la fin du présent contrat."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Cette période d’essai est renouvelable une fois pour une durée équivalente."
+msgstr "Cette période d’essai est renouvelable une fois pour une durée équivalente."
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,chef_famille:0
+#: field:hr.payroll.parametres,chef_famille:0
+msgid "Chef de famille"
+msgstr "رئيس عائلة"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.employee,mode_reglement:0
+msgid "Chèque"
+msgstr "صك"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Chèque N° :"
+msgstr "الصك رقم: "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.infraction,code:0
+#: field:hr.payroll.cotisation,code:0
+#: field:hr.payroll.cotisation.type,code:0
+#: field:hr.payroll.rubrique,code:0
+msgid "Code"
+msgstr "رمز"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Code Catégorie"
+msgstr "رمز الوحدة "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Code TVA"
+msgstr "رمز الأداء على القمة المضافة"
+
+#. module: devplus_hr_payroll_tn
+#: field:res.company,code_exploitation:0
+msgid "Code d'exploitation"
+msgstr "رمز التشغيل"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Code d'exploitation :"
+msgstr "رمز التشغيل :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.ligne_rubrique,note:0
+#: field:hr.payroll.rubrique,note:0
+msgid "Commentaire"
+msgstr "تعليق"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.payroll,state:0
+msgid "Comptabilisé"
+msgstr "مغلقة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Compte tenu de la nature évolutive du poste de Monsieur B et de la nécessaire adaptation des attributions au contexte économique et social, il est expressément convenu que la liste des attributions indiquées au présent contrat ne saurait revêtir un caractère exhaustif."
+msgstr "Compte tenu de la nature évolutive du poste de Monsieur B et de la nécessaire adaptation des attributions au contexte économique et social, il est expressément convenu que la liste des attributions indiquées au présent contrat ne saurait revêtir un caractère exhaustif."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Concernant les offres, les contrats de vente, les conditions de vente (remise, rabais, ….) diligentés par Monsieur B ; les documents afférents à ces opérations comporteront obligatoirement outre la signature de Monsieur B, la  signature de Monsieur A ou toute autre personne mandatée à cet effet par lui."
+msgstr "Concernant les offres, les contrats de vente, les conditions de vente (remise, rabais, ….) diligentés par Monsieur B ; les documents afférents à ces opérations comporteront obligatoirement outre la signature de Monsieur B, la  signature de Monsieur A ou toute autre personne mandatée à cet effet par lui."
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll:devplus_hr_payroll_tn.hr_payroll_form
+msgid "Confirmer"
+msgstr "Confirmer"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.avance,state:0
+#: selection:hr.infraction,state:0
+#: selection:hr.payroll,state:0
+#: selection:hr.payroll.bulletin,state:0
+msgid "Confirmé"
+msgstr "مؤكد"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:643
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+#, python-format
+msgid "Congés payés"
+msgstr "اجازة مدفوعة الأجر"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_contract
+msgid "Contract"
+msgstr "عقد"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_contract_type
+msgid "Contract Type"
+msgstr "نوع العقد"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.hr_payroll_bulletin_serach
+#: field:hr.payroll.ligne_rubrique,id_contract:0
+msgid "Contrat"
+msgstr "عقد"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,employee_contract_id:0
+msgid "Contrat de travail"
+msgstr "عقد شغل"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.rubrique,cotisable:0
+msgid "Cotisable"
+msgstr "خاضع للمساهمات"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.cotisation:devplus_hr_payroll_tn.hr_payroll_cotisation_form
+#: view:hr.payroll.cotisation:devplus_hr_payroll_tn.hr_payroll_cotisation_tree
+#: field:hr.payroll.cotisation.type,cotisation_ids:0
+msgid "Cotisations"
+msgstr "المساهمات"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,cotisations_employer:0
+msgid "Cotisations Employeur"
+msgstr "مساهمات المؤجر"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,cotisations_employee:0
+msgid "Cotisations Employé"
+msgstr "مساهمات الأجير"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,create_uid:0
+#: field:hr.avance,create_uid:0
+#: field:hr.avance.line,create_uid:0
+#: field:hr.infraction,create_uid:0
+#: field:hr.infraction.type,create_uid:0
+#: field:hr.month,create_uid:0
+#: field:hr.payroll,create_uid:0
+#: field:hr.payroll.bulletin,create_uid:0
+#: field:hr.payroll.bulletin.line,create_uid:0
+#: field:hr.payroll.cotisation,create_uid:0
+#: field:hr.payroll.cotisation.type,create_uid:0
+#: field:hr.payroll.ir,create_uid:0
+#: field:hr.payroll.ligne_rubrique,create_uid:0
+#: field:hr.payroll.parametres,create_uid:0
+#: field:hr.payroll.rubrique,create_uid:0
+#: field:hr.pointage,create_uid:0
+#: field:hr.pointage.line,create_uid:0
+#: field:wizard.certificat.impot,create_uid:0
+#: field:wizard.journal.paie,create_uid:0
+#: field:wizard.ordre.virement,create_uid:0
+#: field:wizard_declaration_cnss,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,create_date:0
+#: field:hr.avance,create_date:0
+#: field:hr.avance.line,create_date:0
+#: field:hr.infraction,create_date:0
+#: field:hr.infraction.type,create_date:0
+#: field:hr.month,create_date:0
+#: field:hr.payroll,create_date:0
+#: field:hr.payroll.bulletin,create_date:0
+#: field:hr.payroll.bulletin.line,create_date:0
+#: field:hr.payroll.cotisation,create_date:0
+#: field:hr.payroll.cotisation.type,create_date:0
+#: field:hr.payroll.ir,create_date:0
+#: field:hr.payroll.ligne_rubrique,create_date:0
+#: field:hr.payroll.parametres,create_date:0
+#: field:hr.payroll.rubrique,create_date:0
+#: field:hr.pointage,create_date:0
+#: field:hr.pointage.line,create_date:0
+#: field:wizard.certificat.impot,create_date:0
+#: field:wizard.journal.paie,create_date:0
+#: field:wizard.ordre.virement,create_date:0
+#: field:wizard_declaration_cnss,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,credit_account_id:0
+msgid "Credit account"
+msgstr "Credit account"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "C’est pourquoi, la société se réserve la possibilité d’apporter toute modification ou aménagement aux attributions de Monsieur B requise dans l’intérêt de celle-ci."
+msgstr "C’est pourquoi, la société se réserve la possibilité d’apporter toute modification ou aménagement aux attributions de Monsieur B requise dans l’intérêt de celle-ci."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+msgid "D.A.F"
+msgstr "D.A.F"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "DE LA SOLIDARITE CAISSE NATIONALE"
+msgstr "الصندوق الوطني للتضامن"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "DECLARATION TRIMESTRIELLE DES SALARIES ET DES SALAIRES"
+msgstr "DECLARATION TRIMESTRIELLE DES SALARIES ET DES SALAIRES"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "DIRECTION GÉNERAL DU"
+msgstr "المديرية العامة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_avance
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "DRH"
+msgstr "DRH"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Dans ce cadre, il bénéficie également d’une délégation en matière disciplinaire pour faire respecter par les salariés de la société leurs obligations, exception faite des procédures de licenciement qui nécessiteront l'accord préalable de Monsieur A."
+msgstr "Dans ce cadre, il bénéficie également d’une délégation en matière disciplinaire pour faire respecter par les salariés de la société leurs obligations, exception faite des procédures de licenciement qui nécessiteront l'accord préalable de Monsieur A."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Dans le cadre de la politique qualité de la société X, qui donne toute priorité à la satisfaction du client, il est demandé à Monsieur B de respecter et faire respecter des salariés dont il a la charge les instructions et procédures en vigueur dans l’entreprise."
+msgstr "Dans le cadre de la politique qualité de la société X, qui donne toute priorité à la satisfaction du client, il est demandé à Monsieur B de respecter et faire respecter des salariés dont il a la charge les instructions et procédures en vigueur dans l’entreprise."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Dans le cadre de sa fonction de Directeur de la société X et sous le contrôle de Monsieur A ou toute personne désignée par lui à cet effet, Monsieur B  assume notamment les attributions suivantes :"
+msgstr "Dans le cadre de sa fonction de Directeur de la société X et sous le contrôle de Monsieur A ou toute personne désignée par lui à cet effet, Monsieur B  assume notamment les attributions suivantes :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Dans l’hypothèse où les moyens nécessaires à l’exercice des pouvoirs visés dans le cadre du présent article viendraient à faire défaut à Monsieur B, il lui appartiendra d’en informer l’expert comptable ou toute personne désignée par lui à cet effet sans délai afin que ce dernier puisse faire le nécessaire de toute urgence."
+msgstr "Dans l’hypothèse où les moyens nécessaires à l’exercice des pouvoirs visés dans le cadre du présent article viendraient à faire défaut à Monsieur B, il lui appartiendra d’en informer l’expert comptable ou toute personne désignée par lui à cet effet sans délai afin que ce dernier puisse faire le nécessaire de toute urgence."
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.autorisation:devplus_hr_payroll_tn.hr_autorisation_serach
+#: field:hr.autorisation,date:0
+#: field:hr.avance,date:0
+#: field:hr.holidays,date:0
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_serach
+#: field:hr.infraction,date:0
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,date_entree:0
+msgid "Date  entrée"
+msgstr "تاريخ الدخول  "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+#: view:website:devplus_hr_payroll_tn.report_avance
+msgid "Date :"
+msgstr "Date :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.month,date_start:0
+msgid "Date Début"
+msgstr "تاريخ البداية"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.month,date_stop:0
+msgid "Date Fin"
+msgstr "تاريخ النهاية"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage,date:0
+msgid "Date Pointage"
+msgstr "التاريخ"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Date d'arrivée :"
+msgstr "تاريخ الوصول:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Date d'embauche:"
+msgstr "تاريخ التعيين:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+msgid "Date de Cessation de Service :"
+msgstr "Date de Cessation de Service :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Date de naissance:"
+msgstr "تاريخ الميلاد:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Date de retour:"
+msgstr "ساعة العودة:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Date de sortie:"
+msgstr "ساعة الخروج:"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.ligne_rubrique,date_start:0
+msgid "Date début"
+msgstr "تاريخ البداية"
+
+#. module: devplus_hr_payroll_tn
+#: constraint:hr.payroll.ligne_rubrique:0
+msgid "Date début doit etre inferieur a date fin"
+msgstr "تاريخ البداية  يجب أن يكون أقل من تاريخ النهاية"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.ligne_rubrique,date_stop:0
+msgid "Date fin"
+msgstr "تاريخ النهاية"
+
+#. module: devplus_hr_payroll_tn
+#: help:hr.payroll,message_last_post:0
+#: help:hr.pointage,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "تاريخ آخر رسالة نشرت على السجل."
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,date_salary:0
+#: field:hr.payroll.bulletin,date_salary:0
+msgid "Date salaire"
+msgstr "التاريخ"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "De plus, Monsieur B, compte tenu de la nature de ses fonctions, prend l'engagement :"
+msgstr "De plus, Monsieur B, compte tenu de la nature de ses fonctions, prend l'engagement :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "De plus,j'atteste que Monsieur/Madame"
+msgstr "De plus,j'atteste que Monsieur/Madame"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,debit_account_id:0
+msgid "Debit account"
+msgstr "Debit account"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.payroll.rubrique,categorie:0
+msgid "Deduction"
+msgstr "حسم"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,deduction:0
+msgid "Deductions"
+msgstr "الخصومات"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Demande De Congé"
+msgstr "Demande De Congé"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Demande de Congé Annuel"
+msgstr "Demande de Congé Annuel"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.action_report_dde_conge
+msgid "Demande de congé"
+msgstr "Demande de congé"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,description:0
+#: field:hr.infraction,warning:0
+#: field:hr.payroll,name:0
+#: field:hr.payroll.bulletin.line,name:0
+#: field:hr.pointage,name:0
+#: field:hr.pointage.line,name:0
+msgid "Description"
+msgstr "الوصف"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Description :"
+msgstr "الوصف :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.cotisation.type,name:0
+msgid "Designation"
+msgstr "الإسم"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "Destinataire:"
+msgstr "Destinataire:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+msgid "Directeur Général"
+msgstr "Directeur Général"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_hr_infraction_form
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.hr_infraction_ss_menu
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_hr_payroll_discipline
+msgid "Disciplines"
+msgstr "Disciplines"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Droit de congé"
+msgstr "الحق في إجازة"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.parametres:devplus_hr_payroll_tn.hr_payroll_parametres_form
+msgid "Droit à des congés payés"
+msgstr "الحق في إجازةمدفوعة الأجر"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:322
+#, python-format
+msgid "Droit à des congés payés : attribué automatiquement pour l'employée   "
+msgstr "Droit à des congés payés : attribué automatiquement pour l'employée   "
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:315
+#, python-format
+msgid "Droit à des congés payés pour le mois : "
+msgstr "Droit à des congés payés pour le mois : "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,duree_prevu:0
+msgid "Durée"
+msgstr "المدة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,autorisation_delay:0
+msgid "Durée d'autorisation"
+msgstr "المدة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Durée:"
+msgstr "المدة:"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.ir,debuttranche:0
+msgid "Début de tranche"
+msgstr "بداية القسط "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Décision du Directeur Général"
+msgstr "Décision du Directeur Général"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_hr_payroll_tn_wizard_declaration_cnss
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.devplus_hr_payroll_declaration_cnss_report
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_declaration_cnss
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Déclaration CNSS"
+msgstr "التصريح بالمساهمة لصندوق الضمان الإجتماعي"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_wizard_declaration_cnss
+msgid "Déclaration CNSS  For"
+msgstr "التصريح بالمساهمة لصندوق الضمان الإجتماعي ل "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.cotisation,name:0
+msgid "Désignation"
+msgstr "الإسم"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Désigné comme contractant,"
+msgstr "Désigné comme contractant,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Désignée comme société X,"
+msgstr "Désignée comme société X,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "D’entrer au service d’une entreprise concurrente à X, de créer pour son compte ou pour un tiers une entreprise de même fonction ou d’y participer directement ou indirectement, et ce, pour la duré de 2 années consécutives au cas ou il quitterait X a compter de la date de son départ."
+msgstr "D’entrer au service d’une entreprise concurrente à X, de créer pour son compte ou pour un tiers une entreprise de même fonction ou d’y participer directement ou indirectement, et ce, pour la duré de 2 années consécutives au cas ou il quitterait X a compter de la date de son départ."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "D’exercer directement ou indirectement toute fonction de quelque nature que ce soit concomitante ou concurrentielle lors de l’exercice de ses fonctions au sein de la société X ;"
+msgstr "D’exercer directement ou indirectement toute fonction de quelque nature que ce soit concomitante ou concurrentielle lors de l’exercice de ses fonctions au sein de la société X ;"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "ET DE FINANCES"
+msgstr "والمالية"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "ET DES TUNISIENS A L’ETRANGER"
+msgstr "و التونسيين بالخارج"
+
+#. module: devplus_hr_payroll_tn
+#: report:regelements.espece:0
+msgid "ETAT DES REGLEMENTS EN ESPECES"
+msgstr "ETAT DES REGLEMENTS EN ESPECES"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "ETAT RECAPITULATIF DES SALAIRES ET APPOINTEMENTS"
+msgstr "ETAT RECAPITULATIF DES SALAIRES ET APPOINTEMENTS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Echlon:"
+msgstr "الصنف:"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.act_hr_payroll_ecriture
+msgid "Ecritures Comptables"
+msgstr "Ecritures Comptables"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Emploi Ocupp"
+msgstr "Emploi Ocupp"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.employee:devplus_hr_payroll_tn.view_employee_filter2
+msgid "Employees"
+msgstr "الموظفون"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.autorisation:devplus_hr_payroll_tn.hr_autorisation_serach
+#: field:hr.autorisation,employee_id:0
+#: field:hr.avance.line,employee_id:0
+#: field:hr.infraction,employer_id:0
+#: field:hr.payroll.bulletin,employee_id:0
+#: field:hr.pointage.line,employee_id:0
+#: view:website:devplus_hr_payroll_tn.report_avance
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Employé"
+msgstr "الموظف"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_serach
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.hr_payroll_bulletin_serach
+msgid "Employée"
+msgstr "الموظفة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "En cas d'empêchement d'exercer son activité et d'accomplir ses obligations, Monsieur B devra en aviser la société dans les plus brefs délais en indiquant les motifs et la durée probable de cet empêchement et en lui adressant, le cas échéant, un certificat médical."
+msgstr "En cas d'empêchement d'exercer son activité et d'accomplir ses obligations, Monsieur B devra en aviser la société dans les plus brefs délais en indiquant les motifs et la durée probable de cet empêchement et en lui adressant, le cas échéant, un certificat médical."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "En cas de nécessité, et étant donné la fonction de Monsieur B, il pourra lui être demandé d’effectuer des heures supplémentaires."
+msgstr "En cas de nécessité, et étant donné la fonction de Monsieur B, il pourra lui être demandé d’effectuer des heures supplémentaires."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "En cas de prolongation d'arrêt de travail, Monsieur B devra transmettre, dans les mêmes délais, le certificat médical justifiant cette prolongation."
+msgstr "En cas de prolongation d'arrêt de travail, Monsieur B devra transmettre, dans les mêmes délais, le certificat médical justifiant cette prolongation."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "En contrepartie de ses services, Monsieur B percevra une rémunération forfaitaire fixe annuelle de ………..,- Dinars Tunisiens payables sur 12 mois, soit une rémunération mensuelle de ………,- Dinars Tunisiens."
+msgstr "En contrepartie de ses services, Monsieur B percevra une rémunération forfaitaire fixe annuelle de ………..,- Dinars Tunisiens payables sur 12 mois, soit une rémunération mensuelle de ………,- Dinars Tunisiens."
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.infraction,date_to:0
+msgid "End Date"
+msgstr "End Date"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,enfant1:0
+msgid "Enfant 1 "
+msgstr "الطفل الأول"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,enfant2:0
+msgid "Enfant 2 "
+msgstr "الطفل الثاني"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,enfant3:0
+msgid "Enfant 3 "
+msgstr "الطفل الثالث "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,enfant4:0
+msgid "Enfant 4 "
+msgstr "الطفل الرابع"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,enfant_handicape:0
+msgid "Enfant handicapé "
+msgstr "الطفل المعوق "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,enfant_etudiant:0
+msgid "Enfant étudiant "
+msgstr "الطفل الطالب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Entre les soussignés :"
+msgstr "Entre les soussignés :"
+
+#. module: devplus_hr_payroll_tn
+#: constraint:hr.employee:0
+msgid "Erreur: Le CIN doit être composé de huit chiffres"
+msgstr "خطأ: رقم بطاقة التعريف يجب أن يكون متكونا من ثمانية أرقام "
+
+#. module: devplus_hr_payroll_tn
+#: constraint:hr.contract:0
+msgid "Erreur: Le Montant ne peut pas  être négative"
+msgstr "خطأ: المبلغ لا يمكن أن يكون سلبيا "
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:128
+#, python-format
+msgid "Error !"
+msgstr "Error !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_certificat_impot.py:19
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:48
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_journal_paie.py:26
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_ordre_virement.py:19
+#, python-format
+msgid "Error!"
+msgstr "خطأ!"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.employee,mode_reglement:0
+msgid "Espèce"
+msgstr "نقداً "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,state:0
+#: field:hr.avance,state:0
+#: field:hr.infraction,state:0
+#: field:hr.payroll,state:0
+#: field:hr.payroll.bulletin,state:0
+#: field:hr.pointage,state:0
+msgid "Etat"
+msgstr "الحالة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Etat des congés"
+msgstr "Etat des congés"
+
+#. module: devplus_hr_payroll_tn
+#: field:wizard_declaration_cnss,fiscalyear_id:0
+msgid "Exercice fiscal"
+msgstr "السنة الضريبية"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,exoneration:0
+msgid "Exonerations"
+msgstr "الإعفاء"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Fait en deux exemplaires originaux dont un pour chacune des parties"
+msgstr "Fait en deux exemplaires originaux dont un pour chacune des parties"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Fait à :"
+msgstr "تم في :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Fait à......... le ........"
+msgstr "تم في.........يوم........."
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Fermer"
+msgstr "إغلاق"
+
+#. module: devplus_hr_payroll_tn
+#: field:wizard_declaration_cnss,data:0
+msgid "Fichier CNSS"
+msgstr "Fichier CNSS"
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Fichier de la déclaration de salaires sur support magnétique"
+msgstr "Fichier de la déclaration de salaires sur support magnétique"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.ir,fintranche:0
+msgid "Fin de tranche"
+msgstr "نهاية القسط"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,message_follower_ids:0
+#: field:hr.pointage,message_follower_ids:0
+msgid "Followers"
+msgstr "Followers"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Fonction :"
+msgstr "Fonction :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Fonction:"
+msgstr "وظيفة:"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:182
+#, python-format
+msgid "Format CNSS de la société est incorrecte : xxxxxxxx-yy "
+msgstr "Format CNSS de la société est incorrecte : xxxxxxxx-yy "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,fraispro:0
+msgid "Frais Professionnels en %"
+msgstr "الرسوم المهنية بالنسبة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,frais_pro:0
+msgid "Frais professionnels"
+msgstr "الرسوم المهنية"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,gain:0
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Gain"
+msgstr "الربح"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.avance:devplus_hr_payroll_tn.hr_avance_serach
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.hr_payroll_bulletin_serach
+msgid "Group By..."
+msgstr "Group By..."
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.autorisation:devplus_hr_payroll_tn.hr_autorisation_serach
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_serach
+msgid "Grouper par..."
+msgstr "Grouper par..."
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Générer le fichier du Déclaration CNSS"
+msgstr "Générer le fichier du Déclaration CNSS"
+
+#. module: devplus_hr_payroll_tn
+#: model:res.groups,name:devplus_hr_payroll_tn.infration_managment
+msgid "Gérer les Disciplines"
+msgstr "Gérer les Disciplines"
+
+#. module: devplus_hr_payroll_tn
+#: model:res.groups,name:devplus_hr_payroll_tn.autorisation_managment
+msgid "Gérer les autorisations"
+msgstr "إدارة تراخيص الخروج"
+
+#. module: devplus_hr_payroll_tn
+#: model:res.groups,name:devplus_hr_payroll_tn.avance_managment
+msgid "Gérer les avances sur salaire"
+msgstr "Gérer les avances sur salaire"
+
+#. module: devplus_hr_payroll_tn
+#: model:res.groups,name:devplus_hr_payroll_tn.heures_supp_manage
+msgid "Gérer les heures supplémentaires"
+msgstr "Gérer les heures supplémentaires"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage.line,hs100:0
+msgid "HS100"
+msgstr "HS100"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage.line,hs125:0
+msgid "HS125"
+msgstr "HS125"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage.line,hs150:0
+msgid "HS150"
+msgstr "HS150"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage.line,hs175:0
+msgid "HS175"
+msgstr "HS175"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage.line,hs200:0
+msgid "HS200"
+msgstr "HS200"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,heure_stop:0
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+msgid "Heure de retour"
+msgstr "ساعة العودة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,heure_start:0
+msgid "Heure de sortie"
+msgstr "Heure de sortie"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+msgid "Heure de sortie :"
+msgstr "ساعة الخروج :"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:532
+#, python-format
+msgid "Heures supplémentaires : HS100"
+msgstr "Heures supplémentaires : HS100"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:541
+#, python-format
+msgid "Heures supplémentaires : HS125"
+msgstr "Heures supplémentaires : HS125"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:550
+#, python-format
+msgid "Heures supplémentaires : HS150"
+msgstr "Heures supplémentaires : HS150"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:559
+#, python-format
+msgid "Heures supplémentaires : HS175"
+msgstr "Heures supplémentaires : HS175"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:568
+#, python-format
+msgid "Heures supplémentaires : HS200"
+msgstr "Heures supplémentaires : HS200"
+
+#. module: devplus_hr_payroll_tn
+#: help:hr.payroll,message_summary:0
+#: help:hr.pointage,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.contract,regime:0
+#: selection:hr.payroll.rubrique,regime:0
+msgid "Horaire"
+msgstr "ساعات العمل"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,id:0
+#: field:hr.avance,id:0
+#: field:hr.avance.line,id:0
+#: field:hr.infraction,id:0
+#: field:hr.infraction.type,id:0
+#: field:hr.month,id:0
+#: field:hr.payroll,id:0
+#: field:hr.payroll.bulletin,id:0
+#: field:hr.payroll.bulletin.line,id:0
+#: field:hr.payroll.cotisation,id:0
+#: field:hr.payroll.cotisation.type,id:0
+#: field:hr.payroll.ir,id:0
+#: field:hr.payroll.ligne_rubrique,id:0
+#: field:hr.payroll.parametres,id:0
+#: field:hr.payroll.rubrique,id:0
+#: field:hr.pointage,id:0
+#: field:hr.pointage.line,id:0
+#: field:report.devplus_hr_payroll_tn.bulletin_report,id:0
+#: field:report.devplus_hr_payroll_tn.report_certificat_impot,id:0
+#: field:report.devplus_hr_payroll_tn.report_declaration_cnss,id:0
+#: field:report.devplus_hr_payroll_tn.report_journal_paie,id:0
+#: field:report.devplus_hr_payroll_tn.report_ordre_virement,id:0
+#: field:report.devplus_hr_payroll_tn.report_recapitulatif_cnss,id:0
+#: field:wizard.certificat.impot,id:0
+#: field:wizard.journal.paie,id:0
+#: field:wizard.ordre.virement,id:0
+#: field:wizard_declaration_cnss,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "IDENTITITE DU SALAIRE(1)"
+msgstr "IDENTITITE DU SALAIRE(1)"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll_ir
+msgid "IR"
+msgstr "IR"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "IRPP"
+msgstr "ضريبة الدخل للأفراد"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,irpp:0
+msgid "IRPP ?"
+msgstr "ضريبة الدخل للأفراد ؟"
+
+#. module: devplus_hr_payroll_tn
+#: help:hr.payroll,message_unread:0
+#: help:hr.pointage,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "If checked new messages require your attention."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Il a été convenu ce qui suit :"
+msgstr "Il a été convenu ce qui suit :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Il en sera de même pour l'embauche des salariés de la société dont les contrats de travail seront co-signés par A."
+msgstr "Il en sera de même pour l'embauche des salariés de la société dont les contrats de travail seront co-signés par A."
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll:devplus_hr_payroll_tn.hr_payroll_form
+#: view:hr.pointage:devplus_hr_payroll_tn.hr_pointage_form_view
+msgid "Importer les employées"
+msgstr "إضافة الموظفين"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.rubrique,imposable:0
+msgid "Imposable"
+msgstr "خاضع للضريبة"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:773
+#: field:hr.payroll.bulletin,igr:0
+#: view:hr.payroll.parametres:devplus_hr_payroll_tn.hr_payroll_parametres_form
+#, python-format
+msgid "Impot sur le revenu"
+msgstr "ضريبة على الدخل"
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard.certificat.impot:devplus_hr_payroll_tn.view_certificat_impot
+#: view:wizard.journal.paie:devplus_hr_payroll_tn.view_journal_paie
+#: view:wizard.ordre.virement:devplus_hr_payroll_tn.view_net_paye
+msgid "Imprimer"
+msgstr "طباعة"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.devplus_hr_payroll_contrat_report
+msgid "Imprimer Contrat "
+msgstr "Imprimer Contrat "
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Imprimer Déclaration CNSS"
+msgstr "طباعة التصريح لصندوق الضمان الإجتماعي"
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Imprimer Récapitulatif"
+msgstr "Imprimer Récapitulatif"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Imprimé le :"
+msgstr "طبع يوم: "
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.payroll.rubrique,type:0
+msgid "Indemnite"
+msgstr "Indemnite"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,indemnite:0
+msgid "Indemnites"
+msgstr "Indemnites"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.salary_form
+msgid "Information supplémentaire qui sera affiché sur le bulletin de paie"
+msgstr "معلومات اضافية سوف تظهر في البطاقة البيانية في الأجر"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.autorisation:devplus_hr_payroll_tn.autorisation_form_view
+#: view:hr.avance:devplus_hr_payroll_tn.avance_form_view
+msgid "Informations"
+msgstr "معلومات"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,comment:0
+msgid "Informations complementaires"
+msgstr "معلومات تكميلية"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_view_tree
+msgid "Infraction"
+msgstr "Infraction"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.infraction.type:devplus_hr_payroll_tn.hr_infraction_type_form_view
+#: view:hr.infraction.type:devplus_hr_payroll_tn.hr_infraction_type_tree_view
+msgid "Infraction Types"
+msgstr "Infraction Types"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,message_is_follower:0
+#: field:hr.pointage,message_is_follower:0
+msgid "Is a Follower"
+msgstr "Is a Follower"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Je soussegne certifie exacts et sinceres les rensignements figurant sur le present certificat et"
+msgstr "اني الممضي أسفله أقر بصحة المعلومات وصدقها على هذه الشهادة و "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Je soussigné(e)"
+msgstr "Je soussigné(e)"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+#: view:wizard.journal.paie:devplus_hr_payroll_tn.view_journal_paie
+msgid "Journal de Paie"
+msgstr "Journal de Paie"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_journal_paie
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_wizard_print_journal_paie
+msgid "Journal de paie"
+msgstr "Journal de paie"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.devplus_hr_payroll_journal_paie_report
+msgid "Journal paie "
+msgstr "Journal paie "
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.contract,regime:0
+#: selection:hr.payroll.rubrique,regime:0
+msgid "Journalier"
+msgstr "يومي"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage.line,nb_days_holiday:0
+msgid "Jours C.P"
+msgstr "عدد أيام الاجازات"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage.line,nb_days_masse:0
+msgid "Jours masse"
+msgstr "Jours masse"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "La Société X Sarl sise à Zone …….. – Route de ………………….., représentée par son Gérant Monsieur A, Titulaire ……………………. du …………………,"
+msgstr "La Société X Sarl sise à Zone …….. – Route de ………………….., représentée par son Gérant Monsieur A, Titulaire ……………………. du …………………,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "La présente déclaration de salaires certifiée sincere et\n"
+"								conforme à nos document comptables est arretée à la somme de :"
+msgstr "La présente déclaration de salaires certifiée sincere et\n"
+"								conforme à nos document comptables est arretée à la somme de :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "La présente délégation de pouvoirs fait partie intégrante du contrat de travail de Monsieur B ; sa rémunération prenant en considération le temps consacré à cette mission et les responsabilités qui en découlent."
+msgstr "La présente délégation de pouvoirs fait partie intégrante du contrat de travail de Monsieur B ; sa rémunération prenant en considération le temps consacré à cette mission et les responsabilités qui en découlent."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "La rémunération est servie nette de toutes retenues à la fin de chaque mois."
+msgstr "La rémunération est servie nette de toutes retenues à la fin de chaque mois."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "La société X engage Monsieur B en qualité de directeur sous contrat à durée indéterminée à compter du 04/04/2005 à 8h00 aux conditions particulières indiquées ci-après."
+msgstr "La société X engage Monsieur B en qualité de directeur sous contrat à durée indéterminée à compter du 04/04/2005 à 8h00 aux conditions particulières indiquées ci-après."
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,message_last_post:0
+#: field:hr.pointage,message_last_post:0
+msgid "Last Message Date"
+msgstr "Last Message Date"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,write_uid:0
+#: field:hr.avance,write_uid:0
+#: field:hr.avance.line,write_uid:0
+#: field:hr.infraction,write_uid:0
+#: field:hr.infraction.type,write_uid:0
+#: field:hr.month,write_uid:0
+#: field:hr.payroll,write_uid:0
+#: field:hr.payroll.bulletin,write_uid:0
+#: field:hr.payroll.bulletin.line,write_uid:0
+#: field:hr.payroll.cotisation,write_uid:0
+#: field:hr.payroll.cotisation.type,write_uid:0
+#: field:hr.payroll.ir,write_uid:0
+#: field:hr.payroll.ligne_rubrique,write_uid:0
+#: field:hr.payroll.parametres,write_uid:0
+#: field:hr.payroll.rubrique,write_uid:0
+#: field:hr.pointage,write_uid:0
+#: field:hr.pointage.line,write_uid:0
+#: field:wizard.certificat.impot,write_uid:0
+#: field:wizard.journal.paie,write_uid:0
+#: field:wizard.ordre.virement,write_uid:0
+#: field:wizard_declaration_cnss,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,write_date:0
+#: field:hr.avance,write_date:0
+#: field:hr.avance.line,write_date:0
+#: field:hr.infraction,write_date:0
+#: field:hr.infraction.type,write_date:0
+#: field:hr.month,write_date:0
+#: field:hr.payroll,write_date:0
+#: field:hr.payroll.bulletin,write_date:0
+#: field:hr.payroll.bulletin.line,write_date:0
+#: field:hr.payroll.cotisation,write_date:0
+#: field:hr.payroll.cotisation.type,write_date:0
+#: field:hr.payroll.ir,write_date:0
+#: field:hr.payroll.ligne_rubrique,write_date:0
+#: field:hr.payroll.parametres,write_date:0
+#: field:hr.payroll.rubrique,write_date:0
+#: field:hr.pointage,write_date:0
+#: field:hr.pointage.line,write_date:0
+#: field:wizard.certificat.impot,write_date:0
+#: field:wizard.journal.paie,write_date:0
+#: field:wizard.ordre.virement,write_date:0
+#: field:wizard_declaration_cnss,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Le délai de préavis dû par Monsieur B ou par la société X, en cas de rupture du contrat de travail, est fixé à 3 mois."
+msgstr "Le délai de préavis dû par Monsieur B ou par la société X, en cas de rupture du contrat de travail, est fixé à 3 mois."
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Le fichier générée :"
+msgstr "Le fichier générée :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Le lieu de travail indiqué à l’alinéa précédent ne revêt qu’un caractère informatif et ne saurait constituer un élément essentiel du présent contrat."
+msgstr "Le lieu de travail indiqué à l’alinéa précédent ne revêt qu’un caractère informatif et ne saurait constituer un élément essentiel du présent contrat."
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_pointage.py:65
+#, python-format
+msgid "Le pointage d'une période doit être unique par société!"
+msgstr "تم تسجيل حضور هذا الشهر ! الرجاء إختيار فترة أخرى"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Le présent engagement ne deviendra définitif qu'à l'expiration d'une période d'essai dont la durée est fixée à 90 jours."
+msgstr "Le présent engagement ne deviendra définitif qu'à l'expiration d'une période d'essai dont la durée est fixée à 90 jours."
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:112
+#, python-format
+msgid "Le saisie de paie  d'une période doit être unique par société!"
+msgstr "تم تسجيل رواتب هذا الشهر ! الرجاء إختيار فترة أخرى"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Le:"
+msgstr "Le:"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_holidays
+msgid "Leave"
+msgstr "مغادرة"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_holidays_status
+msgid "Leave Type"
+msgstr "نوع الاجازة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+msgid "Les conditions de Retour :"
+msgstr "Les conditions de Retour :"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.salary_form
+msgid "Les congés"
+msgstr "الإجازات "
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.cotisation.type:devplus_hr_payroll_tn.hr_payroll_cotisation_type_form
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.hr_payroll_cotisation_action
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.hr_payroll_cotisation_menuitem
+msgid "Les cotisations"
+msgstr "المساهمات "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Les demandes de congés doivent parvenir à l'administration au\n"
+"										moins 07 jours avant la date prévue de sortie."
+msgstr "Les demandes de congés doivent parvenir à l'administration au\n"
+"										moins 07 jours avant la date prévue de sortie."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Les documents ou rapports quelle qu'en soit la nature (dossiers, listes des prix, imprimés, lettres factures, notices, échantillons, …) qu’il établira ou dont il lui sera donné communication sont la propriété de la société et il ne pourra ni en conserver de copie, ni en donner communication à des tiers, sans l’accord exprès et écrit de Monsieur A ou toute personne désignée par lui à cet effet. En fin de relations contractuelles, il restituera, sur première demande, l’ensemble desdits documents. Un droit de rétention est expressément exclu."
+msgstr "Les documents ou rapports quelle qu'en soit la nature (dossiers, listes des prix, imprimés, lettres factures, notices, échantillons, …) qu’il établira ou dont il lui sera donné communication sont la propriété de la société et il ne pourra ni en conserver de copie, ni en donner communication à des tiers, sans l’accord exprès et écrit de Monsieur A ou toute personne désignée par lui à cet effet. En fin de relations contractuelles, il restituera, sur première demande, l’ensemble desdits documents. Un droit de rétention est expressément exclu."
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.parametres:devplus_hr_payroll_tn.hr_payroll_parametres_form
+msgid "Les mois de la Paie"
+msgstr "الأشهر"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Les prises de congés ne peuvent se faire que dans la mesure où les intérêts de la société sont conservés."
+msgstr "Les prises de congés ne peuvent se faire que dans la mesure où les intérêts de la société sont conservés."
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.contract,rubrique_ids:0
+#: view:hr.payroll.rubrique:devplus_hr_payroll_tn.hr_payroll_rubrique_form
+#: view:hr.payroll.rubrique:devplus_hr_payroll_tn.hr_payroll_rubrique_tree
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.hr_payroll_rubrique_action
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.hr_payroll_rubrique_menuitem
+msgid "Les rubriques"
+msgstr "المنح"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.hr_payroll_cotisation_type_action
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.hr_payroll_cotisation_type_menuitem
+msgid "Les types cotisations"
+msgstr "نوع المساهمات"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll_cotisation_type
+msgid "Les types de cotisation"
+msgstr "نوع المساهمات"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll_ligne_rubrique
+msgid "Ligne Rubrique"
+msgstr "Ligne Rubrique"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,pointage_line_id:0
+msgid "Ligne de Pointage"
+msgstr "الحضور"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_pointage_line
+msgid "Lignes  pointage"
+msgstr "سطور الحضور"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.pointage,pointage_line_ids:0
+msgid "Lignes Pointages"
+msgstr "سطور الحضور"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.pointage:devplus_hr_payroll_tn.hr_pointage_form_view
+msgid "Lignes de pointage"
+msgstr "سطور الحضور"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.salary_form
+#: field:hr.payroll.bulletin,salary_line_ids:0
+msgid "Lignes de salaire"
+msgstr "Lignes de salaire"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.pointage:devplus_hr_payroll_tn.hr_pointage_form_view
+msgid "Lignes des pointage"
+msgstr "سطور الحضور"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.ligne_rubrique:devplus_hr_payroll_tn.ligne_rubrique_form
+msgid "Lignes rubriques"
+msgstr "المنح"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "L’attention de Monsieur B est attirée sur le fait que l’expert comptable en place ou toute personne désignée par lui à cet effet est à sa disposition pour lui fournir, à sa demande, les textes légaux et réglementaires qui lui feraient défaut concernant la réglementation du travail et le droit de la sécurité sociale."
+msgstr "L’attention de Monsieur B est attirée sur le fait que l’expert comptable en place ou toute personne désignée par lui à cet effet est à sa disposition pour lui fournir, à sa demande, les textes légaux et réglementaires qui lui feraient défaut concernant la réglementation du travail et le droit de la sécurité sociale."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "MATRICULE DE L'ASSURE"
+msgstr "MATRICULE DE L'ASSURE"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "MINISTERE DE L'ECONOMIES"
+msgstr "وزارة الإقتصاد "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "MINISTERE DES AFFAIRES SOCIALE"
+msgstr "وزارة الشؤون الإجتماعية "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "MINISTERE DES AFFAIRES SOCIALES, DE LA SOLIDARIT"
+msgstr "وزارة الشؤون الاجتماعية والتضامن "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "Madame,Monsieur,"
+msgstr "Madame,Monsieur,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Maintenir l’appareil de production en constant état de fonctionnement en garantissant la qualité des produits et des services commercialisés à destination de la clientèle ; dans ce cadre, en sa qualité de Directeur, Monsieur B a compétence pour décider des investissements à réaliser par la société avec l’accord préalable et exprès de Monsieur A ou toute personne désignée par lui à cet effet."
+msgstr "Maintenir l’appareil de production en constant état de fonctionnement en garantissant la qualité des produits et des services commercialisés à destination de la clientèle ; dans ce cadre, en sa qualité de Directeur, Monsieur B a compétence pour décider des investissements à réaliser par la société avec l’accord préalable et exprès de Monsieur A ou toute personne désignée par lui à cet effet."
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.payroll.rubrique,categorie:0
+msgid "Majoration"
+msgstr "زيادة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,matricule:0
+#: field:hr.holidays,matricule:0
+#: report:regelements.espece:0
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Matricule"
+msgstr "الرقم الوظيفي"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Matricule :"
+msgstr "Matricule :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Matricule Fiscal"
+msgstr "الترقيم الضريبي"
+
+#. module: devplus_hr_payroll_tn
+#: sql_constraint:hr.employee:0
+msgid "Matricule existe déjà !"
+msgstr "الرقم الوظيفي موجود !"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Matricule fiscal:"
+msgstr "الترقيم الضريبي :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Matricule:"
+msgstr "الترقيم :"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.contract,regime:0
+#: selection:hr.payroll.rubrique,regime:0
+msgid "Mensuel"
+msgstr "شهري "
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.act_hr_employee_bulletin
+msgid "Mes bulletins de paie"
+msgstr "Mes bulletins de paie"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,message_ids:0
+#: field:hr.pointage,message_ids:0
+msgid "Messages"
+msgstr "رسالة "
+
+#. module: devplus_hr_payroll_tn
+#: help:hr.payroll,message_ids:0
+#: help:hr.pointage,message_ids:0
+msgid "Messages and communication history"
+msgstr "Messages and communication history"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll:devplus_hr_payroll_tn.hr_payroll_form
+#: view:hr.pointage:devplus_hr_payroll_tn.hr_pointage_form_view
+msgid "Mettre en brouillon"
+msgstr "إعادة التعيين لمسودة"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.autorisation,raison_autorisation:0
+msgid "Mission de Travail"
+msgstr "Mission de Travail"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Mode de paiement par :"
+msgstr "طريقة الدفع ب : \n"
+" "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,mode_reglement:0
+msgid "Mode de règlement"
+msgstr "طريقة التسوية"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.avance,month_id:0
+#: field:hr.month,name:0
+#: field:hr.payroll.bulletin,month_id:0
+#: field:hr.pointage,month_id:0
+msgid "Mois"
+msgstr "الشهر"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_avance
+msgid "Mois :"
+msgstr "الشهر :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Mois:"
+msgstr "الشهر:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Mois :"
+msgstr "الشهر :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Mondat N° :"
+msgstr "Mondat N° :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Monsieur ,"
+msgstr "السيد ,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B aura délégation et pouvoirs de manière permanente pour assurer la gestion courante de la société avec acceptation, modification ou résiliation de contrats de fourniture urgents d’un montant inférieur à 1 000 Dinars Tunisiens ;"
+msgstr "Monsieur B aura délégation et pouvoirs de manière permanente pour assurer la gestion courante de la société avec acceptation, modification ou résiliation de contrats de fourniture urgents d’un montant inférieur à 1 000 Dinars Tunisiens ;"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B aura également délégation et pouvoirs de manière permanente dans les domaines de la gestion du personnel et le respect de la réglementation du droit du travail."
+msgstr "Monsieur B aura également délégation et pouvoirs de manière permanente dans les domaines de la gestion du personnel et le respect de la réglementation du droit du travail."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B bénéficie de congés payés annuels dans les conditions prévues par la loi."
+msgstr "Monsieur B bénéficie de congés payés annuels dans les conditions prévues par la loi."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B déclare en outre, qu’au jour de la signature du présent contrat, il ne s’intéresse directement ou indirectement, ne participe, ni ne conseille aucune autre société, groupement ou affaire même non concurrente."
+msgstr "Monsieur B déclare en outre, qu’au jour de la signature du présent contrat, il ne s’intéresse directement ou indirectement, ne participe, ni ne conseille aucune autre société, groupement ou affaire même non concurrente."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B est informé des effets entraînés par cette délégation de pouvoirs et notamment sur les conséquences en matière de responsabilité pénale qui serait la sienne en cas d’infraction."
+msgstr "Monsieur B est informé des effets entraînés par cette délégation de pouvoirs et notamment sur les conséquences en matière de responsabilité pénale qui serait la sienne en cas d’infraction."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B est investi de l’autorité nécessaire pour lui permettre de respecter et faire respecter par les salariés sous sa responsabilité les dispositions légales, réglementaires, conventionnelles en vigueur au sein de la société."
+msgstr "Monsieur B est investi de l’autorité nécessaire pour lui permettre de respecter et faire respecter par les salariés sous sa responsabilité les dispositions légales, réglementaires, conventionnelles en vigueur au sein de la société."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B exerce les fonctions de Directeur pour le seul compte de la société X."
+msgstr "Monsieur B exerce les fonctions de Directeur pour le seul compte de la société X."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B exerce ses fonctions au siège social de la société."
+msgstr "Monsieur B exerce ses fonctions au siège social de la société."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B reconnaît qu’il est tenu, indépendamment d’une obligation de réserve générale, à une obligation impérative de secret professionnel sur tous les faits dont il peut avoir connaissance, du fait ou à l’occasion de ses fonctions ou du seul fait de son appartenance à la société et, notamment, se rapportant à l’organisation, aux méthodes et au réseau commercial ainsi que des spécificités techniques des matériels et biens de la société."
+msgstr "Monsieur B reconnaît qu’il est tenu, indépendamment d’une obligation de réserve générale, à une obligation impérative de secret professionnel sur tous les faits dont il peut avoir connaissance, du fait ou à l’occasion de ses fonctions ou du seul fait de son appartenance à la société et, notamment, se rapportant à l’organisation, aux méthodes et au réseau commercial ainsi que des spécificités techniques des matériels et biens de la société."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B s'engage à consacrer l'intégralité de son temps de travail dans le respect de l'horaire collectif applicable à la société."
+msgstr "Monsieur B s'engage à consacrer l'intégralité de son temps de travail dans le respect de l'horaire collectif applicable à la société."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B se voit rembourser les frais liés à ses déplacements professionnels sur production des justificatifs des frais ainsi exposés, conformément aux règles de remboursement en vigueur au sein de la société."
+msgstr "Monsieur B se voit rembourser les frais liés à ses déplacements professionnels sur production des justificatifs des frais ainsi exposés, conformément aux règles de remboursement en vigueur au sein de la société."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B sera soumis à la durée du travail (et à sa répartition) applicable au sein de l’entreprise."
+msgstr "Monsieur B sera soumis à la durée du travail (et à sa répartition) applicable au sein de l’entreprise."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B s’engage à adresser journalièrement un rapport écrit et détaillé, relatif à la production réalisée la veille et au rendement de production global et par employé."
+msgstr "Monsieur B s’engage à adresser journalièrement un rapport écrit et détaillé, relatif à la production réalisée la veille et au rendement de production global et par employé."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B s’engage à adresser mensuellement un rapport écrit et détaillé, relatif à ses attributions établi dans les formes prescrites par la Direction et dont Monsieur B aura pris connaissance préalablement."
+msgstr "Monsieur B s’engage à adresser mensuellement un rapport écrit et détaillé, relatif à ses attributions établi dans les formes prescrites par la Direction et dont Monsieur B aura pris connaissance préalablement."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B s’engage à assumer cette fonction au mieux des intérêts de la société, conformément aux instructions et directives de Monsieur A ou toute personne désignée par lui à cet effet et s’engage à y consacrer toute son activité professionnelle."
+msgstr "Monsieur B s’engage à assumer cette fonction au mieux des intérêts de la société, conformément aux instructions et directives de Monsieur A ou toute personne désignée par lui à cet effet et s’engage à y consacrer toute son activité professionnelle."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B s’engage à informer immédiatement la société de toute difficulté de nature à porter atteinte au bon fonctionnement de celle-ci."
+msgstr "Monsieur B s’engage à informer immédiatement la société de toute difficulté de nature à porter atteinte au bon fonctionnement de celle-ci."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B s’engage à :"
+msgstr "Monsieur B s’engage à :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B s’engage, pendant toute la durée de son contrat, à respecter les instructions qui pourront lui être données par la société et à se conformer aux règles régissant le fonctionnement interne de celle-ci."
+msgstr "Monsieur B s’engage, pendant toute la durée de son contrat, à respecter les instructions qui pourront lui être données par la société et à se conformer aux règles régissant le fonctionnement interne de celle-ci."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B s’oblige également à informer l’entreprise, sans délai, de tous changements qui interviendraient dans les situations qu’il a signalées lors de son engagement (adresse, situation de famille, etc.)."
+msgstr "Monsieur B s’oblige également à informer l’entreprise, sans délai, de tous changements qui interviendraient dans les situations qu’il a signalées lors de son engagement (adresse, situation de famille, etc.)."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B, Titulaire de la CIN …………… du …/…/……, né le  ..…./……/…… à      ,domicilié au                                    Situation familiale :"
+msgstr "Monsieur B, Titulaire de la CIN …………… du …/…/……, né le  ..…./……/…… à      ,domicilié au                                    Situation familiale :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B, qui accepte cet engagement, déclare formellement n’être lié à aucune entreprise et être libre de tout engagement envers son précédent employeur."
+msgstr "Monsieur B, qui accepte cet engagement, déclare formellement n’être lié à aucune entreprise et être libre de tout engagement envers son précédent employeur."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Monsieur B, s’interdit expressément sans restrictions ni réserves :"
+msgstr "Monsieur B, s’interdit expressément sans restrictions ni réserves :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.infraction.type,amount:0
+#: field:hr.payroll.ligne_rubrique,montant:0
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Montant"
+msgstr "المبلغ"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Montant :"
+msgstr "المبلغ :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.avance.line,amount_confirm:0
+msgid "Montant Confirmé"
+msgstr "المبلغ الموافق عليه"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_avance
+msgid "Montant Confirmé :"
+msgstr "المبلغ الموافق عليه :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,subtotal_employer:0
+msgid "Montant Employeur"
+msgstr "Montant Employeur"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.avance.line,amount:0
+msgid "Montant Souhaité"
+msgstr "المبلغ المطلوب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_avance
+msgid "Montant Souhaité :"
+msgstr "المبلغ المطلوب :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Montant des Retenues"
+msgstr "Montant des Retenues"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,redevance_max:0
+msgid "Montant maximum"
+msgstr "Montant maximum"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Montant à payer"
+msgstr "المبلغ الواجب دفعه"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "NB :"
+msgstr "NB :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,month_by_year:0
+msgid "NB Mois/Année"
+msgstr "NB Mois/Année"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "NOM ET ADRESSE DE L’EMPLOYEUR"
+msgstr "إسم وعنوان المشغل"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Nature"
+msgstr "Nature"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Nbr d'enfants pris en considération pour la calculde retenue"
+msgstr "عدد الأطفال المأخوذ بعين الإعتبار في حساب الظريبة "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Nbre Tot.salariés"
+msgstr "Nbre Tot.salariés"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Net payé"
+msgstr "الدفع الصافي"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.contract:devplus_hr_payroll_tn.view_order_form2
+msgid "Net vers Brut"
+msgstr "احتساب الأجر الخام من الأجر الصافي"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.infraction.type,name:0
+#: field:wizard_declaration_cnss,name:0
+msgid "Nom"
+msgstr "الإسم "
+
+#. module: devplus_hr_payroll_tn
+#: report:regelements.espece:0
+msgid "Nom & Prénom"
+msgstr "الإسم واللقب "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.rubrique,name:0
+msgid "Nom de la rubrique"
+msgstr "الإسم"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Nom et Prénom"
+msgstr "الإسم واللقب "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Nom et Prénom :"
+msgstr "الإسم واللقب  :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "Nom et Prénom:"
+msgstr "Nom et Prénom:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Nom et prénom"
+msgstr "الإسم واللقب "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_avance
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Nom,Prénom :"
+msgstr "Nom,Prénom :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Nom,prénoms ou raison sociale"
+msgstr "الإسم، اللقب أو إسم الشركة "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Nom/Prénom"
+msgstr "الإسم/ اللقب"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.employee:devplus_hr_payroll_tn.view_hr_employee_form3
+msgid "Nombre d'Autorisation"
+msgstr "Nombre d'Autorisation"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,action_count_autorisation:0
+msgid "Nombre d'autorisation"
+msgstr "Nombre d'autorisation"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_form _view
+#: field:hr.infraction,number_of_days_temp:0
+#: selection:hr.infraction.type,type:0
+msgid "Nombre de jours"
+msgstr "Nombre de jours"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+msgid "Nombre de jours pris :"
+msgstr "Nombre de jours pris :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,nb_enfant_handicape:0
+msgid "Nombre enfants handicapés"
+msgstr "عدد الأطفال ذوي الإعاقة "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,nb_enfant_etudiant:0
+msgid "Nombre enfants étudiants"
+msgstr "عدد الأطفال الطلاب"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,nb_parents:0
+msgid "Nombre parents à charge"
+msgstr "عدد الأباء في الكفالة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,note:0
+#: report:regelements.espece:0
+msgid "Note"
+msgstr "ملا حظة"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.salary_form
+#: field:hr.payroll.bulletin.line,note:0
+#: field:hr.pointage,note:0
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,number:0
+#: field:hr.payroll.bulletin,name:0
+msgid "Numero du salaire"
+msgstr "التسلسل"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,name:0
+#: field:hr.avance,name:0
+#: field:hr.contract,num:0
+msgid "Numéro"
+msgstr "الرقم"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.employee,numero_compte:0
+msgid "Numéro de compte"
+msgstr "رقم الحساب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "N° Compte"
+msgstr "رقم الحساب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "N° Employeur"
+msgstr "N° Employeur"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "N° Employeur:"
+msgstr "N° Employeur:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "N° Ordre:"
+msgstr "N° Ordre:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "N° ets Secondaires"
+msgstr "N° ets Secondaires"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "N°Carte d'identité"
+msgstr "N°Carte d'identité"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "OBSERVATIONS"
+msgstr "ملاحظات"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "ORDRE DE VIREMENT"
+msgstr "إذن تحويل رواتب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Objet :"
+msgstr "موضوع:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Observation :"
+msgstr "ملاحظة :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Occasionnels"
+msgstr "سببي"
+
+#. module: devplus_hr_payroll_tn
+#: help:hr.payroll.rubrique,sequence:0
+msgid "Ordre d'affichage dans le bulletin de paie"
+msgstr "ترتيب العرض في بطاقة الأجر"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_net_paye
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_wizard_net_paye
+#: view:wizard.ordre.virement:devplus_hr_payroll_tn.view_net_paye
+msgid "Ordre de virement"
+msgstr "طلب حوالة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Ordre de virement salaires"
+msgstr "Ordre de virement salaires"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.devplus_hr_payroll_ordre_virement_report
+msgid "Ordre virement"
+msgstr "Ordre virement"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Page N°:"
+msgstr "الصفحة رقم ::"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.payroll_configuration
+msgid "Paie"
+msgstr "الراتب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Par le débit de notre compte chez vous N°,"
+msgstr "Par le débit de notre compte chez vous N°,"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll_parametres
+msgid "Parametres"
+msgstr "إعدادات"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.hr_payroll_parametres_action
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.hr_payroll_parametres_menuitem
+msgid "Paramètres"
+msgstr "إعدادات"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.parametres:devplus_hr_payroll_tn.hr_payroll_parametres_form
+#: view:hr.payroll.parametres:devplus_hr_payroll_tn.hr_payroll_parametres_tree
+msgid "Paramètres de la Paie"
+msgstr "Paramètres de la Paie"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,month_ids:0
+msgid "Paramétre"
+msgstr "Paramétre"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.parametres:devplus_hr_payroll_tn.hr_payroll_parametres_form
+msgid "Paramétres IRPP"
+msgstr "إعدادات"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:368
+#, python-format
+msgid "Pas de contrat !"
+msgstr "Pas de contrat !"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.holidays.status,payed:0
+msgid "Payé?"
+msgstr "Payé?"
+
+#. module: devplus_hr_payroll_tn
+#: field:wizard.journal.paie,month_id:0
+#: field:wizard.ordre.virement,period_id:0
+msgid "Periode"
+msgstr "المدة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Permanents"
+msgstr "دائم"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,move_id:0
+msgid "Pièce comptable"
+msgstr "Pièce comptable"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,pointage:0
+#: view:hr.pointage:devplus_hr_payroll_tn.hr_pointage_form_view
+#: view:hr.pointage:devplus_hr_payroll_tn.hr_pointage_tree_view
+#: field:hr.pointage.line,nb_pointage:0
+#: field:hr.pointage.line,pointage_id:0
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_hr_pointage_view
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_hr_pointage
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menuitem_hr_pointage
+msgid "Pointage"
+msgstr "الحضور"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_pointage.py:70
+#, python-format
+msgid "Pointage %s du mois %s"
+msgstr "حضور %s لشهر %s"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:175
+#, python-format
+msgid "Pointage non définie !"
+msgstr "Pointage non définie !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:178
+#, python-format
+msgid "Pointage non validé !"
+msgstr "Pointage non validé !"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Pour la réalisation d’opérations particulières ou exceptionnelles sortant du cadre normal de l’activité, Monsieur B devra nécessairement obtenir au préalable l’approbation écrite de Monsieur A ou toute personne désignée par lui à cet effet. A défaut, tout manquement à la procédure mise en place par le présent article pourra entraîner des sanctions graves à l’encontre de Monsieur B pouvant aller jusqu’au licenciement."
+msgstr "Pour la réalisation d’opérations particulières ou exceptionnelles sortant du cadre normal de l’activité, Monsieur B devra nécessairement obtenir au préalable l’approbation écrite de Monsieur A ou toute personne désignée par lui à cet effet. A défaut, tout manquement à la procédure mise en place par le présent article pourra entraîner des sanctions graves à l’encontre de Monsieur B pouvant aller jusqu’au licenciement."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Pour les dispositions non prévues au présent contrat, les parties s’engagent à appliquer les dispositions légales, ainsi qu’à celles découlant des accords collectifs."
+msgstr "Pour les dispositions non prévues au présent contrat, les parties s’engagent à appliquer les dispositions légales, ainsi qu’à celles découlant des accords collectifs."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Pour vous aider à faire valoir vos droits, conservez ce\n"
+"										bulletin de paie sans limitation de durée."
+msgstr "Pour vous aider à faire valoir vos droits, conservez ce\n"
+"										bulletin de paie sans limitation de durée."
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.infraction.type,percentage:0
+msgid "Pourcentage"
+msgstr "Pourcentage"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.payroll.rubrique,type:0
+msgid "Prime"
+msgstr "Prime"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,prime:0
+msgid "Primes"
+msgstr "Primes"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Pris ce mois"
+msgstr "Pris ce mois"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Pénalité Nbre de jours"
+msgstr "Pénalité Nbre de jours"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.avance:devplus_hr_payroll_tn.hr_avance_serach
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_form _view
+#: field:hr.month,parametre_id:0
+#: field:hr.payroll.bulletin,period_id:0
+#: field:hr.payroll.ligne_rubrique,period_id:0
+msgid "Période"
+msgstr "الفترة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.month,period_id:0
+#: field:hr.payroll,period_id:0
+#: field:hr.pointage,period_id:0
+msgid "Période Comptable"
+msgstr "فترة المالية"
+
+#. module: devplus_hr_payroll_tn
+#: report:regelements.espece:0
+msgid "Période du"
+msgstr "من"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Période du travail durant l'année"
+msgstr "مدة العمل خلال السنة"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:352
+#, python-format
+msgid "Période non définie !"
+msgstr "Période non définie !"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "REMUNERATION MENSULLE Report des Montants"
+msgstr "REMUNERATION MENSULLE Report des Montants"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "REPUBLIQUE TUNISIENNE"
+msgstr "REPUBLIQUE TUNISIENNE"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.autorisation,raison_autorisation:0
+msgid "Raison de l'autorisation"
+msgstr "السبب"
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard_declaration_cnss:devplus_hr_payroll_tn.hr_payroll_tn_wizard_declaration_cnss_form
+msgid "Rapport Déclaration CNSS"
+msgstr " "
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_hr_reporting_paie
+msgid "Rapports"
+msgstr "Rapports"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.hr_payroll_bulletin_serach
+msgid "Recherche"
+msgstr "Recherche"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:790
+#: field:hr.payroll.bulletin,mnt_redevance:0
+#: view:hr.payroll.parametres:devplus_hr_payroll_tn.hr_payroll_parametres_form
+#, python-format
+msgid "Redevance de compensation"
+msgstr "Redevance de compensation"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,id_payroll:0
+#: field:hr.payroll.bulletin.line,id_bulletin:0
+msgid "Ref Salaire"
+msgstr "Ref Salaire"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.contract,regime:0
+#: field:hr.payroll.rubrique,regime:0
+#: field:hr.pointage.line,regime:0
+msgid "Regime"
+msgstr "نظام العمل"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,retenu:0
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Retenu"
+msgstr "الخصم"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Retenue CNSS"
+msgstr "Retenue CNSS"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Retenue Effectuée Durant l'année"
+msgstr "Retenue Effectuée Durant l'année"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Revenu Imposable(a)"
+msgstr "Revenu Imposable(a)"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Revenu Net de Retenues"
+msgstr "Revenu Net de Retenues"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Revenu Réinvisti"
+msgstr "Revenu Réinvisti"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.ligne_rubrique,rubrique_id:0
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Rubrique"
+msgstr "المنحة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.ligne_rubrique,permanent:0
+msgid "Rubrique Permanante"
+msgstr "منحة دائمة"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.contract:devplus_hr_payroll_tn.view_order_form2
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll_rubrique
+msgid "Rubriques"
+msgstr "المنح"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.regelements_espece
+msgid "Règlements"
+msgstr "Règlements"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.devplus_hr_payroll_recapitulatif_cnss_report
+msgid "Récapitulatif cnss"
+msgstr "Récapitulatif cnss"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,regime:0
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Régime"
+msgstr "نظام العمل"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.parametres,smig:0
+msgid "SMIG"
+msgstr "SMIG"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.menu_hr_payroll
+msgid "Saisie Paie"
+msgstr "إدخال الرواتب"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll
+msgid "Saisie des bulletins"
+msgstr "Saisie des bulletins"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_pointage
+msgid "Saisie du pointage"
+msgstr "الحضور"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll:devplus_hr_payroll_tn.hr_payroll_form
+#: view:hr.payroll:devplus_hr_payroll_tn.hr_payroll_tree
+msgid "Saisie mensuelle"
+msgstr "Saisie mensuelle"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.hr_payroll_bulletin_serach
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.salary_tree
+msgid "Salaire"
+msgstr "الأجر"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,salaire:0
+msgid "Salaire Base"
+msgstr "الأجر الأساسي"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.contract:devplus_hr_payroll_tn.view_order_form2
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Salaire Brut"
+msgstr "الأجر الخام "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,salaire_brute:0
+msgid "Salaire Brute"
+msgstr "الأجر الخام "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Salaire Imposable"
+msgstr "Salaire Imposable"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.contract,salaire_net:0
+#: field:hr.payroll.bulletin,salaire_net:0
+#: report:regelements.espece:0
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Salaire Net"
+msgstr "الأجر"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Salaire Net à Payer"
+msgstr "الأجر الصافي"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Salaire base"
+msgstr "Salaire base"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Salaire brute"
+msgstr "الأجر الخام "
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,salaire_brute_cotisable:0
+msgid "Salaire brute cotisable"
+msgstr "الخام الخاضع للمساهمات"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,salaire_brute_imposable:0
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Salaire brute imposable"
+msgstr "الخام  الخاضع للضريبة"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:627
+#: field:hr.payroll.bulletin,salaire_base:0
+#, python-format
+msgid "Salaire de base"
+msgstr "الأجر الأساسي"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.contract:devplus_hr_payroll_tn.view_order_form2
+msgid "Salaire et cotisations"
+msgstr "الأجر"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Salaire net"
+msgstr "الأجر الصافي"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:118
+#, python-format
+msgid "Salaires %s du mois %s"
+msgstr "رواتب %s لشهر %s"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Salaires déclarés"
+msgstr "Salaires déclarés"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.infraction.type,type:0
+msgid "Sans déduction"
+msgstr "Sans déduction"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Service :"
+msgstr "Service :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+#: view:website:devplus_hr_payroll_tn.report_avance
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Signature"
+msgstr "Signature"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Signature de\n"
+"											l'Agent:...................................."
+msgstr "Signature de\n"
+"											l'Agent:...................................."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Signature de L'employeur"
+msgstr "Signature de L'employeur"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+msgid "Signature de l'employé(e).......................Signature Supérieur Immédiat......................."
+msgstr "Signature de l'employé(e).......................Signature Supérieur Immédiat......................."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Signatures précédées de la mention manuscrite « Lu et approuvé » ; chacune des pages du présent contrat devant être paraphées"
+msgstr "Signatures précédées de la mention manuscrite « Lu et approuvé » ; chacune des pages du présent contrat devant être paraphées"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Sit.familiale:"
+msgstr "Sit.familiale:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Situation familiale"
+msgstr "Situation familiale"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,company_id:0
+#: field:hr.pointage,company_id:0
+#: field:wizard.certificat.impot,company_id:0
+#: field:wizard.journal.paie,company_id:0
+#: field:wizard.ordre.virement,company_id:0
+#: field:wizard_declaration_cnss,company_id:0
+msgid "Société"
+msgstr "الشركة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Solde"
+msgstr "Solde"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,nb_jours_cp_solde:0
+msgid "Solde CP"
+msgstr "مجموع الإجازات المتبقية"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Sollicite un congé de"
+msgstr "Sollicite un congé de"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.ir,somme:0
+msgid "Somme à deduire"
+msgstr "Somme à deduire"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Sont concernés, notamment, les domaines suivants (liste non exhaustive) :"
+msgstr "Sont concernés, notamment, les domaines suivants (liste non exhaustive) :"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.infraction,date_from:0
+msgid "Start Date"
+msgstr "Start Date"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.bulletin:devplus_hr_payroll_tn.salary_form
+msgid "Structure du salaire"
+msgstr "تفاصيل الراتب"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Suivre la facturation et l’encaissement."
+msgstr "Suivre la facturation et l’encaissement."
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,message_summary:0
+#: field:hr.pointage,message_summary:0
+msgid "Summary"
+msgstr "Summary"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Sécurité sociale"
+msgstr "الضمان الإجتماعي"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,sequence:0
+#: field:hr.payroll.rubrique,sequence:0
+msgid "Séquence"
+msgstr "التسلسل"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "TOTAL GENERAL"
+msgstr "TOTAL GENERAL"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,taux:0
+#: field:hr.payroll.ir,taux:0
+#: field:hr.payroll.parametres,redevance_taux:0
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Taux"
+msgstr "النسبة"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin.line,rate_employer:0
+msgid "Taux Employeur"
+msgstr "مساهمة المؤجر"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.cotisation,tauxpatronal:0
+msgid "Taux Patronal"
+msgstr "مساهمة المؤجر"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.cotisation,tauxsalarial:0
+msgid "Taux Salarial"
+msgstr "مساهمة الأجير"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.cotisation,tauxTotal:0
+msgid "Taux Total"
+msgstr "المجموع"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Taux cotisations"
+msgstr "نسبة المساهمة"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_infraction.py:54
+#, python-format
+msgid "The start date must be anterior to the end date."
+msgstr "The start date must be anterior to the end date."
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_certificat_impot.py:19
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:48
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_journal_paie.py:26
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_ordre_virement.py:19
+#, python-format
+msgid "There is no default company for the current user!"
+msgstr "There is no default company for the current user!"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+msgid "Titre de Congé Annuel"
+msgstr "Titre de Congé Annuel"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_tn.action_report_conge_approuve
+msgid "Titre de congé"
+msgstr "Titre de congé"
+
+#. module: devplus_hr_payroll_tn
+#: report:regelements.espece:0
+msgid "Total :"
+msgstr "المجموع:"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,nb_jours_cp_total:0
+msgid "Total CP"
+msgstr "مجموع الإجازات"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,nb_jours_cp_total_pris:0
+msgid "Total CP pris"
+msgstr "مجموع الإجازات الفائتة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Total congés"
+msgstr "Total congés"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Total du Revenu Brut Imposable(a+b)"
+msgstr "Total du Revenu Brut Imposable(a+b)"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,total_net:0
+msgid "Total net"
+msgstr "Total net"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.bulletin_report
+msgid "Total pris"
+msgstr "Total pris"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Total à payer"
+msgstr "إجمالي المستحق"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Total à reporter"
+msgstr "Total à reporter"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "Total:"
+msgstr "الإجمالي:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_journal_paie
+msgid "Totaux:"
+msgstr "المجاميع: "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Toute suspension qui interviendrait pendant la période d’essai prolongerait celle-ci d’une durée équivalente à ladite suspension."
+msgstr "Toute suspension qui interviendrait pendant la période d’essai prolongerait celle-ci d’une durée équivalente à ladite suspension."
+
+#. module: devplus_hr_payroll_tn
+#: field:wizard_declaration_cnss,trimester:0
+msgid "Trimestre"
+msgstr "الثلاثية"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "Trimestre:"
+msgstr "الثلاثية:"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Tunis,Le"
+msgstr "Tunis,Le"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_serach
+#: field:hr.infraction,type_id:0
+#: field:hr.infraction.type,type:0
+#: field:hr.payroll.bulletin.line,type:0
+#: field:hr.payroll.rubrique,type:0
+msgid "Type"
+msgstr "نوع"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.contract,cotisation:0
+#: field:hr.contract.type,cotisation:0
+msgid "Type cotisations"
+msgstr " نوع المساهمات "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_hr_holidays
+msgid "Type de congé :"
+msgstr "Type de congé :"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_hr_infraction_type
+#: model:ir.ui.menu,name:devplus_hr_payroll_tn.hr_infraction_type_ss_menu
+msgid "Types"
+msgstr "Types"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.cotisation.type:devplus_hr_payroll_tn.hr_payroll_cotisation_type_form
+#: view:hr.payroll.cotisation.type:devplus_hr_payroll_tn.hr_payroll_cotisation_type_tree
+msgid "Types Cotisations"
+msgstr " نوع المساهمات "
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.contract.type:devplus_hr_payroll_tn.hr_contract_type_form
+msgid "Types de contrat"
+msgstr "Types de contrat"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_dde_conge
+msgid "Téléphone :"
+msgstr "Téléphone :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "Téléphone:"
+msgstr "Téléphone:"
+
+#. module: devplus_hr_payroll_tn
+#: constraint:hr.payroll.bulletin:0
+msgid "Un bulletin de paie est repété pour un même employé"
+msgstr "بطاقة بيانية في الأجر تتكرر لنفس الموظف"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Un compte-rendu devra être adressé à Monsieur A ou toute personne désignée par lui à cet effet annuellement et également chaque fois qu’une situation particulière, notamment une infraction ou un manquement relevé, paraîtra l’exiger."
+msgstr "Un compte-rendu devra être adressé à Monsieur A ou toute personne désignée par lui à cet effet annuellement et également chaque fois qu’une situation particulière, notamment une infraction ou un manquement relevé, paraîtra l’exiger."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Une prime d’intéressement récompensant l’assiduité, les performances et l’implication du contractant au bon fonctionnement de l’entreprise, dont le montant est laissé à l’appréciation des dirigeants de X, sera éventuellement versée. Son montant sera compris entre 0 et 2 mois de salaire net."
+msgstr "Une prime d’intéressement récompensant l’assiduité, les performances et l’implication du contractant au bon fonctionnement de l’entreprise, dont le montant est laissé à l’appréciation des dirigeants de X, sera éventuellement versée. Son montant sera compris entre 0 et 2 mois de salaire net."
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,message_unread:0
+#: field:hr.pointage,message_unread:0
+msgid "Unread Messages"
+msgstr "Unread Messages"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "Valeur des Avantages en Nature(b)"
+msgstr "Valeur des Avantages en Nature(b)"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.autorisation:devplus_hr_payroll_tn.autorisation_form_view
+#: view:hr.avance:devplus_hr_payroll_tn.avance_form_view
+#: view:hr.infraction:devplus_hr_payroll_tn.hr_infraction_form _view
+msgid "Valider"
+msgstr "Valider"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.pointage:devplus_hr_payroll_tn.hr_pointage_form_view
+msgid "Valider le pointage"
+msgstr "تأكيد"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.autorisation,state:0
+#: selection:hr.pointage,state:0
+msgid "Validé"
+msgstr "مؤكد"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Veiller au respect :"
+msgstr "Veiller au respect :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "Veiller à l’organisation, la gestion et la coordination de l’ensemble du personnel salarié  de la société,"
+msgstr "Veiller à l’organisation, la gestion et la coordination de l’ensemble du personnel salarié  de la société,"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_pointage.py:154
+#, python-format
+msgid "Veuillez d'abord ajoutre un contract pour l'employée %s"
+msgstr "Veuillez d'abord ajoutre un contract pour l'employée %s"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:128
+#, python-format
+msgid "Veuillez d'abord supprimer les écritures comptables associés"
+msgstr "Veuillez d'abord supprimer les écritures comptables associés"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:359
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:410
+#: code:addons/devplus_hr_payroll_tn/models/hr_pointage.py:103
+#, python-format
+msgid "Veuillez définir les paramétres de paie pour l'exercice courant : \n"
+"                                                         Menu Configuration>>Paie>>Paramètres !"
+msgstr "Veuillez définir les paramétres de paie pour l'exercice courant : \n"
+"                                                         Menu Configuration>>Paie>>Paramètres !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:206
+#, python-format
+msgid "Veuillez remplir le CIN de l'employé %sname"
+msgstr "Veuillez remplir le CIN de l'employé %sname"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:179
+#, python-format
+msgid "Veuillez remplir le CNSS de la société dans la fiche du société"
+msgstr "Veuillez remplir le CNSS de la société dans la fiche du société"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/wizard/wizard_declaration_cnss.py:184
+#, python-format
+msgid "Veuillez remplir le Code d'exploitation de la société dans la fiche du société"
+msgstr "Veuillez remplir le Code d'exploitation de la société dans la fiche du société"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:178
+#, python-format
+msgid "Veuillez valider le pointage de cet période  !"
+msgstr "Veuillez valider le pointage de cet période  !"
+
+#. module: devplus_hr_payroll_tn
+#: selection:hr.employee,mode_reglement:0
+msgid "Virement"
+msgstr "حوالة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "Virement bancaire sur :"
+msgstr "حوالة مصرفية على "
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:175
+#, python-format
+msgid "Vous devez  saisir le pointage de cet période !"
+msgstr "Vous devez  saisir le pointage de cet période !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:368
+#, python-format
+msgid "Vous devez d'abord saisir un contrat pour cet employé !"
+msgstr "Vous devez d'abord saisir un contrat pour cet employé !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:352
+#, python-format
+msgid "Vous devez d'abord spécifier une période !"
+msgstr "Vous devez d'abord spécifier une période !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:873
+#, python-format
+msgid "Vous ne pouvez pas supprimer les bulletins de paie confirmés !"
+msgstr "Vous ne pouvez pas supprimer les bulletins de paie confirmés !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_payroll_tn.py:31
+#, python-format
+msgid "Vous ne pouvez pas supprimer les saisies mensuelles confirmées !"
+msgstr "Vous ne pouvez pas supprimer les saisies mensuelles confirmées !"
+
+#. module: devplus_hr_payroll_tn
+#: code:addons/devplus_hr_payroll_tn/models/hr_infraction.py:54
+#, python-format
+msgid "Warning!"
+msgstr "Warning!"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll,website_message_ids:0
+#: field:hr.pointage,website_message_ids:0
+msgid "Website Messages"
+msgstr "Website Messages"
+
+#. module: devplus_hr_payroll_tn
+#: help:hr.payroll,website_message_ids:0
+#: help:hr.pointage,website_message_ids:0
+msgid "Website communication history"
+msgstr "Website communication history"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_wizard_certificat_impot
+msgid "Wizard certificat impot"
+msgstr "Wizard certificat impot"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_wizard_journal_paie
+msgid "Wizard journal de paie"
+msgstr "Wizard journal de paie"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_wizard_ordre_virement
+msgid "Wizard order de virement"
+msgstr "Wizard order de virement"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "a) Développement commercial de la société"
+msgstr "a) Développement commercial de la société"
+
+#. module: devplus_hr_payroll_tn
+#: report:regelements.espece:0
+msgid "au"
+msgstr "إلى"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "au programme des réparations (notamment : suivi de la productivité),"
+msgstr "au programme des réparations (notamment : suivi de la productivité),"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "b) Développement et suivi administratif de la société"
+msgstr "b) Développement et suivi administratif de la société"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll_bulletin
+msgid "bulletin"
+msgstr "bulletin"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.act_hr_payroo_ma_bulletin
+msgid "bulletins de paie"
+msgstr "بطاقات الأجور"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "c) Développement et suivi de l’équipement de production de la société"
+msgstr "c) Développement et suivi de l’équipement de production de la société"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.actions.act_window,name:devplus_hr_payroll_tn.action_certificat_impot
+msgid "certificat impot"
+msgstr "certificat impot"
+
+#. module: devplus_hr_payroll_tn
+#: selection:wizard_declaration_cnss,state:0
+msgid "choose"
+msgstr "choose"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "contrôle permanent des circonstances du marché pour les services et les produits commercialisés par la société ainsi que la situation de ses concurrents,"
+msgstr "contrôle permanent des circonstances du marché pour les services et les produits commercialisés par la société ainsi que la situation de ses concurrents,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "d'accepter tout changement de lieu de travail nécessité par l'intérêt du fonctionnement de l'entreprise sur l'ensemble du territoire Tunisien."
+msgstr "d'accepter tout changement de lieu de travail nécessité par l'intérêt du fonctionnement de l'entreprise sur l'ensemble du territoire Tunisien."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "dans"
+msgstr "dans"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "de droit."
+msgstr "de droit."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "des Traitmenets,Salaires,Pensions et Rentre Viagéres"
+msgstr "العلاجات,الرواتب و الأجور و المعاشات"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "des procédures internes (notamment : procédure qualité, cahier des charges, relations fournisseurs),"
+msgstr "des procédures internes (notamment : procédure qualité, cahier des charges, relations fournisseurs),"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.holidays,description:0
+msgid "description"
+msgstr "description"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_declaration_cnss
+msgid "doit être remise à la Caisse sous peine de pénalités dans les 15\n"
+"							premiers jours qui suivent le trimestre"
+msgstr "doit être remise à la Caisse sous peine de pénalités dans les 15\n"
+"							premiers jours qui suivent le trimestre"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "d’autre part"
+msgstr "d’autre part"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "d’effectuer tous déplacements nécessités par les besoins de l’entreprise,"
+msgstr "d’effectuer tous déplacements nécessités par les besoins de l’entreprise,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "d’une part"
+msgstr "d’une part"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.employee:devplus_hr_payroll_tn.view_hr_employee_form3
+msgid "e.g. Part Time"
+msgstr "على سبيل المثال دوام جزئي"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "en qualité de"
+msgstr "en qualité de"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "engagement des procédures disciplinaires."
+msgstr "engagement des procédures disciplinaires."
+
+#. module: devplus_hr_payroll_tn
+#: selection:wizard_declaration_cnss,state:0
+msgid "get"
+msgstr "get"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "hygiène et sécurité et prévention des accidents du travail,"
+msgstr "hygiène et sécurité et prévention des accidents du travail,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+msgid "je demande l'autorisation de sortie de mon travail :"
+msgstr "je demande l'autorisation de sortie de mon travail :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "je soussigné(e)Monsieur/Madame"
+msgstr "je soussigné(e)Monsieur/Madame"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_approbation_conge
+msgid "jour(s) au titre du congé annuel :"
+msgstr "jour(s) au titre du congé annuel :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "l'entreprise,certifie que \n"
+"								 Monsieur/Madame"
+msgstr "l'entreprise,certifie que \n"
+"								 Monsieur/Madame"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "la gestion des stocks (notamment l’approvisionnement) et l’administration des expéditions."
+msgstr "la gestion des stocks (notamment l’approvisionnement) et l’administration des expéditions."
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll_cotisation
+msgid "les cotisations"
+msgstr "المساهمات"
+
+#. module: devplus_hr_payroll_tn
+#: model:ir.model,name:devplus_hr_payroll_tn.model_hr_payroll_bulletin_line
+msgid "ligne de salaire"
+msgstr "ligne de salaire"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "l’organisation des stocks (notamment l’approvisionnement) et à l’administration des expéditions,"
+msgstr "l’organisation des stocks (notamment l’approvisionnement) et à l’administration des expéditions,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_certificat_impot
+msgid "m'expose aux sanctions prévues par la loi pour toute inexactitude"
+msgstr " يعرض لي للعقوبات المنصوص عليها في القانون في حال عدم دقة"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "n'est ni en période d'essai,"
+msgstr "n'est ni en période d'essai,"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "ni en préavis suite à démission ou licenciement."
+msgstr "ni en préavis suite à démission ou licenciement."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_ordre_virement
+msgid "nous vous prions de bien vouloir créditer les comptes suivants\n"
+"									d un Montant de"
+msgstr "nous vous prions de bien vouloir créditer les comptes suivants\n"
+"									d un Montant de"
+
+#. module: devplus_hr_payroll_tn
+#: view:wizard.journal.paie:devplus_hr_payroll_tn.view_journal_paie
+msgid "or"
+msgstr "أو "
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_autorisation
+msgid "pour la raison suivante :"
+msgstr "pour la raison suivante :"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "promotion et  commercialisation des produits et services de la société."
+msgstr "promotion et  commercialisation des produits et services de la société."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "recrutement du personnel de la société et établissement des contrats de travail des salariés dont la rémunération annuelle n'excède pas 12 000,- Dinars Tunisiens, en veillant au respect strict des obligations légales et conventionnelles."
+msgstr "recrutement du personnel de la société et établissement des contrats de travail des salariés dont la rémunération annuelle n'excède pas 12 000,- Dinars Tunisiens, en veillant au respect strict des obligations légales et conventionnelles."
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.contrat_report
+msgid "respect des dispositions légales portant, notamment, sur la durée du travail, les congés payés, le contrôle de l'emploi, la formation du personnel,"
+msgstr "respect des dispositions légales portant, notamment, sur la durée du travail, les congés payés, le contrôle de l'emploi, la formation du personnel,"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.payroll.ligne_rubrique:devplus_hr_payroll_tn.ligne_rubrique_tree
+msgid "rubriques"
+msgstr "المنح"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.payroll.bulletin,salaire_net_a_payer:0
+msgid "salaire net à payer"
+msgstr "الأجر الصافي"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "société depuis le"
+msgstr "société depuis le"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_recapitulatif_cnss
+msgid "sur banque"
+msgstr "sur banque"
+
+#. module: devplus_hr_payroll_tn
+#: view:website:devplus_hr_payroll_tn.report_attestaion
+msgid "travaille au sein de notre"
+msgstr "travaille au sein de notre"
+
+#. module: devplus_hr_payroll_tn
+#: field:hr.avance,avance_ids:0
+#: field:hr.avance.line,avance_id:0
+#: field:wizard_declaration_cnss,state:0
+msgid "unknown"
+msgstr "unknown"
+
+#. module: devplus_hr_payroll_tn
+#: view:hr.employee:devplus_hr_payroll_tn.view_hr_employee_form3
+msgid "{'invisible':[('marital','=','c')]}"
+msgstr "{'invisible':[('marital','=','c')]}"
+

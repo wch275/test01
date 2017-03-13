@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="bulletin_report">
+			<t t-call="report.html_container">
+
+				<t t-foreach="docs" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+							<div class="oe_structure" />
+								<div class="col-xs-12 text-center">
+									<h2>
+										Bulletin de paie
+									</h2>
+									<br />
+									<br />
+
+
+								</div>
+
+
+								<div class="col-xs-6 text-left">
+									<strong>Nom et Prénom : </strong>
+									<span t-field="o.employee_id.name" />
+								</div>
+
+								<div class="col-xs-6 text-right">
+									<strong>Mois :  </strong>
+									<span t-field="o.period_id.name" />
+								</div>
+
+							<div class="col-xs-12 div-radius" style="margin-top:20px;">
+
+								<div class="col-xs-4">
+									<table class="table table-condensed">
+										<tbody class="sale_tbody">
+											<tr>
+											</tr>
+											<tr>
+												<th>Matricule: </th>
+												<td>
+													<span t-field="o.employee_id.matricule" />
+												</td>
+											</tr>
+											<tr>
+												<th>CIN:</th>
+												<td>
+													<span t-field="o.employee_id.cin" />
+												</td>
+											</tr>
+
+											<tr>
+												<th>CNSS/CNRPS:</th>
+												<td>
+													<span t-if="o.employee_id.cnss" t-field="o.employee_id.cnss" />
+ 												  <span t-if="o.employee_id.cnrps">/
+													<span    t-field="o.employee_id.cnrps" />
+													</span> 
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+
+								<div class="col-xs-4">
+									<table class="table table-condensed">
+										<tr>
+											<th>Date d'embauche:</th>
+											<td>
+												<span t-field="o.employee_id.date_entree" />
+											</td>
+										</tr>
+										<tr>
+											<th>Date de naissance: </th>
+											<td>
+												<span t-field="o.employee_id.birthday" />
+											</td>
+										</tr>
+										<tr>
+											<th>Sit.familiale: </th>
+											<td>
+												<span t-esc="get_situation_faml(o.employee_id.marital)" />
+											</td>
+										</tr>
+									</table>
+								</div>
+
+								<div class="col-xs-4">
+									<table class="table table-condensed">
+										<tr>
+											<th>Fonction: </th>
+											<td>
+												<span t-field="o.employee_id.job_id.name" />
+											</td>
+										</tr>
+										<tr>
+											<th>Catégorie: </th>
+											<td>
+												<span t-field="o.employee_id.categorie_id.name" />
+											</td>
+										</tr>
+										
+										<tr>
+											<th>Echlon: </th>
+											<td>
+												<span t-field="o.employee_id.echlon_id.name" />
+											</td>
+										</tr>
+									</table>
+								</div>
+						
+
+							<div class="col-xs-12" style="margin-top:20px;">
+								<table class="table table-condensed table-bg-head-gray">
+									<thead>
+										<tr>
+											<th class="text-left">Rubrique</th>
+											<th class="text-right">Base</th>
+											<th class="text-right">Taux</th>
+											<th class="text-right">Gain</th>
+											<th class="text-right">Retenu</th>
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr t-foreach="gross_wage_line(o.salary_line_ids)" t-as="line">
+											<td>
+												<span t-esc="line['name']" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(line['base'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(line['taux'],digits=get_digits(dp='Taux Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(line['gain'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(line['retenu'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+										</tr>
+										<tr t-foreach="get_hs_line(o.salary_line_ids )" t-as="hs">
+											<td>
+												<span t-esc="hs['name']" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(hs['base'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(hs['taux'],digits=get_digits(dp='Taux Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(hs['gain'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											<th>
+											</th>
+										</tr>
+										<tr>
+											<th>Salaire brute </th>
+											<th>
+											</th>
+											<th>
+											</th>
+											<td class="text-right">
+												<span t-field="o.salaire_brute" />
+											</td>
+											<th>
+											</th>
+										</tr>
+										
+										<tr t-foreach="cotisation_line(o.salary_line_ids )" t-as="cot">
+											<td>
+												<span t-esc="cot['name']" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(cot['base'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(cot['taux'],digits=get_digits(dp='Taux Paie'))" />
+											</td>
+											<th>
+											</th>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(cot['retenu'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+										</tr>
+										
+										<tr>
+											<th>Salaire brute imposable </th>
+											<th>
+											</th>
+											<th>
+											</th>
+											<td class="text-right">
+												<span t-field="o.salaire_brute_imposable" />
+											</td>
+											<th>
+											</th>
+										</tr>
+										
+										<tr t-foreach="ir_line(o.salary_line_ids )" t-as="ir">
+											<td>
+												<span t-esc="ir['name']" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(ir['base'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+
+											<th>
+											</th>
+											<th>
+											</th>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(ir['retenu'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											
+										</tr>
+										<tr>
+											<th>Salaire net </th>
+											<th>
+											</th>
+											<th>
+											</th>
+											<td class="text-right">
+												<span t-field="o.salaire_net" />
+											</td>
+											<th>
+											</th>
+										</tr>
+
+										<!--<tr t-if="o.mnt_redevance" t-foreach="redevance_line(o.salary_line_ids )" t-as="redevance">
+											<td>
+												<span t-esc="redevance['name']" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(redevance['base'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(redevance['taux'],digits=get_digits(dp='Taux Paie'))" />
+											</td>
+											<td/>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(redevance['retenu'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+										</tr>-->
+																				
+										
+										<tr t-foreach="get_retenu_line(o.salary_line_ids )" t-as="ret">
+											<td>
+												<span t-esc="ret['name']" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(ret['base'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(ret['taux'],digits=get_digits(dp='Taux Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(ret['gain'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+											<td class="text-right">
+												<span
+													t-esc="formatLang(ret['retenu'],digits=get_digits(dp='Montant Paie'))" />
+											</td>
+										</tr>
+										
+										<tr>
+											<th>Salaire Net à Payer </th>
+											<th>
+											</th>
+											<th>
+											</th>
+											<td class="text-right">
+											<strong>	<span t-field="o.salaire_net_a_payer" /> </strong>
+											</td>
+											<th>
+											</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-xs-12" style="margin-top:20px;">
+								<br />
+								<div class="col-xs-5 pull-left">
+									<strong>
+										<span t-esc="total_text(o.salaire_net_a_payer)" />
+									</strong>
+									<br />
+									<br />
+									<br />
+									<span t-esc="company.city" />
+									Le:
+									<br />
+									<br />
+									<br />
+								</div>
+								<div class="col-xs-7 text-center">
+									<strong>Congés payés</strong>
+									<br /><br />
+									<table class="table table-condensed table-bg-head-gray">
+										<thead>
+											<tr>
+												<th>Droit de congé</th>
+												<th>Pris ce mois</th>
+												<th>Total pris</th>
+												<th>Total congés</th>
+												<th>Solde</th>
+											</tr>
+										</thead>
+
+										<tr>
+											<center>
+												<td class="text-right">
+													<span t-field="o.nb_jours_cp_attribue" />
+												</td>
+												<td class="text-right">
+													<span t-field="o.nb_jours_cp_pris" />
+												</td>
+												<td class="text-right">
+													<span t-field="o.nb_jours_cp_total_pris" />
+												</td>
+												<td class="text-right">
+													<span t-field="o.nb_jours_cp_total" />
+												</td>
+												<td class="text-right">
+													<span t-field="o.nb_jours_cp_solde" />
+												</td>
+											</center>
+										</tr>
+
+									</table>
+
+								</div>
+								
+								
+								<div class="col-xs-12 text-left" t-if="o.note">
+									<br />
+									
+									Observation :  <span t-field="o.note" />
+								 
+									
+								</div>
+								
+								<div class="col-xs-12 text-right">
+									<br />
+									<br />
+									<br />
+
+
+									Pour vous aider à faire valoir vos droits, conservez ce
+										bulletin de paie sans limitation de durée.
+									
+								</div>
+							</div>
+							</div>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+	</data>
+</openerp>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="wizard_pret_employee_view" model="ir.ui.view">
+			<field name="name">wizard.pret.employee.form</field>
+			<field name="model">wizard.pret.employee</field>
+			<field name="arch" type="xml">
+				<form string="Suivi des prêts">
+					<group string="Durée de Prêts">
+					
+							<field name="period_id_from"  />
+						<field name="period_id_to"/>
+					</group>
+
+					<footer>
+						<button name="print_report" string="Imprimer" type="object"
+							class="oe_highlight" />
+						ou
+						<button string="Annuler" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+
+
+
+		<record id="action_pret_employee" model="ir.actions.act_window">
+			<field name="name">Suivi des prêts</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">wizard.pret.employee</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+
+		<record model="ir.values" id="wizard_pret_employee_values">
+			<field name="model_id" ref="hr.model_hr_employee" />
+			<field name="name">Suivi des prêts</field>
+			<field name="key2">client_print_multi</field>
+			<field name="value"
+				eval="'ir.actions.act_window,' + str(ref('action_pret_employee'))" />
+			<field name="key">action</field>
+			<field name="model">hr.employee</field>
+		</record>
+
+
+	</data>
+</openerp>	
+        

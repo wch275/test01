@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="hr_infraction_type_1" model="hr.infraction.type">
+			<field name="name">‫إنذار كتابي‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+		<record id="hr_infraction_type_11" model="hr.infraction.type">
+			<field name="name">‫إنذار أول بالفصل ‬‬‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+		<record id="hr_infraction_type_12" model="hr.infraction.type">
+			<field name="name">‫إنذار ثاني بالفصل‬‬‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+		<record id="hr_infraction_type_13" model="hr.infraction.type">
+			<field name="name"> فصل مع مكافأة)‬‬‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+		<record id="hr_infraction_type_14" model="hr.infraction.type">
+			<field name="name">‫فصل بدون مكافأة‬‬‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+		<record id="hr_infraction_type_15" model="hr.infraction.type">
+			<field name="name">‫ فصل بدون إنذار أو تعويض  ‬‬‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+
+		<record id="hr_infraction_type_16" model="hr.infraction.type">
+			<field name="name">‫ فصل بدون مكافأة مع خصم أجر مدة الغياب ‬‬‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+		<record id="hr_infraction_type_17" model="hr.infraction.type">
+			<field name="name">‫ فصل بدون إنذار أو مكافأة أو تعويض  ‬‬‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+		<record id="hr_infraction_type_18" model="hr.infraction.type">
+			<field name="name">‫فصل مع التعويض والمكافأة ‬‬‬</field>
+			<field name="type">no_deduction</field>
+		</record>
+
+	 
+        										
+	</data>
+</openerp>

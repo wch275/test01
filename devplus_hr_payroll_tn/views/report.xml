@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report 
+            id="devplus_hr_payroll_bulletin_report"
+            string="Bulletin de paie"
+            model="hr.payroll.bulletin" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.bulletin_report" 
+            name="devplus_hr_payroll_tn.bulletin_report" 
+        />
+        
+          <report 
+            id="devplus_hr_payroll_declaration_cnss_report"
+            string="Déclaration CNSS"
+            model="payroll.report.declaration_cnss" 
+            report_type="qweb-pdf"
+            attachment_use="True"
+            attachment="'Déclaration_CNSS.pdf'"
+            file="devplus_hr_payroll_tn.report_declaration_cnss" 
+            name="devplus_hr_payroll_tn.report_declaration_cnss" />
+            
+         	<record id="devplus_hr_payroll_declaration_cnss_report" model="ir.actions.report.xml">
+				<field name="paperformat_id" ref="devplus_hr_payroll_tn.paperformat_landscape" />
+			</record>
+		    
+          
+          <report 
+            id="devplus_hr_payroll_recapitulatif_cnss_report"
+            string="Récapitulatif CNSS"
+            model="payroll.report.declaration_cnss" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_recapitulatif_cnss" 
+            name="devplus_hr_payroll_tn.report_recapitulatif_cnss" 
+            attachment_use="True"
+            attachment="(object.name or '')+'.pdf'"
+        	/>
+         
+       
+          <report 
+            id="devplus_hr_payroll_journal_paie_report"
+            string="Journal paie "
+            model="journal.paie" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_journal_paie" 
+            name="devplus_hr_payroll_tn.report_journal_paie" 
+        /> 
+       <report 
+            id="devplus_hr_payroll_journal_saisie_report"
+            string="Journal de Paie "
+            model="hr.payroll" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_saisie_paie" 
+            name="devplus_hr_payroll_tn.report_saisie_paie" 
+        />
+
+		<record id="paperformat_CNSS" model="report.paperformat">
+		    <field name="name">Quarly CNSS</field>
+		    <field name="default" eval="True" />
+		    <field name="format">A4</field>
+		    <field name="page_height">0</field>
+		    <field name="page_width">0</field>
+		    <field name="orientation">Landscape</field>
+		    <field name="margin_top">5</field>
+		    <field name="margin_bottom">7</field>
+		    <field name="margin_left">7</field>
+		    <field name="margin_right">7</field>
+		    <field name="header_line" eval="False" />
+		    <field name="header_spacing">35</field>
+		    <field name="dpi">90</field>
+		</record>
+		
+ 		<record id="devplus_hr_payroll_tn.devplus_hr_payroll_journal_saisie_report" model="ir.actions.report.xml">
+		    <field name="paperformat_id" ref="devplus_hr_payroll_tn.paperformat_CNSS" />
+		</record> 
+ 		<record id="devplus_hr_payroll_tn.devplus_hr_payroll_declaration_cnss_report" model="ir.actions.report.xml">
+		    <field name="paperformat_id" ref="devplus_hr_payroll_tn.paperformat_CNSS" />
+		</record>
+		
+         <report 
+            id="devplus_hr_payroll_ordre_virement_report"
+            string="Ordre virement"
+            model="hr.payroll" 
+			menu="False"
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_ordre_virement" 
+            name="devplus_hr_payroll_tn.report_ordre_virement" 
+        />
+        
+        <report 
+            id="devplus_hr_payroll_certificat_impot_report"
+            string="Certificat de Retunue d'impôt"
+            model="hr.payroll" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_certificat_impot" 
+            name="devplus_hr_payroll_tn.report_certificat_impot" 
+            menu="False"
+        />
+        
+         <report 
+            id="devplus_hr_payroll_solde_decompte"
+            string="Solde de tout compte"
+            model="hr.payroll" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_solde_decompte" 
+            name="devplus_hr_payroll_tn.report_solde_decompte" 
+            menu="False"
+        />
+        
+         <report   
+            id="action_report_autorisation"
+            string="Autorisation"
+            model="hr.autorisation" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_autorisation" 
+            name="devplus_hr_payroll_tn.report_autorisation" 
+        />        
+
+        
+         <report   
+            id="action_report_avance"
+            string="Avance"
+            model="hr.avance" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_avance" 
+            name="devplus_hr_payroll_tn.report_avance" 
+        />
+        
+  <report   
+            id="action_report_dde_conge"
+            string="Demande de congé"
+            model="hr.holidays" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_dde_conge" 
+            name="devplus_hr_payroll_tn.report_dde_conge" 
+        />
+        
+        <report   
+            id="action_report_conge_approuve"
+            string="Titre de congé"
+            model="hr.holidays" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_approbation_conge" 
+            name="devplus_hr_payroll_tn.report_approbation_conge" 
+        />
+ 
+        <report 
+            id="devplus_hr_payroll_contrat_report"
+            string="Imprimer Contrat "
+            model="hr.contract" 
+			menu="False"
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.contrat_report" 
+            name="devplus_hr_payroll_tn.contrat_report" 
+        />
+        
+<!--         <report 
+            id="devplus_hr_payroll_attestaion_report"
+            string="Attestaion de travail "
+            model="hr.employee" 
+			menu="False"
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_tn.report_attestaion" 
+            name="devplus_hr_payroll_tn.report_attestaion" 
+        /> -->
+        
+                
+    </data>
+</openerp>

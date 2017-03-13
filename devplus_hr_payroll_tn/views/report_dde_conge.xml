@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_dde_conge">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+
+							<div class="text-center col-xs-12">
+								<h2>
+									<strong>Demande de Congé Annuel
+									</strong>
+								</h2>
+							</div>
+							<br />
+							<br />
+							<br />
+							<br />
+							<div class="row">
+								<div class="col-xs-3 col-xs-offset-8">
+									Tunis,Le
+									<span t-field="o.date" />
+								</div>
+							</div>
+							<br />
+							<br />
+
+							<br />
+							<br />
+
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										Je soussigné(e)
+										<strong>Nom et Prénom : </strong>
+										<span t-field="o.employee_id" />
+									</h4>
+								</div>
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										<strong>Matricule : </strong>
+										<span t-field="o.employee_id.matricule" />
+									</h4>
+								</div>
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										<strong>Fonction : </strong>
+										<span t-field="o.employee_id.job_id" />
+									</h4>
+								</div>
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										<strong>Service : </strong>
+										<span t-field="o.employee_id.department_id" />
+									</h4>
+								</div>
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										Sollicite un congé de
+										<span t-field="o.holiday_status_id" />
+										(
+										<span t-field="o.number_of_days_temp" />
+										) jour(s) au titre de l'année
+										<span t-field="o.yeaar" />
+									</h4>
+								</div>
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										Ce congé durera du
+										<!--<span t-field="o.date_from" />-->
+										<span t-field="o.date_from" t-field-options='{"format": "dd/mm/yyyy"}'/>
+										au
+										<!--<span t-field="o.date_to" />-->
+										<span t-field="o.date_to" t-field-options='{"format": "dd/mm/yyyy"}'/>
+									</h4>
+								</div>
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										<strong>Adresse de contact pendant le congé : </strong>
+										<span t-field="o.employee_id.address" />
+									</h4>
+								</div>
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										<strong>Téléphone : </strong>
+										<span t-field="o.employee_id.mobile_phone" />
+									</h4>
+								</div>
+							</div>
+							<br />
+							<br />
+
+
+							<div class="row">
+								<div class="col-xs-5 text-center">
+								</div>
+								<div class="col-xs-7 ">
+									<h4>
+										<strong>Signature de
+											l'Agent:....................................
+										</strong>
+									</h4>
+								</div>
+							</div>
+							<br />
+							<br />
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<!--<th class="text-center col-xs-3">Etat des congés</th>-->
+												<th class="text-center col-xs-3">Avis du Resp. Hiérarchique</th>
+												<th class="text-center col-xs-3">Avis D.A.F </th>
+												<th class="text-center col-xs-3">Décision du Directeur Général	</th>
+											</tr>
+
+
+										</thead>
+										<tbody>
+
+											<tr>
+												<!--<td>
+													<strong> Adroit à ce jour à : </strong>
+
+													<br />
+													... jours sur ....
+													<br />
+													... jours sur ....
+													<br />
+													<br />
+
+													<strong> Après ce congé, il lui reste : </strong>
+													<br />
+													... jours sur ....
+													<br />
+													... jours sur ....
+													<br />
+													<br />
+												</td>-->
+												<td>
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+													<br />
+												</td>
+												<td></td>
+												<td>
+												</td>
+
+											</tr>
+										</tbody>
+
+									</table>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+									<h4>
+										<strong>NB : </strong>
+										Les demandes de congés doivent parvenir à l'administration au
+										moins 07 jours avant la date prévue de sortie.
+									</h4>
+								</div>
+							</div>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+
+
+	</data>
+</openerp>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+
+ 
+         <report 
+            id="regelements_espece"
+            string="Règlements" 
+            name="regelements.espece"
+            model="hr.payroll"
+            rml="devplus_hr_payroll_tn/report/regelements_espece.rml"
+            header="True"
+            />
+   
+            
+
+
+    </data>
+</openerp>

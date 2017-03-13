@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_declaration_cnss">
+			<t t-call="report.html_container">
+			<t t-foreach="docs" t-as="p">
+			
+ 				<t t-set="data_report_margin_top" t-value="1" />
+				<t t-set="data_report_header_spacing" t-value="5" />
+				<t t-set="data_report_dpi" t-value="110" />
+				<div class="page">
+				<t
+					t-foreach="get_nb_page(p.company_id , p.fiscalyear_id.id,p.trimester)"
+					t-as="o">
+
+					
+						<table class="table" >
+                              <tbody>
+                                   <tr class="text-center" >
+                                       <td style="font-size:0.5em;width:300px;border-top-color: transparent !important" >
+                                           <strong>REPUBLIC TUNISIENNE<br/>
+                                               MINISTERE DES AFFAIRES SOCIALES DE LA SOLIDARIT<br/>
+                                               ET DES TUNISIENS A L'ETRANGER</strong><br/>
+                                           CAISSE NATIONALE DE SECURITE SOCIALE<br/>
+                                           49, Av. TAIEB MHIRI - TUNIS - Tél : 71. 769. 744</td>
+                                       <td class="text-center" style="border-top-color: transparent !important" >
+                                           <strong style="font-size:1.7em">DECLARATION TRIMESTRIELLE DES SALARIES ET DES SALAIRES</strong><br/>
+                                           <p style="font-size:0.9em">doit être remise à la Caisse sous peine de pénalités dans les 15 premiers jours qui suivent le trimestre</p>
+                                       </td>
+                                </tr>
+                           </tbody> 
+                           </table> 
+
+  						<div class="col-xs-6 text-center" >
+							
+						</div> 
+						<div class="col-xs-6 text-center" >
+							<strong> NOM ET ADRESSE DE L’EMPLOYEUR </strong>
+						</div>
+
+						<div class="col-xs-4 text-center" style="margin-top:4px;">
+							<table class="table table-bordered">
+								<tr>
+									<td colspan="4">
+										<strong>N° Employeur:</strong>
+										<span t-esc="company.cnss" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>BR:</strong>
+									</td>
+									<td>
+										<strong>Trimestre:</strong>
+										<span t-esc="p.trimester" />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<strong>Page N°:</strong>
+										<span t-esc="o" />
+									</td>
+									<td>
+										<strong>Année:</strong>
+										<span t-esc="p.fiscalyear_id.name" />
+									</td>
+								</tr>
+
+							</table>
+						</div>
+						<div class="col-xs-2 text-center" style="margin-top:4px;">
+							<table class="table table-bordered ">
+								<tr>
+									<td style="height: 60px;">
+										<strong>Code d'exploitation :</strong>
+										<span t-esc="company.code_exploitation" />
+									</td>
+								</tr>
+								<tr>
+									<td style="height: 50px;">
+										<strong>Matricule fiscal:</strong>
+										<span t-esc="company.mat_fiscal" />/<span t-esc="company.code_tva" />/<span t-esc="company.code_categorie" />/<span t-esc="company.etab_secondaire" />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="col-xs-6 text-center" style="margin-top:8px;">
+
+							<table class="table table-bordered ">
+
+								<tr >
+									<td style="height: 100px;">
+
+										<div t-field="company.partner_id"
+											t-field-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": true}' />
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div class="col-xs-12 ">
+							<table class="table table-bordered">
+								<tr style="font-size:0.9em;">
+									<th rowspan="2">N° Ordre:</th>
+									<th rowspan="2">MATRICULE DE L'ASSURE </th>
+									<th rowspan="2">IDENTITITE DU SALAIRE(1)</th>
+									<th rowspan="2">CIN.</th>
+									<th colspan="3">REMUNERATION MENSULLE Report des Montants</th>
+									<th rowspan="2">
+										TOTAL GENERAL
+									</th>
+								</tr>
+
+								<tr style="font-size:0.9em;">
+									<th>1er mois (TND)</th>
+									<th>2éme mois (TND)</th>
+									<th>3éme mois (TND)</th>
+								</tr>
+
+
+								<tr style="font-size:0.8em;"
+									t-foreach="get_page(p.company_id , p.fiscalyear_id.id,p.trimester,o)"
+									t-as="line">
+									<td width="5%">
+										<span t-esc="line['num_line']" />
+									</td>
+									<td width="10%">
+										<span t-esc="line['cnss']" />
+									</td>
+									<td width="30%" style="white-space: nowrap;">
+										<span t-esc="line['name']" />
+									</td>
+									<td width="7%">
+										<span t-esc="line['cin']" />
+									</td>
+
+									<td width="12%" class="text-right">
+										<span t-if="line['mois1']">
+											<span
+												t-esc="formatLang(line['mois1'],digits=get_digits(dp='Montant Paie'))" />
+										</span>
+									</td>
+									<td width="12%" class="text-right">
+										<span t-if="line['mois2']">
+											<span
+												t-esc="formatLang(line['mois2'],digits=get_digits(dp='Montant Paie'))" />
+										</span>
+
+									</td>
+									<td width="12%" class="text-right">
+										<span t-if="line['mois3']">
+											<span
+												t-esc="formatLang(line['mois3'],digits=get_digits(dp='Montant Paie'))" />
+										</span>
+									</td>
+									<td width="12%" class="text-right">
+										<span t-if="line['total']"   >
+											<span
+												t-esc="formatLang(line['total'],digits=get_digits(dp='Montant Paie'))" />
+										</span>
+									</td>
+								</tr>
+							</table>
+					<div>
+					<div t-if="max(get_nb_page(p.company_id , p.fiscalyear_id.id,p.trimester))!=o">
+							<div style="margin-top: 2%;display: inline-block;width: 60%;font-size: 0.7em;">
+                                   Certifié sincère et conforme à nos documents comptables et arrêté à la somme de : (en toutes lettres) (2)
+                                  <br />
+                                   		<span t-foreach="get_page(p.company_id , p.fiscalyear_id.id,p.trimester,o)"
+												t-as="line">
+												<span  t-if="line['sub_tot']['sub_total']!=0">
+													<u><span t-esc="amount_to_text(line['sub_tot']['sub_total'])"/></u>
+                                   				</span>
+                                   		</span>
+                                   <br />
+                                   <br />
+                               <strong>
+                               	  (1) l’identité doit être conforme à la carte d’assuré ou à l’extrait de naissance.<br/>
+                                  (2) L’arrêté doit correspondre au total des salaires déclarés pendant le trimestre (à indiquer sur la dernière page).</strong>
+                           </div>
+                           <div style="margin-top: 2%;display: inline-block;width: 39%;vertical-align: top;">
+                               <div style="float: right;width: 68%;">
+                                   <div style="display: inline-block;margin-right: 12%;font-weight: bold;">Total à reporter </div>
+                                   <div style="border: solid 2px;display: inline-block;width: 52%;height: 30px;vertical-align: middle;">
+										<span t-foreach="get_page(p.company_id , p.fiscalyear_id.id,p.trimester,o)"
+												t-as="line">
+												<span  t-if="line['sub_tot']['sub_total']!=0">
+													<span style="padding: 45px" t-esc="formatLang(line['sub_tot']['sub_total'],digits=get_digits(dp='Montant Paie'))"/>
+                                   				</span>
+                                   		</span>
+                                   </div>
+                               </div>
+                               <div style="float: right;width: 64%;;text-align: center;font-weight: bold;">
+                                   Fait à <span t-field="p.company_id.city"/> le <span t-field="p.date"/>
+                               </div>
+                               <br/>
+                               <div style="float: right;width: 64%;text-align: center;font-weight: bold;">
+                                   Cachet et signature de l'Entreprise
+                               </div>
+                               <div style="float: right;width: 64%;font-size: 0.7em;;text-align: center;font-weight: bold;">
+                                   (sur toutes les pages)
+                               </div>
+                           </div>
+                        </div>
+							<table class="table table-bordered"
+								t-if="max(get_nb_page(p.company_id , p.fiscalyear_id.id,p.trimester))==o">
+								<tr>
+
+									<td colspan="4" class="text-right">
+										<strong>Total à reporter</strong>
+									</td>
+
+									<td width="12%" class="text-right">
+										<strong>
+											<span
+												t-esc="formatLang(get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois1'],digits=get_digits(dp='Montant Paie'))" />
+										</strong>
+									</td>
+									<td width="12%" class="text-right">
+										<strong>
+											<span
+												t-esc="formatLang(get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois2'],digits=get_digits(dp='Montant Paie'))" />
+										</strong>
+									</td>
+									<td width="12%" class="text-right">
+										<strong>
+											<span
+												t-esc="formatLang(get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois3'],digits=get_digits(dp='Montant Paie'))" />
+										</strong>
+									</td>
+									<td width="12%" class="text-right">
+										<strong>
+											<!-- <span
+												t-esc="formatLang(get_total(data['form']['company_id'] , data['form']['fiscalyear_id'],data['form']['trimester'])['montant_total'],digits=get_digits(dp='Montant Paie'))" /> -->
+											<span
+												t-esc="formatLang(get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois1']+get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois2']+get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois3'],digits=get_digits(dp='Montant Paie'))" /> 								
+										</strong>
+									</td>
+								</tr>
+							</table>
+
+						</div>
+
+						<div  t-if="max(get_nb_page(p.company_id , p.fiscalyear_id.id,p.trimester))==o">
+							<div style="margin-top: 2%;display: inline-block;width: 60%;font-size: 0.7em;">
+                               <p>
+                                   Certifié sincère et conforme à nos documents comptables et arrêté à la somme de : (en toutes lettres) (2)</p>
+                                   <u><span
+										t-esc="amount_to_text(get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois1']+get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois2']+get_total(p.company_id , p.fiscalyear_id.id,p.trimester)['total_mois3'])" /></u> 
+									<br />	
+									<br />	
+                               <strong>(1) l’identité doit être conforme à la carte d’assuré ou à l’extrait de naissance.<br/>
+                                  (2) L’arrêté doit correspondre au total des salaires déclarés pendant le trimestre (à indiquer sur la dernière page).</strong>
+                           </div>
+                           <div style="margin-top: 2%;display: inline-block;width: 39%;vertical-align: top;">
+                               <div style="float: right;width: 64%;;text-align: center;font-weight: bold;">
+                                   Fait à <span t-field="p.company_id.city"/> le <span t-field="p.date"/>
+                               </div>
+                               <br/>
+                               <div style="float: right;width: 64%;text-align: center;font-weight: bold;">
+                                   Cachet et signature de l'Entreprise
+                               </div>
+                               <div style="float: right;width: 64%;font-size: 0.7em;;text-align: center;font-weight: bold;">
+                                   (sur toutes les pages)
+                               </div>
+                           </div>
+						</div>
+						
+					  </div>
+					  					<p style="page-break-after:always;"/>
+					
+
+					</t>
+	</div> <!-- div page -->
+				</t>
+			</t>
+		</template>
+	</data>
+</openerp>
+						
+						

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_pret_employee">
+			<t t-call="report.html_container">
+				<t t-foreach="get_employees(data['ids'])" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+							<div class="row">
+								<div class="col-xs-12 text-center">
+									<h3>
+										<strong>Résumés de prêts  </strong>
+									</h3>
+									Analyse de :
+									<span t-esc="(data['form']['period_id_from'][1])" />
+									à
+									<span t-esc="(data['form']['period_id_to'][1])" />
+									<br></br>
+									<br></br>
+									<table class="table table-condensed">
+										<tbody class="sale_tbody">
+											<tr>
+												<th>
+													<strong>Nom et Prénom : </strong>
+													<span t-field="o.name" />
+												</th>
+												<th>
+													<strong>Matricule: </strong>
+													<span t-field="o.matricule" />
+												</th>
+											</tr>
+										</tbody>
+									</table>
+									<div class="col-xs-12 " style="margin-top:30px;">
+										<br />
+										<t t-foreach="get_prets(o.id)" t-as="l">
+
+
+											<div class="col-xs-12 ">
+
+												<span t-esc="l.name" /> 
+												<strong>Période de :</strong>
+												<span t-esc="l.period_id_from.name" />
+												<strong>à</strong>
+												<span t-esc="l.period_id_to.name" />
+												<strong>Montant :</strong>
+												<span t-esc="l.amount" />
+											</div>
+
+
+											<table class="table  table-bg-head-gray" style="margin-left:40px">
+												<thead>
+
+													<th>Description</th>
+													<th class="text-center">Période</th>
+													<th class="text-center">Montant</th>
+													<th class="text-center">Prêt</th>
+												</thead>
+												<tr t-foreach="l.loan_line_ids" t-as="line">
+
+													<td>
+														<span t-field="line.name" />
+													</td>
+													<td class="text-center">
+														<span t-field="line.period_id" />
+													</td>
+													<td class="text-center">
+														<span t-field="line.amount" />
+													</td>
+													<td class="text-center">
+														<span t-field="line.loan_id" />
+													</td>
+
+													<td class="text-center">
+														<span t-field="line.note" />
+													</td>
+												</tr>
+											</table>
+
+
+										</t>
+									</div>
+								</div>
+							</div>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+	</data>
+</openerp>
+					

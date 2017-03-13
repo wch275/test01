@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record model="ir.ui.view" id="avancement_form_view">
+			<field name="name">avancement.form</field>
+			<field name="model">salary_grid.avancement</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<from string="avancement Form" version="7.0">
+					<header>
+						<button name="action_validate" type="object" states="draft"
+							class="oe_highlight" string="Valider avancement" />
+						<field name="state" widget="statusbar" />
+					</header>
+					<sheet>
+
+						<group>
+							<field name="employee_id" on_change="onchange_employee_id(employee_id)" />
+						</group>
+						<group>
+						<field name="date" string="Date d'avancement" />
+						</group>
+						<group col="2">
+
+							<group string="Ancienne catégorie">
+								<field name="ancien_categorie_id" />
+								<field name="ancien_echlon_id" />
+							</group>
+							<group string="Nouvelle catégorie">
+								<field name="nouveau_categorie_id" />
+								<field name="nouveau_echlon_id" domain="[('categorie_id','=',nouveau_categorie_id)]" />
+							</group>
+						
+						</group>
+						<field name="description" placeholder="Notes..." />
+
+					</sheet>
+				</from>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="avancement_search_view">
+			<field name="name">avancement.search</field>
+			<field name="model">salary_grid.avancement</field>
+			<field name="arch" type="xml">
+				<search string=" Search avancment">
+
+					<group expand="0" string="Group By">
+						<filter string="Employé" context="{'group_by': 'employee_id'}" />
+						<filter string="Ancienne catégorie" context="{'group_by': 'ancien_categorie_id'}" />
+						<filter string="Nouvelle catégorie" context="{'group_by': 'nouveau_categorie_id'}" />
+						<filter string="Ancien echlon" context="{'group_by': 'ancien_echlon_id'}" />
+						<filter string="Nouveau echlon" context="{'group_by': 'nouveau_echlon_id'}" />
+					</group>
+
+				</search>
+			</field>
+		</record>
+
+
+		<record model="ir.ui.view" id="avancment_tree_view">
+			<field name="name">avancement.tree</field>
+			<field name="model">salary_grid.avancement</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Avancmenets">
+					<field name="employee_id" on_change="onchange_employee_id(employee_id)" />
+					<field name="ancien_categorie_id" />
+					<field name="ancien_echlon_id" />
+					<field name="nouveau_categorie_id" />
+					<field name="nouveau_echlon_id" domain="[('categorie_id','=',nouveau_categorie_id)]" />
+				</tree>
+			</field>
+		</record>
+
+
+		<record model="ir.actions.act_window" id="hr_payroll_avancement_action">
+			<field name="name">Avancements</field>
+			<field name="res_model">salary_grid.avancement</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem id="devplus_salary_avancement_menu" name="Avancements"
+			parent="hr.menu_hr_root" sequence="22" />
+		<menuitem id="hr_grille_avancement_menuitem" parent="devplus_salary_avancement_menu"
+			action="hr_payroll_avancement_action" />
+
+
+	</data>
+
+</openerp>
+		

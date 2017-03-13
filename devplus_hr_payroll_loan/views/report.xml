@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report 
+            id="devplus_hr_payrollloan"
+            string="Imprimer"
+            model="hr.payroll.loan" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_loan.payroll_loan_report" 
+            name="devplus_hr_payroll_loan.payroll_loan_report" 
+        />
+        
+           <report 
+            id="devplus_hr_payroll_pret_employee_report"
+            string="Suivi des prêts"
+            model="hr.employee" 
+            report_type="qweb-pdf"
+            file="devplus_hr_payroll_loan.report_pret_employee" 
+            name="devplus_hr_payroll_loan.report_pret_employee"
+            menu="False" 
+        		/>
+        
+        
+    </data>
+</openerp>

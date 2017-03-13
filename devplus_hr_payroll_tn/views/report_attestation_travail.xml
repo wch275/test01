@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_attestaion">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+						
+						 <div class="row">
+										<div class="col-xs-8">
+											<strong>Nom et Prénom:</strong>
+											<span t-field="o.parent_id" /><br/>
+											<strong>Adresse complète:</strong>
+											<span t-field="o.parent_id.address" /><br/>
+											<strong>Téléphone:</strong>
+											<span t-field="o.parent_id.mobile_phone" />
+										</div>
+										<div class="col-xs-4">
+											<strong>Destinataire:</strong>
+											<span t-field="o.name" /><br/>
+											<strong>Adresse complète:</strong>
+											<span t-field="o.address" />
+										</div>
+									</div>
+									<br/><br/><br/>
+									
+									<div class="text-center col-xs-12">
+								<h2>
+									<strong>ATTESTAION DE TRAVAIL
+									</strong>
+								</h2>
+							</div><br/><br/><br/><br/><br/>
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1">
+								<h4>Madame,Monsieur,</h4><br/><br/>
+								<h4>je soussigné(e)Monsieur/Madame <span t-field="o.parent_id" />,agissant en qualité de <span t-field="o.parent_id.job_id" /> dans 
+								<br/><br/>
+								l'entreprise,certifie que 
+								 Monsieur/Madame <span t-field="o.name" /> travaille au sein de notre <br/><br/> société depuis le <span t-field="o.date_entree" /> en qualité de <span t-field="o.job_id" />.
+								 <br/> <br/></h4></div>
+								 <div class="col-xs-10 col-xs-offset-1">
+								 <h4>De plus,j'atteste que Monsieur/Madame <span t-field="o.name" /> n'est ni en période d'essai, 
+								 <br/><br/>
+								 ni en préavis suite à démission ou licenciement.</h4>
+								  <br/> <br/></div>
+								  <div class="col-xs-10 col-xs-offset-1">
+								 <h4>Cette attestation est délivrée à la demande de l'intéressé pour servir et valoir ce que <br/><br/> de droit.</h4>
+								</div>
+								</div>
+						
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+
+
+	</data>
+</openerp>

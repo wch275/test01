@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="contrat_report">
+			<t t-call="report.html_container">
+				<t t-foreach="docs" t-as="o">
+					<t t-call="report.external_layout">
+						<div class="page">
+
+							<div class="text-center col-xs-12">
+								<h2>
+									CONTRAT DE TRAVAIL
+									
+								</h2>
+							</div>
+
+							<br />
+							<br />
+							<br />
+							<br />
+
+							<br />
+							<br />
+							<br />
+							<br />
+							
+							<div class="row">
+								<div class="text-left">
+									<u><h4><b>Entre les soussignés :</b></h4></u>
+									
+									La Société X Sarl sise à Zone …….. – Route de ………………….., représentée par son Gérant Monsieur A, Titulaire ……………………. du …………………, 
+									<br/>
+									Désignée comme société X,
+									<br/>
+									<h5><b>d’une part</b></h5>
+									<br/>
+									Et
+									<br/>
+									Monsieur B, Titulaire de la CIN …………… du …/…/……, né le  ..…./……/…… à      ,domicilié au                                    Situation familiale :
+									<br/>
+									Désigné comme contractant,
+									<br/>
+									<h5><b>d’autre part</b></h5>
+									<br/>
+									Il a été convenu ce qui suit :
+									<br/>
+									<h4><b>ARTICLE 1 - CONDITIONS D’ ENGAGEMENT</b></h4>
+									<br/>
+									La société X engage Monsieur B en qualité de directeur sous contrat à durée indéterminée à compter du 04/04/2005 à 8h00 aux conditions particulières indiquées ci-après.
+									<br/>
+									Monsieur B, qui accepte cet engagement, déclare formellement n’être lié à aucune entreprise et être libre de tout engagement envers son précédent employeur.
+									<br/>
+									Monsieur B déclare en outre, qu’au jour de la signature du présent contrat, il ne s’intéresse directement ou indirectement, ne participe, ni ne conseille aucune autre société, groupement ou affaire même non concurrente.
+									<br/>
+									<h4><b>ARTICLE 2 – PERIODE D’ ESSAI</b></h4>
+									<br/>
+									Le présent engagement ne deviendra définitif qu'à l'expiration d'une période d'essai dont la durée est fixée à 90 jours.
+									<br/>
+									Cette période d’essai est renouvelable une fois pour une durée équivalente.
+									<br/>
+									Toute suspension qui interviendrait pendant la période d’essai prolongerait celle-ci d’une durée équivalente à ladite suspension.
+									<br/>
+									<h4><b>ARTICLE 3 - FONCTIONS</b></h4>
+									<br/>
+									Monsieur B exerce les fonctions de Directeur pour le seul compte de la société X.
+									<br/>
+									Monsieur B s’engage à assumer cette fonction au mieux des intérêts de la société, conformément aux instructions et directives de Monsieur A ou toute personne désignée par lui à cet effet et s’engage à y consacrer toute son activité professionnelle.
+									<br/>
+									<h4><b>ARTICLE 4 - ATTRIBUTIONS ET DELEGATION DE POUVOIRS</b></h4>
+									<br/>
+									<u><h5>A) ATTRIBUTIONS </h5></u>
+									<br/>
+									Dans le cadre de sa fonction de Directeur de la société X et sous le contrôle de Monsieur A ou toute personne désignée par lui à cet effet, Monsieur B  assume notamment les attributions suivantes :
+									<br/>
+									<u><h6>a) Développement commercial de la société</h6></u>	
+									<br/>
+									 promotion et  commercialisation des produits et services de la société. 
+									 <br/>
+									 A ce titre, Monsieur Monsieur B s’engage à :
+									 <br/>
+									 - s’occuper personnellement des clients les plus importants,<br/>
+									 - accompagner le cas échéant le personnel salarié « itinérant » en clientèle,<br/>
+									 - recueillir les informations pertinentes portant notamment sur la solvabilité des clients,<br/>
+									 - veiller au respect des conditions de vente fixées par la société, des ordres et des commandes,<br/>
+									 - veiller au  règlement des litiges éventuels avec la clientèle.<br/>
+									 A ce titre, Monsieur B est investi de l’autorité nécessaire pour lui permettre de fixer des directives et des instructions en direction de l’ensemble du personnel, signer toute correspondance commerciale et procéder aux démarches ayant trait aux attributions qui lui ont été fixées.
+									 <br/>
+									 Concernant les offres, les contrats de vente, les conditions de vente (remise, rabais, ….) diligentés par Monsieur B ; les documents afférents à ces opérations comporteront obligatoirement outre la signature de Monsieur B, la  signature de Monsieur A ou toute autre personne mandatée à cet effet par lui.
+									 <br/>
+									 Il en sera de même pour l'embauche des salariés de la société dont les contrats de travail seront co-signés par A.
+									 <br/>
+									 contrôle permanent des circonstances du marché pour les services et les produits commercialisés par la société ainsi que la situation de ses concurrents,
+									 <br/>
+									 la gestion des stocks (notamment l’approvisionnement) et l’administration des expéditions.<br/>
+									 <u><h6>b) Développement et suivi administratif de la société</h6></u>
+									 <br/>
+									 Monsieur B s’engage à :<br/>
+									 Veiller à l’organisation, la gestion et la coordination de l’ensemble du personnel salarié  de la société,<br/>
+									 Suivre la facturation et l’encaissement.<br/>
+									 <u><h6>c) Développement et suivi de l’équipement de production de la société</h6></u>
+									 <br/>
+									 Monsieur B s’engage à :<br/>
+									 Maintenir l’appareil de production en constant état de fonctionnement en garantissant la qualité des produits et des services commercialisés à destination de la clientèle ; dans ce cadre, en sa qualité de Directeur, Monsieur B a compétence pour décider des investissements à réaliser par la société avec l’accord préalable et exprès de Monsieur A ou toute personne désignée par lui à cet effet.
+									 <br/>
+									 Veiller au respect :<br/>
+									 des procédures internes (notamment : procédure qualité, cahier des charges, relations fournisseurs),<br/>
+									 au programme des réparations (notamment : suivi de la productivité),<br/>
+									 l’organisation des stocks (notamment l’approvisionnement) et à l’administration des expéditions,<br/>
+									 Assurer la gestion de la production pour assurer les livraisons dans les délais impartis, avec le niveau de qualité demandé.<br/>
+									 Pour la réalisation d’opérations particulières ou exceptionnelles sortant du cadre normal de l’activité, Monsieur B devra nécessairement obtenir au préalable l’approbation écrite de Monsieur A ou toute personne désignée par lui à cet effet. A défaut, tout manquement à la procédure mise en place par le présent article pourra entraîner des sanctions graves à l’encontre de Monsieur B pouvant aller jusqu’au licenciement. 
+									 <br/>
+									 Monsieur B s’engage à informer immédiatement la société de toute difficulté de nature à porter atteinte au bon fonctionnement de celle-ci.
+									 <br/>
+									 Monsieur B s’engage à adresser mensuellement un rapport écrit et détaillé, relatif à ses attributions établi dans les formes prescrites par la Direction et dont Monsieur B aura pris connaissance préalablement.
+									 <br/>
+									 Monsieur B s’engage à adresser journalièrement un rapport écrit et détaillé, relatif à la production réalisée la veille et au rendement de production global et par employé.
+									 <br/>
+									 Compte tenu de la nature évolutive du poste de Monsieur B et de la nécessaire adaptation des attributions au contexte économique et social, il est expressément convenu que la liste des attributions indiquées au présent contrat ne saurait revêtir un caractère exhaustif.
+									 <br/>
+									 C’est pourquoi, la société se réserve la possibilité d’apporter toute modification ou aménagement aux attributions de Monsieur B requise dans l’intérêt de celle-ci.<br/>
+									 <u><h5>B) DELEGATIONS DE POUVOIRS</h5></u><br/>
+									 Monsieur B aura délégation et pouvoirs de manière permanente pour assurer la gestion courante de la société avec acceptation, modification ou résiliation de contrats de fourniture urgents d’un montant inférieur à 1 000 Dinars Tunisiens ;
+									 <br/>
+									 Monsieur B aura également délégation et pouvoirs de manière permanente dans les domaines de la gestion du personnel et le respect de la réglementation du droit du travail.
+									 <br/>
+									 Sont concernés, notamment, les domaines suivants (liste non exhaustive) :<br/>
+									 recrutement du personnel de la société et établissement des contrats de travail des salariés dont la rémunération annuelle n'excède pas 12 000,- Dinars Tunisiens, en veillant au respect strict des obligations légales et conventionnelles.
+									 <br/>
+									 respect des dispositions légales portant, notamment, sur la durée du travail, les congés payés, le contrôle de l'emploi, la formation du personnel,<br/>
+									 hygiène et sécurité et prévention des accidents du travail, <br/>
+									 engagement des procédures disciplinaires.<br/>
+									 Monsieur B est investi de l’autorité nécessaire pour lui permettre de respecter et faire respecter par les salariés sous sa responsabilité les dispositions légales, réglementaires, conventionnelles en vigueur au sein de la société.<br/>
+									 <br/>
+									 Dans ce cadre, il bénéficie également d’une délégation en matière disciplinaire pour faire respecter par les salariés de la société leurs obligations, exception faite des procédures de licenciement qui nécessiteront l'accord préalable de Monsieur A.
+									 <br/>
+									 Un compte-rendu devra être adressé à Monsieur A ou toute personne désignée par lui à cet effet annuellement et également chaque fois qu’une situation particulière, notamment une infraction ou un manquement relevé, paraîtra l’exiger.
+									 <br/>
+									 Monsieur B est informé des effets entraînés par cette délégation de pouvoirs et notamment sur les conséquences en matière de responsabilité pénale qui serait la sienne en cas d’infraction.
+									 <br/>
+									 La présente délégation de pouvoirs fait partie intégrante du contrat de travail de Monsieur B ; sa rémunération prenant en considération le temps consacré à cette mission et les responsabilités qui en découlent.
+									 <br/>
+									 L’attention de Monsieur B est attirée sur le fait que l’expert comptable en place ou toute personne désignée par lui à cet effet est à sa disposition pour lui fournir, à sa demande, les textes légaux et réglementaires qui lui feraient défaut concernant la réglementation du travail et le droit de la sécurité sociale.
+									 <br/>
+									 Dans l’hypothèse où les moyens nécessaires à l’exercice des pouvoirs visés dans le cadre du présent article viendraient à faire défaut à Monsieur B, il lui appartiendra d’en informer l’expert comptable ou toute personne désignée par lui à cet effet sans délai afin que ce dernier puisse faire le nécessaire de toute urgence.
+									 <br/>
+									 <u><h5>C) POLITIQUE QUALITE</h5></u><br/>
+									 Dans le cadre de la politique qualité de la société X, qui donne toute priorité à la satisfaction du client, il est demandé à Monsieur B de respecter et faire respecter des salariés dont il a la charge les instructions et procédures en vigueur dans l’entreprise.
+									 <br/>
+									 <h4><b>ARTICLE 5 - LIEU DE TRAVAIL</b></h4><br/>
+									 Monsieur B exerce ses fonctions au siège social de la société.<br/>
+									 Le lieu de travail indiqué à l’alinéa précédent ne revêt qu’un caractère informatif et ne saurait constituer un élément essentiel du présent contrat.<br/>
+									 De plus, Monsieur B, compte tenu de la nature de ses fonctions, prend l'engagement :<br/>
+									 d’effectuer tous déplacements nécessités par les besoins de l’entreprise,<br/>
+									 d'accepter tout changement de lieu de travail nécessité par l'intérêt du fonctionnement de l'entreprise sur l'ensemble du territoire Tunisien.<br/>
+									 <h4><b>ARTICLE 6  - ORGANISATION DU TRAVAIL - DUREE DU TRAVAIL</b></h4><br/>
+									 Monsieur B sera soumis à la durée du travail (et à sa répartition) applicable au sein de l’entreprise.<br/>
+									 Monsieur B s'engage à consacrer l'intégralité de son temps de travail dans le respect de l'horaire collectif applicable à la société. <br/>
+									 En cas de nécessité, et étant donné la fonction de Monsieur B, il pourra lui être demandé d’effectuer des heures supplémentaires.<br/>
+									  <h4><b>ARTICLE 7 - APPOINTEMENTS  / REMUNERATION</b></h4><br/>
+									  En contrepartie de ses services, Monsieur B percevra une rémunération forfaitaire fixe annuelle de ………..,- Dinars Tunisiens payables sur 12 mois, soit une rémunération mensuelle de ………,- Dinars Tunisiens.
+									  <br/>
+									  La rémunération est servie nette de toutes retenues à la fin de chaque mois.<br/>
+									  Une prime d’intéressement récompensant l’assiduité, les performances et l’implication du contractant au bon fonctionnement de l’entreprise, dont le montant est laissé à l’appréciation des dirigeants de X, sera éventuellement versée. Son montant sera compris entre 0 et 2 mois de salaire net.
+									  <br/>
+									  <h4><b>ARTICLE 8 - CONGES PAYES</b></h4><br/>
+									  Monsieur B bénéficie de congés payés annuels dans les conditions prévues par la loi. <br/>
+									  Les prises de congés ne peuvent se faire que dans la mesure où les intérêts de la société sont conservés.<br/>
+									  <h4><b>ARTICLE 10 - FRAIS PROFESSIONNELS</b></h4><br/>
+									  Monsieur B se voit rembourser les frais liés à ses déplacements professionnels sur production des justificatifs des frais ainsi exposés, conformément aux règles de remboursement en vigueur au sein de la société.
+									  <br/>
+									  <h4><b>ARTICLE 11 - SECRET PROFESSIONNEL</b></h4><br/>
+									  Monsieur B reconnaît qu’il est tenu, indépendamment d’une obligation de réserve générale, à une obligation impérative de secret professionnel sur tous les faits dont il peut avoir connaissance, du fait ou à l’occasion de ses fonctions ou du seul fait de son appartenance à la société et, notamment, se rapportant à l’organisation, aux méthodes et au réseau commercial ainsi que des spécificités techniques des matériels et biens de la société.
+									  <br/>
+									  Les documents ou rapports quelle qu'en soit la nature (dossiers, listes des prix, imprimés, lettres factures, notices, échantillons, …) qu’il établira ou dont il lui sera donné communication sont la propriété de la société et il ne pourra ni en conserver de copie, ni en donner communication à des tiers, sans l’accord exprès et écrit de Monsieur A ou toute personne désignée par lui à cet effet. En fin de relations contractuelles, il restituera, sur première demande, l’ensemble desdits documents. Un droit de rétention est expressément exclu.
+									  <br/>
+									  Cette obligation de secret professionnel subsistera après la fin du présent contrat.<br/>
+									  <h4><b>ARTICLE 12 - ABSENCE - MALADIE - ACCIDENT</b></h4><br/>
+									  En cas d'empêchement d'exercer son activité et d'accomplir ses obligations, Monsieur B devra en aviser la société dans les plus brefs délais en indiquant les motifs et la durée probable de cet empêchement et en lui adressant, le cas échéant, un certificat médical.
+									  <br/>
+									  En cas de prolongation d'arrêt de travail, Monsieur B devra transmettre, dans les mêmes délais, le certificat médical justifiant cette prolongation.<br/>
+									  <h4><b>ARTICLE 13 - OBLIGATIONS</b></h4>
+									  Monsieur B s’engage, pendant toute la durée de son contrat, à respecter les instructions qui pourront lui être données par la société et à se conformer aux règles régissant le fonctionnement interne de celle-ci.<br/>
+									  Monsieur B s’oblige également à informer l’entreprise, sans délai, de tous changements qui interviendraient dans les situations qu’il a signalées lors de son engagement (adresse, situation de famille, etc.).<br/>
+									  <h4><b>ARTICLE 14 – CLAUSE DE NON CONCURRENCE</b></h4><br/>
+									  Monsieur B, s’interdit expressément sans restrictions ni réserves :<br/>
+									  D’exercer directement ou indirectement toute fonction de quelque nature que ce soit concomitante ou concurrentielle lors de l’exercice de ses fonctions au sein de la société X ;<br/>
+									  D’entrer au service d’une entreprise concurrente à X, de créer pour son compte ou pour un tiers une entreprise de même fonction ou d’y participer directement ou indirectement, et ce, pour la duré de 2 années consécutives au cas ou il quitterait X a compter de la date de son départ.<br/>
+									  <h4><b>ARTICLE 15 - RUPTURE DU CONTRAT</b></h4><br/>
+									  Le délai de préavis dû par Monsieur B ou par la société X, en cas de rupture du contrat de travail, est fixé à 3 mois.<br/>
+									  Pour les dispositions non prévues au présent contrat, les parties s’engagent à appliquer les dispositions légales, ainsi qu’à celles découlant des accords collectifs.<br/>
+									  A Dar Chaabane, le 4 avril 2005<br/>
+									  Fait en deux exemplaires originaux dont un pour chacune des parties<br/>
+									  Signatures précédées de la mention manuscrite « Lu et approuvé » ; chacune des pages du présent contrat devant être paraphées <br/>
+									  
+									   
+									 
+									 								
+								</div>
+							</div>
+						</div>
+					</t>
+				</t>
+			</t>
+		</template>
+
+
+	</data>
+</openerp>

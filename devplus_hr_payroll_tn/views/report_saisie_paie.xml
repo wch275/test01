@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_saisie_paie">
+			<t t-call="report.html_container">
+			<t t-foreach="docs" t-as="p">
+
+				<t t-set="data_report_margin_top" t-value="12" />
+				<t t-set="data_report_header_spacing" t-value="9" />
+				<t t-set="data_report_dpi" t-value="110" />
+				<t t-call="report.external_layout">
+					<div class="page">
+						<div class="text-center row mt32">
+							<br />
+							<br />
+							<br />
+							<br />
+							<strong>
+								<h1>Journal de Paie de Période: <span t-esc="p.period_id.name"/> </h1>
+							</strong>
+							<br />
+							<br />
+						</div>
+						<table class="table table-bordered">
+							<tr>
+								<td>
+									<strong>Matricule</strong>
+								</td>
+								<td>
+									<strong>Nom et prénom</strong>
+								</td>
+<!-- 								<td>
+									<strong>Régime</strong>
+								</td> -->
+
+								<td>
+									<strong>Salaire base</strong>
+								</td>
+								<td>
+									<strong>Salaire Brut</strong>
+								</td>
+								<td>
+									<strong>Retenue CNSS</strong>
+								</td>
+								<td>
+									<strong>Salaire Imposable</strong>
+								</td>
+								<td>
+									<strong>IRPP</strong>
+								</td>
+								<td>
+									<strong>Salaire Net</strong>
+								</td>
+ 								<td>
+									<strong>Avances et prêts</strong>
+								</td> 
+								<td>
+									<strong>Net à payé</strong>
+								</td>
+
+							</tr>
+							<tr
+								t-foreach="p.bulletin_line_ids"
+								t-as="line">
+
+
+ 								<td>
+									<span t-esc="line['matricule']" />
+								</td> 
+								<td>
+									<span t-esc="line['employee_id'].name" />
+								</td>
+<!-- 								<td>
+									<span t-esc="line['regime']" />
+								</td> -->
+
+								<td class="text-right">
+									<span
+										t-esc="line['salaire_base']" />
+								</td>
+								<td class="text-right">
+									<span
+										t-esc="line['salaire_brute']" />
+
+								</td>
+
+								<td class="text-right">
+									<span
+										t-esc="line['cotisations_employee']" />
+								</td>
+								<td class="text-right">
+									<span
+										t-esc="line['salaire_brute_imposable']" />
+								</td>
+								<td class="text-right">
+									<span t-esc="line['igr']" />
+								</td>
+								<td class="text-right">
+									<span
+										t-esc="line['salaire_net']" />
+								</td>
+
+								<td class="text-right">
+									<span
+										t-esc="formatLang(line['deduction'],digits=get_digits(dp='Montant Paie'))" />
+								</td>
+
+								<td class="text-right">
+									<span
+										t-esc="line['salaire_net_a_payer']" />
+								</td>
+
+
+							</tr>
+							<tr t-foreach="get_total(p.month_id.id)" t-as="tot">
+								<td colspan="2">
+									<strong>Totaux:</strong>
+								</td>
+								<td class="text-right">
+									<strong>
+										<span
+											t-esc="formatLang(tot['salaire_base'],digits=get_digits(dp='Montant Paie'))" />
+									</strong>
+								</td>
+								<td class="text-right">
+									<strong>
+										<span
+											t-esc="formatLang(tot['salaire_brute'],digits=get_digits(dp='Montant Paie'))" />
+									</strong>
+								</td>
+
+								<td class="text-right">
+									<strong>
+										<span
+											t-esc="formatLang(tot['cotisations_employee'],digits=get_digits(dp='Montant Paie'))" />
+									</strong>
+								</td>
+								<td class="text-right">
+									<strong>
+										<span
+											t-esc="formatLang(tot['salaire_brute_imposable'],digits=get_digits(dp='Montant Paie'))" />
+									</strong>
+								</td>
+								<td class="text-right">
+									<strong>
+										<span
+											t-esc="formatLang(tot['igr'],digits=get_digits(dp='Montant Paie'))" />
+									</strong>
+								</td>
+								<td class="text-right">
+									<strong>
+										<span
+											t-esc="formatLang(tot['salaire_net'],digits=get_digits(dp='Montant Paie'))" />
+									</strong>
+								</td>
+								
+ 								<td class="text-right">
+									<strong>
+										<span
+											t-esc="formatLang(tot['deduction'],digits=get_digits(dp='Montant Paie'))" />
+									</strong>
+								</td> 
+
+								<td class="text-right">
+									<strong>
+										<span
+											t-esc="formatLang(tot['salaire_net_a_payer'],digits=get_digits(dp='Montant Paie'))" />
+									</strong>
+								</td>
+							</tr> 
+						</table>
+						<div class="col-xs-12 text-right">
+							<strong>Imprimé le :</strong>
+							<span t-esc="time.strftime('%d-%m-%Y')" />
+						</div>
+					</div>
+
+				</t>
+			</t>
+		</t>
+
+
+
+		</template>
+	</data>
+</openerp>
+					

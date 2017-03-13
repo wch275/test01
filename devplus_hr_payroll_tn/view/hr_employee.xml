@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+
+		<record model="ir.ui.view" id="smartit_hr_view_employee_form3">
+			<field name="name">smartit.hr.employee.form3.inherit</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="devplus_hr_payroll_tn.view_hr_employee_form3" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+
+
+			
+
+				<!-- renommer groupe Nationalité & autres infos par information personnelle -->
+				<xpath
+					expr="//notebook/page[@string='Personal Information']/group/group[@string='Citizenship &amp; Other Info']"
+					position="replace">
+					<group string="Information Général" />
+				</xpath>
+
+
+				<xpath
+					expr="//notebook/page[@string='Personal Information']/group/group[@string='Information Général']"
+					position="inside">
+					<field name="gender" />
+					<field name="country_id" options="{'no_create': 1,'no_open': 1,'create_edit':0}" />
+					<field name="cin" />
+					<!-- <field name="delivre_cin" /> -->
+					<!-- <field name="lieu_cin" /> -->
+					<field name="birthday" />
+					<field name="place_of_birth" />
+					<field name="marital" />
+					<field name="chef_famille" />
+					<field name="children" attrs="{'invisible':[('marital','=','c')]}" />
+					<field name="nb_enfant_etudiant" attrs="{'invisible':[('marital','=','c')]}" />
+					<field name="nb_enfant_handicape" attrs="{'invisible':[('marital','=','c')]}" />
+					<field name="nb_parents" />
+
+					<field name="address" />
+					<label for="state_id" string="Zone" />
+					<div class="address_format">
+
+						<field name="state_id" class="oe_no_button" placeholder="Gouvernorat"
+							style="width: 49%%" options='{"no_open": True}' />
+
+						<field name="region_id" placeholder="Délégation"
+							domain="[('state_id','=',state_id)]" style="width: 49%%" />
+
+						<field name="localite_id" placeholder="Localité" style="width: 49%%"
+							domain="[('region_id','=',region_id)]" />
+
+						<field name="zip" placeholder="ZIP" style="width: 49%%" />
+
+						<field name="country_id" placeholder="Pays" class="oe_no_button"
+							options='{"no_open": True}' />
+					</div>
+					<field name="mobile_phone" />
+
+				</xpath>
+
+				<!-- rendre groupe naissance invisible -->
+				<xpath
+					expr="//notebook/page[@string='Personal Information']/group/group[@string='Birth']"
+					position="replace">
+				</xpath>
+
+				<!-- rendre group active invisible -->
+				<!-- <xpath expr="//notebook/page[@string='HR Settings']/group/group[@string='Active']" 
+					position="replace"> </xpath> -->
+				<!-- rendre groupe Grille de salaire invisible -->
+				<xpath
+					expr="//notebook/page[@string='Personal Information']/group/group[@string='Grille de salaire']"
+					position="replace">
+
+				</xpath>
+
+
+
+				<!-- renommer groupe État par information financiére -->
+				<xpath
+					expr="//notebook/page[@string='Personal Information']/group/group[@string='Status']"
+					position="replace">
+					<group string="Information financiére" />
+				</xpath>
+
+				<xpath
+					expr="//notebook/page[@string='Personal Information']/group/group[@string='Information financiére']"
+					position="inside">
+					<field name="res_bank_id" />
+					<field name="numero_compte" />
+					<field name="mode_reglement" />
+					<field name="cnss" />
+				</xpath>
+
+				<!-- rendre page Informations publiques invisible -->
+				<xpath expr="//notebook/page[@string='Public Information']"
+					position="attributes">
+					<attribute name="invisible">1</attribute>
+				</xpath>
+				<xpath expr="//notebook/page[@string='HR Settings']" position="inside">
+					<group>
+						<group string="Grille de salaire">
+							<field name="categorie_id" />
+							<field name="echlon_id" domain="[('categorie_id','=',categorie_id)]" />
+						</group>
+						<group string="Position">
+							<field name="department_id" on_change="onchange_department_id(department_id)" />
+							<field name="job_id" />
+							<field name="parent_id" />
+							<field name="date_entree" />
+							<field name="date_sortie" 
+								 /><!-- on_change="onchange_date_sortie(date_sortie)" -->
+							<field name="sortie_cause"
+								attrs="{'required':[('active','=',False)] , 'invisible':[('active','!=',False)]}" />
+						</group>
+					</group>
+					<group string="Avance sur salaire">
+						<field name="avance" />
+					</group>
+				</xpath>
+				<!-- <field name="category_ids" position="after"> <label string="Active" 
+					/> <field name="active" /> </field> -->
+			</field>
+		</record>
+
+
+
+
+
+
+	</data>
+</openerp>		

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+
+		<menuitem id="menu_hr_payroll_loan" parent="hr.menu_hr_root"
+			groups="base.group_hr_manager,base.group_hr_user" sequence="18"
+			name="Gestion des prêts" />
+
+
+
+		<record model="ir.ui.view" id="hr_payroll_loan_tree_view">
+			<field name="name">hr.payroll.loan.tree</field>
+			<field name="model">hr.payroll.loan</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="tree_string">
+					<field name="name" />
+					<field name="employee_id" />
+					<field name="period_id_from" />
+					<field name="period_id_to" />
+					<field name="number_monthly" />
+					<field name="amount" />
+					<field name="amount_monthly" />
+					<field name="state" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="hr_payroll_loan_form_view">
+			<field name="name">hr.payroll.loan.form</field>
+			<field name="model">hr.payroll.loan</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Prêts" version="7.0">
+
+					<header>
+
+						<button name="action_confirm" states="draft" string="Valider le prêt"
+							type="object" class="oe_highlight" />
+
+						<button name="action_done" states="progress" string="Clôturer"
+							type="object" class="oe_highlight" />
+
+						<button name="action_cancelled" states="confirmed" string="Annuler"
+							type="object" />
+
+						<field name="state" widget="statusbar" statusbar_visible="draft,progress,done,cancelled" />
+					</header>
+
+
+					<sheet>
+						<group col="4">
+							<field name="name" readonly="1" />
+							<field name="employee_id" options="{'no_create': 1,'no_open': 1,'create_edit':0}" />
+							<field name="date" />
+							<field name="company_id" groups="base.group_multi_company" />
+						</group>
+
+						<notebook>
+
+							<page string="Informations">
+								<group col="4">
+									<field name="period_id_from" on_change="on_change_date(period_id_from,period_id_to)" options="{'no_create': 1,'no_open': 1,'create_edit':0}" />
+									<field name="period_id_to" on_change="on_change_date(period_id_from,period_id_to)" options="{'no_create': 1,'no_open': 1,'create_edit':0}" />
+									<field name="number_monthly" on_change="onchange_amount(number_monthly,amount)" />
+									<field name="amount" on_change="onchange_amount(number_monthly,amount)" />
+									<field name="amount_monthly" />
+								</group>
+								<field name="note" />
+
+
+							</page>
+
+							<page string="Les échéances">
+								<field name="loan_line_ids">
+									<tree string="Les échéances" editable="bottom">
+										<field name="name" />
+										<field name="month_id" options="{'no_create': 1,'no_open': 1,'create_edit':0}"/>
+										<field name="amount" />
+										<field name="loan_id" options="{'no_create': 1,'no_open': 1,'create_edit':0}"/>
+										<field name="etat" />
+										
+									</tree>
+								</field>
+
+							</page>
+						</notebook>
+					</sheet>
+					<div class="oe_chatter">
+						<field name="message_follower_ids" widget="mail_followers"
+							groups="base.group_user" />
+						<field name="message_ids" widget="mail_thread" />
+					</div>
+				</form>
+			</field>
+		</record>
+		
+		<record id="hr_payroll_loan_search" model="ir.ui.view">
+			<field name="name">hr.payroll.loan.search</field>
+			<field name="model">hr.payroll.loan</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="employee_id" />
+					<newline />
+					<group expand="0" string="Group By...">
+						<filter string="Employée" context="{'group_by':'employee_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_hr_payroll_loan">
+			<field name="name">Les prêts</field>
+			<field name="res_model">hr.payroll.loan</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+
+		<menuitem action="action_hr_payroll_loan" id="menuitem_hr_payroll_loan"
+			groups="base.group_hr_manager,base.group_hr_user" parent="menu_hr_payroll_loan"
+			sequence="1" />
+
+
+
+		<record model="ir.ui.view" id="hr_payroll_loan_line_tree_view">
+			<field name="name">hr.payroll.loan.line.tree</field>
+			<field name="model">hr.payroll.loan.line</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Les échéances">
+					<field name="name" />
+					<field name="month_id" />
+					<field name="amount" />
+					<field name="loan_id" />
+					<field name="etat" widget="radio" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="hr_payroll_loan_line_form_view">
+			<field name="name">hr.payroll.loan.line.form</field>
+			<field name="model">hr.payroll.loan.line</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Les échéances">
+					<sheet>
+						<notebook>
+							<page>
+								<group>
+									<group>
+										<field name="name" />
+										<field name="loan_id" />
+										<field name="etat" widget="radio" />
+									</group>
+									<group>
+										<field name="month_id" />
+										<field name="amount" />
+									</group>
+								</group>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+
+		<record model="ir.actions.act_window" id="action_hr_payroll_loan_line">
+			<field name="name">Les échéances</field>
+			<field name="res_model">hr.payroll.loan.line</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+		<menuitem action="action_hr_payroll_loan_line" id="menu_hr_payroll_loan_line"
+			groups="base.group_hr_manager,base.group_hr_user" parent="menu_hr_payroll_loan"
+			sequence="5" />
+
+
+
+
+
+
+
+
+
+
+
+
+	</data>
+</openerp>
+	

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<report id="action_report_sale_journal" model="report.journal.vente"
+			string="Journal de Vente" report_type="qweb-pdf"
+			name="devplus_journal_report.report_journal_vente" file="devplus_journal_report.report_journal_vente" />
+
+		<report id="report_journal_caisse" model="wizard.customer.payment"
+			string="Journal de paiements" report_type="qweb-pdf"
+			name="devplus_journal_report.journal_payment_clients_report" file="devplus_journal_report.journal_payment_clients_report" />
+
+		<report id="action_report_journal_achat" model="report.account.journal.achat"
+			string="Journal des achats" report_type="qweb-pdf"
+			name="devplus_journal_report.report_journal_achat" file="devplus_journal_report.report_journal_achat" />
+
+		<report id="action_journal_payment_fournisseurs_report" model="wizard.supplier.payment"
+			string="Journal de paiements" report_type="qweb-pdf"
+			name="devplus_journal_report.journal_payment_fournisseurs_report" file="devplus_journal_report.journal_payment_fournisseurs_report" />
+			
+
+	</data>
+</openerp>

@@ -1,0 +1,359 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* devplus_hr_payroll_loan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-01 22:56+0000\n"
+"PO-Revision-Date: 2016-03-01 22:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Analyse de :"
+msgstr "Analyse de :"
+
+#. module: devplus_hr_payroll_loan
+#: view:hr.payroll.loan:devplus_hr_payroll_loan.hr_payroll_loan_form_view
+#: view:wizard.pret.employee:devplus_hr_payroll_loan.wizard_pret_employee_view
+msgid "Annuler"
+msgstr "Annuler"
+
+#. module: devplus_hr_payroll_loan
+#: selection:hr.payroll.loan,state:0
+msgid "Annulé"
+msgstr "Annulé"
+
+#. module: devplus_hr_payroll_loan
+#: selection:hr.payroll.loan,state:0
+msgid "Brouillon"
+msgstr "Brouillon"
+
+#. module: devplus_hr_payroll_loan
+#: view:hr.payroll.loan:devplus_hr_payroll_loan.hr_payroll_loan_form_view
+msgid "Clôturer"
+msgstr "Clôturer"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,create_uid:0
+#: field:hr.payroll.loan.line,create_uid:0
+#: field:wizard.pret.employee,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,create_date:0
+#: field:hr.payroll.loan.line,create_date:0
+#: field:wizard.pret.employee,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,date:0
+msgid "Date"
+msgstr "Date"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Date :"
+msgstr "Date :"
+
+#. module: devplus_hr_payroll_loan
+#: help:hr.payroll.loan,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "Date of the last message posted on the record."
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,description:0
+#: field:hr.payroll.loan.line,name:0
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Description"
+msgstr "وصف"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Descrpition"
+msgstr "Descrpition"
+
+#. module: devplus_hr_payroll_loan
+#: view:wizard.pret.employee:devplus_hr_payroll_loan.wizard_pret_employee_view
+msgid "Durée de Prêts"
+msgstr "Durée de Prêts"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,employee_id:0
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Employé"
+msgstr "Employé"
+
+#. module: devplus_hr_payroll_loan
+#: selection:hr.payroll.loan,state:0
+msgid "En cours"
+msgstr "En cours"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,state:0
+msgid "Etat"
+msgstr "Etat"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,message_follower_ids:0
+msgid "Followers"
+msgstr "Followers"
+
+#. module: devplus_hr_payroll_loan
+#: model:ir.ui.menu,name:devplus_hr_payroll_loan.menu_hr_payroll_loan
+msgid "Gestion des prêts"
+msgstr "Gestion des prêts"
+
+#. module: devplus_hr_payroll_loan
+#: help:hr.payroll.loan,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,id:0
+#: field:hr.payroll.loan.line,id:0
+#: field:report.devplus_hr_payroll_loan.report_pret_employee,id:0
+#: field:wizard.pret.employee,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: devplus_hr_payroll_loan
+#: help:hr.payroll.loan,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "If checked new messages require your attention."
+
+#. module: devplus_hr_payroll_loan
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_loan.devplus_hr_payrollloan
+#: view:wizard.pret.employee:devplus_hr_payroll_loan.wizard_pret_employee_view
+msgid "Imprimer"
+msgstr "Imprimer"
+
+#. module: devplus_hr_payroll_loan
+#: view:hr.payroll.loan:devplus_hr_payroll_loan.hr_payroll_loan_form_view
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Informations"
+msgstr "Informations"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,message_is_follower:0
+msgid "Is a Follower"
+msgstr "Is a Follower"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,message_last_post:0
+msgid "Last Message Date"
+msgstr "Last Message Date"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,write_uid:0
+#: field:hr.payroll.loan.line,write_uid:0
+#: field:wizard.pret.employee,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,write_date:0
+#: field:hr.payroll.loan.line,write_date:0
+#: field:wizard.pret.employee,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: devplus_hr_payroll_loan
+#: model:ir.actions.act_window,name:devplus_hr_payroll_loan.action_hr_payroll_loan
+#: model:ir.ui.menu,name:devplus_hr_payroll_loan.menuitem_hr_payroll_loan
+msgid "Les prêts"
+msgstr "Les prêts"
+
+#. module: devplus_hr_payroll_loan
+#: view:hr.payroll.loan:devplus_hr_payroll_loan.hr_payroll_loan_form_view
+#: view:hr.payroll.loan.line:devplus_hr_payroll_loan.hr_payroll_loan_line_tree_view
+#: model:ir.actions.act_window,name:devplus_hr_payroll_loan.action_hr_payroll_loan_line
+#: model:ir.ui.menu,name:devplus_hr_payroll_loan.menu_hr_payroll_loan_line
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Les échéances"
+msgstr "Les échéances"
+
+#. module: devplus_hr_payroll_loan
+#: model:ir.model,name:devplus_hr_payroll_loan.model_hr_payroll_loan_line
+msgid "Lignes des prêts"
+msgstr "Lignes des prêts"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,loan_line_ids:0
+msgid "Lignes prêts"
+msgstr "Lignes prêts"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Matricule:"
+msgstr "الترقيم :"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,message_ids:0
+msgid "Messages"
+msgstr "Messages"
+
+#. module: devplus_hr_payroll_loan
+#: help:hr.payroll.loan,message_ids:0
+msgid "Messages and communication history"
+msgstr "Messages and communication history"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,amount:0
+#: field:hr.payroll.loan.line,amount:0
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Montant"
+msgstr "المبلغ"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Montant :"
+msgstr "المبلغ :"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Nom et Prénom :"
+msgstr "الإسم واللقب  :"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,number_monthly:0
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Nombre de mois"
+msgstr "Nombre de mois"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,note:0
+#: field:hr.payroll.loan.line,note:0
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Notes"
+msgstr "Notes"
+
+#. module: devplus_hr_payroll_loan
+#: field:wizard.pret.employee,period_id_from:0
+msgid "Periode debut"
+msgstr "Periode debut"
+
+#. module: devplus_hr_payroll_loan
+#: field:wizard.pret.employee,period_id_to:0
+msgid "Periode fin"
+msgstr "Periode fin"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Prét"
+msgstr "Prét"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan.line,loan_id:0
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Prêt"
+msgstr "Prêt"
+
+#. module: devplus_hr_payroll_loan
+#: view:hr.payroll.loan:devplus_hr_payroll_loan.hr_payroll_loan_form_view
+#: model:ir.model,name:devplus_hr_payroll_loan.model_hr_payroll_loan
+msgid "Prêts"
+msgstr "Prêts"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan.line,period_id:0
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Période"
+msgstr "Période"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Période de :"
+msgstr "Période de :"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,period_id_from:0
+msgid "Période début"
+msgstr "Période début"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Période début :"
+msgstr "Période début :"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,period_id_to:0
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Période fin"
+msgstr "Période fin"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,amount_monthly:0
+#: view:website:devplus_hr_payroll_loan.payroll_loan_report
+msgid "Retenue mensuelle"
+msgstr "Retenue mensuelle"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,name:0
+msgid "Référence"
+msgstr "Référence"
+
+#. module: devplus_hr_payroll_loan
+#: view:website:devplus_hr_payroll_loan.report_pret_employee
+msgid "Résumés de prêts"
+msgstr "Résumés de prêts"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,company_id:0
+msgid "Société"
+msgstr "Société"
+
+#. module: devplus_hr_payroll_loan
+#: model:ir.actions.act_window,name:devplus_hr_payroll_loan.action_pret_employee
+#: model:ir.actions.report.xml,name:devplus_hr_payroll_loan.devplus_hr_payroll_pret_employee_report
+#: view:wizard.pret.employee:devplus_hr_payroll_loan.wizard_pret_employee_view
+msgid "Suivi des prêts"
+msgstr "Suivi des prêts"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,message_summary:0
+msgid "Summary"
+msgstr "Summary"
+
+#. module: devplus_hr_payroll_loan
+#: selection:hr.payroll.loan,state:0
+msgid "Terminé"
+msgstr "Terminé"
+
+#. module: devplus_hr_payroll_loan
+#: field:hr.payroll.loan,message_unread:0
+msgid "Unread Messages"
+msgstr "Unread Messages"
+
+#. module: devplus_hr_payroll_loan
+#: view:hr.payroll.loan:devplus_hr_payroll_loan.hr_payroll_loan_form_view
+msgid "Valider le prêt"
+msgstr "Valider le prêt"
+
+#. module: devplus_hr_payroll_loan
+#: model:ir.model,name:devplus_hr_payroll_loan.model_wizard_pret_employee
+msgid "Wizard pret employee"
+msgstr "Wizard pret employee"
+
+#. module: devplus_hr_payroll_loan
+#: model:ir.model,name:devplus_hr_payroll_loan.model_hr_payroll_bulletin
+msgid "bulletin"
+msgstr "bulletin"
+
+#. module: devplus_hr_payroll_loan
+#: view:hr.payroll.loan:devplus_hr_payroll_loan.hr_payroll_loan_tree_view
+msgid "tree_string"
+msgstr "tree_string"
+

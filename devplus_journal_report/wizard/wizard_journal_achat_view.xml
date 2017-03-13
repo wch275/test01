@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="wizard_journal_achat_view" model="ir.ui.view">
+			<field name="name">Journal des Achats</field>
+			<field name="model">wizard.journal.achat</field>
+			<field name="arch" type="xml">
+				<form>
+					<separator string="Période " colspan="4" />
+					<newline />
+					<newline />
+					<group col="4">
+						<field name="date_begin" />
+						<field name="date_end" />
+					</group>
+					<footer>
+						<button string="Imprimer" name="check_report" type="object"
+							class="oe_highlight" />
+						ou
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+		<record id="action_wizard_journal_achat" model="ir.actions.act_window">
+			<field name="name">Journal des Achats</field>
+			<field name="res_model">wizard.journal.achat</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+		<menuitem id="menu_journal_achat_root" name="Rapports des Achats"
+			parent="base.menu_purchase_root"   sequence="2" />
+
+		<menuitem id="menu_journal_achat" name="Journal des Achats"
+			parent="menu_journal_achat_root" action="action_wizard_journal_achat" sequence="5" />
+
+
+
+	</data>
+</openerp>

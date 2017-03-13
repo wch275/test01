@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+ 
+       <record id="wizard_ordre_virement_frs_line_form" model="ir.ui.view">
+            <field name="name">wizard.ordre.virement.frs.line.form</field>
+            <field name="model">wizard.ordre.virement.frs.line</field>
+            <field name="arch" type="xml">
+                <form string="Annuler virement">
+                    <group>
+                        <field name="name"  invisible="1"/>
+                    </group>
+                    <div>
+                    <p>Le virement selectionné sera supprimé de l'ordre de virement.</p>
+                    <p>Le règlement correspend à ce virement sera marqué comme non remis.</p>
+                    </div>
+                    <footer>
+                        <button name="action_delete" string="Continuer" type="object" class="oe_highlight"  />
+                        or
+                        <button string="Annuler" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="wizard_ordre_virement_frs_line" model="ir.actions.act_window">
+            <field name="name">Annuler remise virement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.bordereau_remise.line</field>
+            <field name="view_id" ref="wizard_ordre_virement_frs_line_form"/>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="context">{'form_view_ref': False}</field>
+        </record>
+
+    </data>
+</openerp>

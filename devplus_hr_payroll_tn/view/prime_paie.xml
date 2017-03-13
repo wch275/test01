@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<openerp>
+	<data>
+			
+		<!-- Gestion Présence -->
+<!--  		<record model="ir.ui.view" id="res_presence_tree_view">
+			<field name="name">res.bordereau.paie.tree</field>
+			<field name="model">res.bordereau.paie</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name" />
+					<field name="type" />
+					
+				</tree>
+			</field>
+		</record> -->
+
+		<record model="ir.ui.view" id="hr.prime_form_view">
+			<field name="name">hr.prime.form</field>
+			<field name="model">hr.prime</field>
+			<field name="arch" type="xml">
+				<form >
+					<sheet>
+					<group>
+								<group>
+									<field name="name" />
+									<field name="month_id" on_change="onchange_month_id(month_id)" options="{'no_create': 1,'no_open': 1,'create_edit':0}" />
+									<field name="date" />
+									
+								</group>
+								<group>
+									<field name="period_id" />
+								</group>
+								
+								
+					</group>
+						<notebook   >
+
+							<page string="Informations"  >
+								<field name="prime_line_ids">
+									<tree string="Information" editable="top">
+										<field name="matricule" />
+										<field name="employee_id" on_change="onchange_employee_id(employee_id)"/>
+										<field name="rubrique_id" />
+										<field name="montant" />
+										
+									</tree>
+								</field>
+							</page>
+						</notebook> 
+
+					</sheet>
+				</form>
+			</field>
+		</record>	
+
+	   <record model="ir.actions.act_window" id="action_prime_paie">
+			<field name="name">Primes</field>
+			<field name="res_model">hr.prime</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<record model="ir.ui.view" id="hr_prime_note_tree_view">
+			<field name="name">hr.prime.note.tree</field>
+			<field name="model">hr.prime.note</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Note" >
+					<field name="name" />
+					<field name="classe" />
+				</tree>
+			</field>
+		</record>
+		
+	   <record model="ir.actions.act_window" id="action_note_prime_paie">
+			<field name="name">Note de Prime</field>
+			<field name="res_model">hr.prime.note</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<record model="ir.ui.view" id="hr_note_prime_form_view">
+			<field name="name">hr.note.prime.form</field>
+			<field name="model">hr.note.prime</field>
+			<field name="arch" type="xml">
+				<form >
+					<sheet>
+					<group>
+								<group>
+									<field name="name" />
+									<field name="month_id" on_change="onchange_month_id(month_id)" options="{'no_create': 1,'no_open': 1,'create_edit':0}" />
+									<field name="date" />
+									
+								</group>
+								<group>
+									<field name="period_id" />
+								</group>
+								
+								
+					</group>
+						<notebook   >
+
+							<page string="Informations"  >
+								<field name="prime_line_ids">
+									<tree string="Information" editable="top">
+										<field name="employee_id" />
+										<field name="critere_1"/>
+										<field name="critere_2" />
+										<field name="critere_3" />
+										<field name="critere_4"/>
+										<field name="critere_5" />
+										<field name="total" />
+										<field name="montant_prime" />
+									</tree>
+								</field>
+								<div class="oe_subtotal_footer_separator">
+									<button class="oe_edit_only oe_inline oe_stat_button" name="add_active_employees" string="Importer les employées" type="object"
+									                             icon="fa-user"/>
+								</div>
+							</page>
+						</notebook> 
+
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+	   <record model="ir.actions.act_window" id="action_prime_attribution_paie">
+			<field name="name">Calculer prime par note</field>
+			<field name="res_model">hr.note.prime</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+				
+		<menuitem id="menu_hr_solde_pointage" name="Primes" parent="hr.menu_hr_root" sequence= "17"/>
+		
+		<menuitem id="ss_menu_prime_paie" name="Primes"
+			parent="menu_hr_solde_pointage" action="action_prime_paie"  sequence="5" />	
+
+		<menuitem id="ss_menu_note_prime_paie" name="Note de Prime"
+			parent="menu_hr_solde_pointage" action="action_note_prime_paie"  sequence="10" />			
+
+		<menuitem id="ss_menu_calcule_note_prime" name="Calculer Note"
+			parent="menu_hr_solde_pointage" action="action_prime_attribution_paie"  sequence="15" />	 
+						
+	</data>
+</openerp>

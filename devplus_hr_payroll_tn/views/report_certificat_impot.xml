@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="report_certificat_impot">
+
+			<t t-call="report.html_container">
+			<t t-foreach="docs" t-as="o">
+				<div class="page">
+					<div class="oe_structure" />
+					<div class="col-xs-12 text-centre " >
+						<table class="table" style="border:none;">
+							<tr>
+								<td style="border:none;" class="text-center">
+									<strong>REPUBLIQUE TUNISIENNE
+									<br />
+									 MINISTERE DE L'ECONOMIES <br/>ET DE FINANCES 
+									<br />
+									DIRECTION GÉNERAL DU<br/> CONTROLE FISCAL</strong>
+									<br />
+									
+								</td>
+								<td style="border:none;" class="text-center" colspan="2">
+									<h4>
+										<strong> Certificat de retenue d’impôt sur le revenu au titre </strong> 
+										<br></br>
+										des traitements, salaires, pensions et rentes viagères
+									</h4>
+								</td>
+							</tr>
+							<tr><td style="border:none;" ></td><td style="border:none;" class="text-left"><strong>Retenue Effectuée Durant l'année</strong> 
+							<span t-esc="data['form']['fiscalyear_id'][1]" /></td>
+							<td style="border:none;"></td></tr>
+						</table>
+						<div class="col-xs-12 text-centre div-radius" >
+						<table class="table table-bordered" style="margin-top:10px;" >
+							<tr>
+								<td rowspan="2" class="text-left">
+									A---Employeur	ou	Organisme	Payeur
+								</td>
+								<td>Matricule Fiscal</td>
+<!-- 								<td>Code TVA</td>
+								<td>Code Catégorie</td>
+								<td>N° ets Secondaires</td> -->
+							</tr>
+							<tr>
+								<td><span t-field="company.vat" /></td>
+								<!-- <td><span t-field="company.code_tva" /></td>
+								<td><span t-field="company.code_categorie" /></td>
+								<td><span t-field="company.etab_secondaire" /></td>-->
+							</tr> 
+					
+						</table>
+						<table class="table table-bordered" style="border:none;">
+							<tr>
+								<td style="border:none;" colspan="3" class="text-left" >
+									<strong>Nom,prénoms ou raison sociale</strong>
+									<br><span t-field="company.name" /></br>
+									<br></br>
+									<strong>Adresse</strong>
+									<br><span t-field="company.street" /></br>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="text-left">
+									<strong>B--Désignation du bénéficiaire</strong>
+								</td>
+								<td><strong>Situation familiale</strong></td>
+								<td>Nbr d'enfants pris en considération pour le calcul de la retenue</td>
+							</tr>
+							<tr>
+								<td style="border:none;"> <span t-field="o.marital" /> </td>
+								<td style="border:none;"> <span t-field="o.children" /> </td>
+							</tr>
+						</table>
+						<table class="table" style="border:none;">
+							<tr>
+								<td style="border:none;"><strong>Nom et Prénom</strong></td>
+								<td style="border:none;"> <span t-field="o.name" /> </td>
+								<td style="border:none;"><strong>N°Carte d'identité</strong></td>
+								<td style="border:none;"><span t-field="o.cin" /></td>
+							</tr>
+							
+							<tr>
+								<td style="border:none;"><strong>Adresse de Résidence</strong></td>
+								<td style="border:none;"><span t-field="o.address" /></td>
+								<td style="border:none;"><strong>Emploi Occupé</strong></td>
+								<td style="border:none;"><span t-field="o.job_id" /></td>
+							</tr>
+							
+							<tr>
+								<td style="border:none;"><strong>Période du travail durant l'année</strong></td>
+								<td style="border:none;"></td>
+								<td style="border:none;"><strong>Matricule</strong></td>
+								<td style="border:none;"><span t-field="o.matricule" /></td>
+							</tr>
+							
+							<tr>
+								<td style="border:none;"><strong>CNSS/CNRPS</strong></td>
+								<td style="border:none;"> <span t-field="o.cnss" />/ <span t-field="o.cnrps" /></td>
+							</tr>
+							</table>
+							<table class="table table-bordered">
+							<tr>
+							<td>Revenu Imposable(A)</td>
+							<td>Valeur des avantages en Nature(B)</td>
+							<td>Total du Revenu Brut Imposable(A+B)</td>
+							<td>Revenu Réinvisti</td>
+							<td>Montant des retenues</td>
+							<td>Revenu Net de Retenues</td>
+							</tr>
+							
+							<t  t-set="res" t-value="bulletin_line(o.id,data['form']['fiscalyear_id'][0])"  />
+							
+							<tr>
+							<td>
+							<span t-esc="res['salaire_brute_imposable']" />
+							</td>
+
+							<td>0.0</td>
+							<td>
+							<span t-esc="res['salaire_brute_imposable']" />
+							</td>
+							<td>0.0</td>
+							<td><span t-esc="res['igr']" /></td>
+							<td><span t-esc="res['salaire_net_a_payer']" />
+							</td>
+							</tr>
+							</table>
+							</div>
+					</div>
+					<div class="col-xs-12 text-left">
+					Je soussigne certifié exacts et sincères les renseignements figurant sur le présent certificat et  m'exposent aux sanctions prévues par la loi pour toute inexactitude<br></br>
+					 <br></br>
+							<strong>Cachet et signature de l'employeur</strong>
+						
+					</div>
+				</div>
+				</t>
+			</t>
+		</template>
+	</data>
+</openerp>
+						

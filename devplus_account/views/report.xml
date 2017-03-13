@@ -1,0 +1,16 @@
+<openerp>
+	<data>
+		<report id="bordereau_remise_report" string="Bordereau de remise"
+			model="account.bordereau_remise" report_type="qweb-pdf"
+			file="devplus_account.report_bordereau_remise" name="devplus_account.report_bordereau_remise" />
+
+ 	<report id="ordre_virement_report" string="Ordre de Virement"
+			model="ordre.virement.frs" report_type="qweb-pdf"
+			file="devplus_account.report_ordre_virement" name="devplus_account.report_ordre_virement" />
+ 
+
+	</data>
+</openerp>
+			
+	
+	

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+
+		<!-- Decimal Precision -->
+
+		<record forcecreate="True" id="decimal_commision_paie" model="decimal.precision">
+			<field name="name">Montant Paie</field>
+			<field name="digits">3</field>
+		</record>
+
+		<record forcecreate="True" id="decimal_commision_taux_paie"
+			model="decimal.precision">
+			<field name="name">Taux Paie</field>
+			<field name="digits">2</field>
+		</record>
+
+		<!-- Cotisation CNSS -->
+		
+		<record model="hr.payroll.cotisation" id="cotisation_data">
+			<field name="code">CNSS</field>
+			<field name="name">CNSS</field>
+			<field name="tauxsalarial">9.18</field>
+			<field name="tauxpatronal">16.75</field>
+		</record>
+
+
+		<record model="hr.payroll.cotisation.type" id="cotisation_type_data">
+			<field name="name">Cotisation CNSS</field>
+			<field name="cotisation_ids" eval="[(6, 0,[ref('cotisation_data')])]" />
+		</record>
+
+		<!-- Cotisation CNRPS -->
+		
+		<record model="hr.payroll.cotisation" id="cotisation_cnrps_1">
+			<field name="code">CNRPS-1</field>
+			<field name="name">مساهمة في صندوق التقاعد</field>
+			<field name="tauxsalarial">8.20</field>
+			<field name="tauxpatronal">12.50</field>
+		</record>
+		
+		<record model="hr.payroll.cotisation" id="cotisation_cnrps_2">
+			<field name="code">CNRPS-2</field>
+			<field name="name">مساهمة في صندوق الحيطة الإجتماعية</field>
+			<field name="tauxsalarial">2.75</field>
+			<field name="tauxpatronal">4.0</field>
+		</record>
+
+		<record model="hr.payroll.cotisation" id="cotisation_cnrps_3">
+			<field name="code">CNRPS-3</field>
+			<field name="name">مساهمة في رأس مال الوفاة</field>
+			<field name="tauxsalarial">1.0</field>
+			<field name="tauxpatronal">0.0</field>
+		</record>
+
+		<record model="hr.payroll.cotisation" id="cotisation_cnrps_4">
+			<field name="code">CNRPS-4</field>
+			<field name="name">مساهمة في صندوق النهوض بالمسكن</field>
+			<field name="tauxsalarial">0.0</field>
+			<field name="tauxpatronal">1.0</field>
+		</record>
+				
+		<record model="hr.payroll.cotisation.type" id="cotisation_type_cnrps">
+			<field name="name">Cotisation CNRPS</field>
+			<field name="cotisation_ids" eval="[(6, 0,[ref('cotisation_cnrps_1'),ref('cotisation_cnrps_2'),ref('cotisation_cnrps_3'),ref('cotisation_cnrps_4')])]" />
+		</record>
+				
+		<!-- IRPP -->		
+
+		<record model="hr.payroll.ir" id="ir_data1">
+			<field name="debuttranche">0</field>
+			<field name="fintranche">5000</field>
+			<field name="taux">0</field>
+			<field name="somme">0</field>
+		</record>
+		<record model="hr.payroll.ir" id="ir_data2">
+			<field name="debuttranche">5000,001</field>
+			<field name="fintranche">20000</field>
+			<field name="taux">26</field>
+			<field name="somme">0</field>
+		</record>
+		<record model="hr.payroll.ir" id="ir_data3">
+			<field name="debuttranche">20000.001</field>
+			<field name="fintranche">30000</field>
+			<field name="taux">28</field>
+			<field name="somme">3900</field>
+		</record>
+		<record model="hr.payroll.ir" id="ir_data4">
+			<field name="debuttranche">30000,001</field>
+			<field name="fintranche">50000</field>
+			<field name="taux">32</field>
+			<field name="somme">6700</field>
+		</record>
+		<record model="hr.payroll.ir" id="ir_data5">
+			<field name="debuttranche">50000,001</field>
+			<field name="fintranche">9999999999</field>
+			<field name="taux">35</field>
+			<field name="somme">13100</field>
+		</record>
+
+		<!-- Rubriques  -->
+		
+		<record model="hr.payroll.rubrique" id="rubrique_data1">
+			<field name="name">Indémnité de Présence</field>
+			<field name="code">IND-PRE</field>
+			<field name="categorie">majoration</field>
+			<field name="type">indemnite</field>
+			<field name="regime">journalier</field>
+			<field name="imposable">1</field>
+			<field name="cotisable">1</field>
+			<field name="afficher">1</field>
+		</record>
+
+		<record model="hr.payroll.rubrique" id="rubrique_data2">
+			<field name="name">Indémnité de Transport</field>
+			<field name="code">IND-TRA</field>
+			<field name="categorie">majoration</field>
+			<field name="type">indemnite</field>
+			<field name="regime">journalier</field>
+			<field name="imposable">1</field>
+			<field name="cotisable">1</field>
+			<field name="afficher">1</field>
+		</record>
+
+		<record model="hr.payroll.rubrique" id="rubrique_data3">
+			<field name="name">Indémnité de Panier</field>
+			<field name="code">IND-PAN</field>
+			<field name="categorie">majoration</field>
+			<field name="type">indemnite</field>
+			<field name="regime">journalier</field>
+			<field name="imposable">1</field>
+			<field name="cotisable">1</field>
+			<field name="afficher">1</field>
+		</record>
+
+		<record model="hr.payroll.rubrique" id="rubrique_data4">
+			<field name="name">Prime déplacement</field>
+			<field name="code">PRI-DEP</field>
+			<field name="categorie">majoration</field>
+			<field name="type">prime</field>
+			<field name="regime">mensuel</field>
+			<field name="imposable">1</field>
+			<field name="cotisable">1</field>
+			<field name="afficher">1</field>
+		</record>
+
+		<!-- Type des contrats -->
+		
+		<!--<record model="hr.contract.type" id="contract_type_svip">
+			<field name="name">SIVP</field>
+		</record>
+		<record model="hr.contract.type" id="contract_type_cdd">
+			<field name="name">CDD</field>
+		</record>
+		<record model="hr.contract.type" id="contract_type_cdi">
+			<field name="name">CDI</field>
+		</record>-->
+
+		<!-- Régimes  des contrats -->
+		
+		<record model="hr.contract.regime" id="contract_regime_mensuel_40">
+			<field name="name">Mensuel- 40H</field>
+			<field name="type_regime">mensuel</field>
+			<field name="hours_mensuel">40</field>
+		</record>
+
+		<record model="hr.contract.regime" id="contract_regime_mensuel_48">
+			<field name="name">Mensuel- 48H</field>
+			<field name="type_regime">mensuel</field>
+			<field name="hours_mensuel">48</field>
+		</record>
+
+		<record model="hr.contract.regime" id="contract_regime_horaire_260">
+			<field name="name">Horaire- 260H</field>
+			<field name="type_regime">horaire</field>
+			<field name="hours_horaire">260</field>
+		</record>
+						
+		<!-- Types Absence  -->
+		
+		<record model="res.absence.type" id="absence_type_justifie">
+			<field name="name">Absence justifiée</field>
+		</record>
+
+		<record model="res.absence.type" id="absence_type_non_justifie">
+			<field name="name">Absence non justifiée</field>
+		</record>
+		 
+				
+		<!-- Les séquences -->		
+		
+		<record id="hr_autorisation_sequence_type" model="ir.sequence.type">
+			<field name="name">Autorisation</field>
+			<field name="code">hr.autorisation</field>
+		</record>
+		
+		<record id="hr_autorisation_sequence" model="ir.sequence">
+			<field name="name">Autorisation</field>
+			<field name="code">hr.autorisation</field>
+			<field name="padding">3</field>
+		</record>
+		
+		<record id="hr_avance_sequence_type" model="ir.sequence.type">
+			<field name="name">Avance</field>
+			<field name="code">hr.avance</field>
+		</record>
+		
+		<record id="hr_avance_sequence" model="ir.sequence">
+			<field name="name">Avance</field>
+			<field name="code">hr.avance</field>
+			<field name="padding">3</field>
+		</record>
+
+		<record id="hr_contract_sequence_type" model="ir.sequence.type">
+			<field name="name">Contrats des employées</field>
+			<field name="code">hr.contract</field>
+		</record>
+		
+		<record id="hr_contract_sequence" model="ir.sequence">
+			<field name="name">Contrats des employées</field>
+			<field name="code">hr.contract</field>
+			<field name="prefix">C</field>
+			<field name="padding">3</field>
+		</record>
+				
+
+
+	</data>
+</openerp>

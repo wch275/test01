@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report 
+            id="report_salary_grid_avancement"
+            string="Imprimer Détailles"
+            model="salary_grid.avancement" 
+            report_type="qweb-pdf"
+            file="devplus_salary_grid.report_salarygrid_avancement" 
+            name="devplus_salary_grid.report_salarygrid_avancement" 
+        />
+    </data>
+</openerp>
